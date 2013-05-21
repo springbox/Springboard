@@ -4,7 +4,7 @@ This framework utilizes SASS + Compass + Compass Extensions. To compile these th
 
 ## SASS + Compass + Extensions
 
-Compass has many built in @mixins that are useful for SASS projects, but it also has many extensions for enhanced functionality. We make use of some of them and they can be found in the /extensions directory. However, rather than using them as Compass extensions, they are imported directly to /library/core/styles.scss to avoid SASS config problems. Documention for each extension can be found at the links below.
+Compass has many built in @mixins that are useful for SASS projects, but it also has many extensions for enhanced functionality. We make use of some of them and they can be found in the /ext directory. However, rather than using them as Compass extensions, they are imported directly to /library/core/styles.scss to avoid SASS config problems. Documention for each extension can be found at the links below.
 
 1. [Breakpoint](http://breakpoint-sass.com/#get_started)
 	Easily set breakpoints.
