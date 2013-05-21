@@ -7,3 +7,6 @@
 # Mixture
 .sass-cache/
 mixture.json
+
+# Codekit
+codekit-config.json
