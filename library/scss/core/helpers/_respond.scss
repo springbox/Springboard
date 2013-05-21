@@ -1,0 +1,79 @@
+
+/**
+ * Supports lists as a parameter for use with multiple media queries.
+ * @include respond-to(palm, phablet, lap) { .sub-nav { display: none; }}
+ */
+@mixin respond-to($media...) {
+	$query: '';
+
+	@if (length($media) > 1) {
+		@if type-of($media) == number {
+			$query: '(min-width: ' + $media  + ')';
+		} @else {
+			$query: $media;
+		}
+	} @else {
+		$query: '(min-width: 400px)';
+	}
+	/*$response-count: 0;
+	
+	$height: '(min-height: 576px)';
+	$and: false;
+
+	@if(length($media) > 1) {
+		@if(nth($media, 1) == 'height') {
+			$and: true;
+		}
+	}
+
+
+	@each $medium in $media {
+		@if $response-count > 0 {
+			@if($and) {
+				@if($medium != 'height') {
+					@if ($response-count > 1) {
+						$query: $query + ', ' + $height + 'and ';
+					} @else {
+						$query: $query + $height + 'and ';
+					}
+				}
+			} @else {
+				$query: $query + ', ';
+			}
+		}
+		@if $medium == 'palm' {
+			$query: $query + '(max-width: 525px)';
+		}
+		@if $medium == 'phablet' {
+			$query: $query + '(min-width: 526px) and (max-width: 759px)';
+		}
+		@if $medium == 'lap' {
+			$query: $query + '(min-width: 760px) and (max-width: 990px)';
+		}
+		@if $medium == 'desk' {
+			$query: $query + '(min-width: 991px) and (max-width: 1247px)';
+		}
+		@if $medium == 'wide' {
+			$query: $query + '(min-width: 1248px) and (max-width: 1437px)';
+		}
+		@if $medium == 'extra-wide' {
+			$query: $query + '(min-width: 1438px)';
+		}
+		@if $medium == 'height' {
+			@if ($and == false) {
+				$query: $query + $height;
+			} @else {
+
+			}
+		}
+
+		$response-count: $response-count + 1;
+	}
+
+	*/
+
+
+	@media #{$query} {
+		@content;
+	}
+}
