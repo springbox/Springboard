@@ -1,0 +1,21 @@
+//-------------------------------------
+//  Springboard
+//  Welcome to Springboard.
+//-------------------------------------
+
+// ----- Import Compass and Extensions ----- //
+// There's quite a bit included here. For more details see the README.
+@import "compass";
+@import "../ext/breakpoint-2.0.5/stylesheets/breakpoint";
+@import "../ext/respond-to-custom/compass/stylesheets/respond-to"; // custom removes breakpoint loading
+@import "../ext/Singularity-custom/stylesheets/singularitygs"; // custom removes breakpoint loading
+
+
+// ----- Import any Compass styles ----- //
+@import "compass/reset";
+
+// ----- Import Springboard core styles ----- //
+
+
+// ----- Import App-specific styles ----- //
+@import "app/main";
