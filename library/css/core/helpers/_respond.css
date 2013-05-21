@@ -1,4 +1,0 @@
-/**
- * Supports lists as a parameter for use with multiple media queries.
- * @include respond-to(palm, phablet, lap) { .sub-nav { display: none; }}
- */
