@@ -1,4 +1,8 @@
+# Change below to point to your working directory
+root = "~/Documents/Local\ Projects/Framework/"
+
 # Require any additional compass plugins here.
+require root + "extensions/breakpoint-2.0.5/lib/breakpoint.rb";
 
 # Set this to the root of your project when deployed:
 http_path = "/"
