@@ -1,0 +1,51 @@
+////////////////////////
+// Import the Breakpoint partial
+////////////////////////
+//@import 'breakpoint';
+
+////////////////////////
+// Default the Breakpoints variable
+////////////////////////
+$breakpoints: () !default;
+
+////////////////////////
+// Respond-to API Mixin
+////////////////////////
+
+@mixin respond-to($context, $media: $breakpoint-default-media, $no-query: false, $base-font-size: $breakpoint-base-font-size) {
+  @if type-of($breakpoints) != 'list' {
+    // Just in case someone writes gibberish to the $breakpoints variable.
+    @warn "Your breakpoints aren't a list! See https://github.com/snugug/respond-to#api if you'd like a reminder on how to use Respond-to";
+  }
+  @if length($breakpoints)  != 0 {
+    // If there's only one breakpoint, SASS will think it's a space separated list :P
+    @if length($breakpoints) == 2 and type-of(nth($breakpoints, 1)) != 'list' {
+      $breakpoints: append((), (nth($breakpoints, 1), nth($breakpoints, 2)));
+    }
+    @each $bkpt in $breakpoints {
+      @if $context == nth($bkpt, 1) {
+        $length: length($bkpt);
+        $mq: false !default;
+        
+        @for $i from 2 through $length {
+          // If it's the first item, override $mq
+          @if $i == 2 {
+            $mq: nth($bkpt, $i);
+          }
+          // Else, join $mq
+          @else {
+            $mq: join($mq, nth($bkpt, $i));
+          }
+        }
+        
+        @include breakpoint($mq, $media, $no-query, $base-font-size) {
+          @content;
+        }
+      }
+    }
+  }
+  @else {
+    @warn "You haven't created any breakpoints yet! Make some already! See https://github.com/snugug/respond-to#api if you'd like a reminder on how to use Respond-to";
+    @content;
+  }
+}
