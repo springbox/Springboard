@@ -63,7 +63,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 19, ../scss/core/base/_navigation.scss */
-.bar-nav {
+/* line 36, ../scss/core/base/_navigation.scss */
+.sb-bar-nav {
+  position: relative;
   width: 100%;
+  list-style: none;
+  background-color: #333333;
 }

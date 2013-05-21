@@ -3,23 +3,38 @@
 //-------------------------------------
 
 // Print the class names?
-$print-base-nav-classes: $print-base-classes !default;
+$print-base-nav-classes:	$print-base-classes	!default;
 
-
+$sb-bar-nav-color:	#333333	!default;
 // ----- Mixins ----- //
-@mixin bar-nav($fixed: 'true') {
+
+// Bar navigation
+@mixin sb-bar-nav($fixed: 'true') {
+
+	@if $fixed == true {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+	} @else {
+		position: relative;
+	}
 
 	width: 100%;
+	list-style: none; // override lists if this is on them.
+	background-color: $sb-bar-nav-color;
 
 }
 
-
+// ----- Classes ----- //
 @if $print-base-nav-classes == true {
 
-	.bar-nav {
-		@include bar-nav;
+	.sb-nav {
+		//@include sb-nav;
+	}
 
-
+	.sb-bar-nav {
+		@include sb-bar-nav;
 	}
 
 }
