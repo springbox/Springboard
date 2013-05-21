@@ -1,0 +1,25 @@
+//-------------------------------------
+//  Springboard: core/base/navigation
+//-------------------------------------
+
+// Print the class names?
+$print-base-nav-classes: $print-base-classes !default;
+
+
+// ----- Mixins ----- //
+@mixin bar-nav($fixed: 'true') {
+
+	width: 100%;
+
+}
+
+
+@if $print-base-nav-classes == true {
+
+	.bar-nav {
+		@include bar-nav;
+
+
+	}
+
+}

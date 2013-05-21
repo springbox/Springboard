@@ -14,7 +14,10 @@
 // ----- Import any Compass styles ----- //
 @import "compass/reset";
 
+
 // ----- Import Springboard core styles ----- //
+@import "core/settings";
+@import "core/base";
 
 
 // ----- Import App-specific styles ----- //
