@@ -5,13 +5,17 @@
 //-------------------------------------
 
 
-@mixin grid-generator($sb-gg-prefix: 'sb-grid', $sb-gg-max-width: 1030px, $sb-gg-total-columns: 12, $sb-gg-column-width: 72px, $sb-gg-gutter: 30px, $sb-gg-spacing: -10px, $sb-gg-inline: false) {
+@mixin grid-generator($sb-gg-prefix: 'sb-grid', $sb-gg-max-width: 64em, $sb-gg-total-columns: 12, $sb-gg-column-width: 4.5em, $sb-gg-gutter: 2em, $sb-gg-spacing: -.5em, $sb-gg-inline: true) {
 	
 
-	@if unit($sb-gg-column-width) == 'px' {
+	@if unit($sb-gg-column-width) == 'em' {
 		$sb-gg-width: ( ($sb-gg-total-columns * $sb-gg-column-width) + (($sb-gg-total-columns) * $sb-gg-gutter) );
 	} @else {
-		$sb-gg-width: 100% + $sb-gg-gutter;
+		@if unit($sb-gg-gutter) == 'em' {
+			$sb-gg-width: 100% + $sb-gg-gutter;
+		} @else {
+			$sb-gg-width: 100%;
+		}
 	}
 
 
@@ -20,6 +24,7 @@
 		@if unit($sb-gg-column-width) == '%' {
 			max-width: $sb-gg-max-width;
 		} @else {
+			max-width: none;
 			width: ( ($sb-gg-total-columns * $sb-gg-column-width) + (($sb-gg-total-columns) * $sb-gg-gutter) );
 		}
 		margin: 0 auto;
@@ -41,9 +46,7 @@
 
 	// placeholder for row
 	%#{$sb-gg-prefix}-row { 
-		@if unit($sb-gg-column-width) == 'px' {
-			width: ( ($sb-gg-total-columns * $sb-gg-column-width) + (($sb-gg-total-columns) * $sb-gg-gutter) );
-		}
+		width: 100%;
 		list-style: none;
 		padding: 0;
 		margin: 0;
@@ -73,21 +76,32 @@
 	@for $sb-gg-column-count from 1 through $sb-gg-total-columns {
 		%#{$sb-gg-prefix}-#{$sb-gg-column-count} {
 
-			@if unit($sb-gg-column-width) == 'px' {
+			//@if unit($sb-gg-column-width) == 'em' {
 				width: $sb-gg-column-count * $sb-gg-column-width + ($sb-gg-column-count - 1) * $sb-gg-gutter;
-			} @else {
-				width: percentage($sb-gg-column-count / $sb-gg-total-columns);
-			}
+			//} @else {
+			//	width: percentage($sb-gg-column-count / $sb-gg-total-columns);
+			//}
 
-			margin-left: $sb-gg-gutter;
+			@if unit($sb-gg-gutter) == '%' {
+				@if unit($sb-gg-column-width) == 'em' {
+					padding-left: $sb-gg-gutter;
+					margin-left: 0;
+				} @else {
+					margin-left: $sb-gg-gutter;
+					padding-left: 0;
+				}
+			} @else {
+				margin-left: $sb-gg-gutter;
+				padding-left: 0;
+			}
 
 			@if $sb-gg-inline {
 				display:inline-block;
-				margin-left: 0;
+				//margin-left: 0;
 				vertical-align:top;
 				letter-spacing:normal;
 				word-spacing:normal;
-				font-size: medium;
+				font-size: 1rem;
 			} @else {
 				float: left;
 			}

@@ -9,57 +9,50 @@ $sb-large-max-width:	1030px	!default;
 
 // ----- Placeholders ----- //
 
-@include grid-generator('sb-s', 1030px, 12, 5.88888888888583%, 2.666666666667%,  -12px);
+@include grid-generator('sb-s', 65em, 12, 5.88888888888583%, 2.666666666667%,  -0);
 
 @include respond-to('sb-m') {
-	@include grid-generator('sb-m', 1030px, 12, 5.88888888888583%, 2.666666666667%,  -12px);
+	@include grid-generator('sb-m', 65em, 12, 5.88888888888583%, 2.666666666667%,  -0);
 }
 
 @include respond-to('sb-l') {
-	@include grid-generator('sb-l', 1320px, 12, 5.88888888888583%, 2.666666666667%,  -12px);
+	@include grid-generator('sb-l', 82.5, 12, 5.88888888888583%, 2.666666666667%,  -0);
 }
 
 @include respond-to('sb-xl') {
-	@include grid-generator('sb-xl', 1400px, 12, 100px, 10px,  -12px);
+	@include grid-generator('sb-xl', 87.5em, 12, 5.4583333333em, 2em,  -0);
+}
+
+
+%sb-grid-column {
+	padding: 10px;
+	background-color: #fdadad;
 }
 
 
 // ----- Classes ----- //
 
-.sb-l-container {
+.sb-grid-container {
+	@extend %sb-s-container;
+	@extend %sb-m-container;
 	@extend %sb-l-container;
 	@extend %sb-xl-container;
 }
 
-.sb-l-row {
+.sb-grid-row {
+	@extend %sb-s-row;
+	@extend %sb-m-row;
 	@extend %sb-l-row;
 	@extend %sb-xl-row;
 }
 
-.sb-l-1 {
-	@extend %sb-l-1;
-	@extend %sb-xl-1;
-	padding: 10px;
-	background-color: #fdadad;
-}
 
-.sb-l-2 {
-	@extend %sb-l-2;
-	@extend %sb-xl-2;
-	padding: 10px;
-	background-color: #fdadad;
-}
-
-.sb-l-3 {
-	@extend %sb-l-3;
-	@extend %sb-xl-3;
-	padding: 10px;
-	background-color: #fdadad;
-}
-
-.sb-l-4 {
-	@extend %sb-l-4;
-	@extend %sb-xl-4;
-	padding: 10px;
-	background-color: #fdadad;
+@for $i from 1 through 12 {
+	.sb-grid-#{$i} {
+		@extend %sb-s-#{$i};
+		@extend %sb-m-#{$i};
+		@extend %sb-l-#{$i};
+		@extend %sb-xl-#{$i};
+		@extend %sb-grid-column;
+	}
 }
