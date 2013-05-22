@@ -8,7 +8,6 @@
 @import "compass";
 @import "../ext/breakpoint-2.0.5/stylesheets/breakpoint";
 @import "../ext/respond-to-custom/compass/stylesheets/respond-to"; // custom removes breakpoint loading
-@import "../ext/Singularity-custom/stylesheets/singularitygs"; // custom removes breakpoint loading
 
 
 // ----- Import any Compass styles ----- //
@@ -16,9 +15,17 @@
 
 
 // ----- Import Springboard core styles ----- //
+
+// Settings
 @import "core/settings";
+@import "core/variables";
+
+// Base
 @import "core/base";
 
+// Layout
+@import "core/layout/grid-generator";
+@import "core/layout/grid";
 
 // ----- Import App-specific styles ----- //
 @import "app/main";
