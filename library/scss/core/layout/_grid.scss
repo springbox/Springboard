@@ -1,0 +1,39 @@
+//-------------------------------------
+//  Springboard: core/layout/grid
+//  Set up default responsive grid.
+//-------------------------------------
+
+// ----- Settings ----- //
+
+
+
+// ----- Placeholders ----- //
+
+
+
+// ----- Classes ----- //
+
+// 12 columns that are 5.8888% wide with 2.66666% gutters. Prefix with 'sb-large'.
+@include grid-generator('sb-large', 1030px, 12, 5.88888888888583%, 2.666666666667%,  -12px);
+
+
+
+.sb-large-row {
+	@extend %sb-large-container;
+}
+
+.sb-large-1 {
+	@extend %sb-large-1;
+}
+
+.sb-large-2 {
+	@extend %sb-large-2;
+}
+
+.sb-large-3 {
+	@extend %sb-large-3;
+}
+
+.sb-large-4 {
+	@extend %sb-large-4;
+}
