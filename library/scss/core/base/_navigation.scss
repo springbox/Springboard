@@ -2,39 +2,68 @@
 //  Springboard: core/base/navigation
 //-------------------------------------
 
-// Print the class names?
+// ----- Settings ----- //
+
 $print-base-nav-classes:	$print-base-classes	!default;
 
-$sb-bar-nav-color:	#333333	!default;
-// ----- Mixins ----- //
+$sb-bar-nav-color:	#d1d1d1	!default;
 
-// Bar navigation
-@mixin sb-bar-nav($fixed: 'true') {
 
-	@if $fixed == true {
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 1000;
-	} @else {
-		position: relative;
-	}
+// ----- Placeholders ----- //
 
+%sb-bar-nav {
 	width: 100%;
-	list-style: none; // override lists if this is on them.
+	list-style: none;
 	background-color: $sb-bar-nav-color;
-
 }
+
+%sb-fixed-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+%sb-has-fixed-nav {
+	padding-top: 2.25rem;
+
+	@if $ie8-support == true {
+		padding-top: 2.25 * $rem;
+	}
+}
+
+%sb-nav-item {
+	display: inline-block;
+	padding-top: .5rem;
+	padding-bottom: .75rem;
+	margin-left: .75rem;
+
+	@if $ie8-support == true {
+		padding-top: .5 * $rem;
+		margin-left: .75 * $rem;
+		padding-bottom: .75 * $rem;
+	}
+}
+
 
 // ----- Classes ----- //
 @if $print-base-nav-classes == true {
 
-	.sb-nav {
-		//@include sb-nav;
+	.sb-fixed-nav {
+		@extend %sb-fixed-nav;
 	}
 
 	.sb-bar-nav {
-		@include sb-bar-nav;
+		@extend %sb-bar-nav;
+
+		.sb-nav-item {
+			@extend %sb-nav-item;
+		}
+	}
+
+	.sb-has-fixed-nav {
+		@extend %sb-has-fixed-nav;
 	}
 
 }
