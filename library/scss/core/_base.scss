@@ -5,8 +5,16 @@
 
 
 // ----- Base settings ----- //
-//$print-base-nav-classes: true;
+//$print-base-nav-classes: false;
+//$border-box-all-the-things: false;
 
 
 // ----- Base import ----- //
 @import "base/navigation";
+
+
+@if $border-box-all-the-things == true {
+	* {
+		@include box-sizing(border-box);
+	}
+}
