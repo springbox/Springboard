@@ -63,10 +63,83 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 36, ../scss/core/base/_navigation.scss */
+/* line 14, ../scss/core/base/_navigation.scss */
 .sb-bar-nav {
-  position: relative;
   width: 100%;
   list-style: none;
-  background-color: #333333;
+  background-color: #d1d1d1;
+}
+
+/* line 20, ../scss/core/base/_navigation.scss */
+.sb-fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* line 28, ../scss/core/base/_navigation.scss */
+.sb-has-fixed-nav {
+  padding-top: 2.25rem;
+  padding-top: 36px;
+}
+
+/* line 36, ../scss/core/base/_navigation.scss */
+.sb-bar-nav .sb-nav-item {
+  display: inline-block;
+  padding-top: .5rem;
+  padding-bottom: .75rem;
+  margin-left: .75rem;
+  padding-top: 8px;
+  margin-left: 12px;
+  padding-bottom: 12px;
+}
+
+/* line 74, ../scss/core/layout/_grid-generator.scss */
+.sb-large-row {
+  width: 102.66667%;
+  max-width: 1030px;
+  padding: 0;
+  margin-left: -2.66667%;
+  zoom: 1;
+  list-style: none;
+  margin: 0 auto;
+}
+/* line 85, ../scss/core/layout/_grid-generator.scss */
+.sb-large-row:before, .sb-large-row:after {
+  content: " ";
+  display: table;
+}
+/* line 90, ../scss/core/layout/_grid-generator.scss */
+.sb-large-row:after {
+  clear: both;
+}
+
+/* line 104, ../scss/core/layout/_grid-generator.scss */
+.sb-large-1 {
+  width: 8.33333%;
+  padding-left: 2.66667%;
+  float: left;
+}
+
+/* line 104, ../scss/core/layout/_grid-generator.scss */
+.sb-large-2 {
+  width: 16.66667%;
+  padding-left: 2.66667%;
+  float: left;
+}
+
+/* line 104, ../scss/core/layout/_grid-generator.scss */
+.sb-large-3 {
+  width: 25%;
+  padding-left: 2.66667%;
+  float: left;
+}
+
+/* line 104, ../scss/core/layout/_grid-generator.scss */
+.sb-large-4 {
+  width: 33.33333%;
+  padding-left: 2.66667%;
+  float: left;
 }
