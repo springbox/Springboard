@@ -19,7 +19,5 @@ Compass comes with a number of built-in functions that can be quite useful (spri
 Below are extensions we're utilizing:
 
 1. [Breakpoint](http://breakpoint-sass.com/#get_started) — Easily set breakpoints.
-2. [Respond To](https://github.com/Snugug/respond-to) — Predefine breakpoints for convenience on larger projects.
-3. [Singularity.gs](https://github.com/Team-Sass/Singularity) — Quickly build out responsive grids.
 
 These extensions are pulled in from ` /library/ext `
