@@ -4,36 +4,62 @@
 //-------------------------------------
 
 // ----- Settings ----- //
-
+$sb-large-max-width:	1030px	!default;
 
 
 // ----- Placeholders ----- //
 
+@include grid-generator('sb-s', 1030px, 12, 5.88888888888583%, 2.666666666667%,  -12px);
+
+@include respond-to('sb-m') {
+	@include grid-generator('sb-m', 1030px, 12, 5.88888888888583%, 2.666666666667%,  -12px);
+}
+
+@include respond-to('sb-l') {
+	@include grid-generator('sb-l', 1320px, 12, 5.88888888888583%, 2.666666666667%,  -12px);
+}
+
+@include respond-to('sb-xl') {
+	@include grid-generator('sb-xl', 1400px, 12, 100px, 10px,  -12px);
+}
 
 
 // ----- Classes ----- //
 
-// 12 columns that are 5.8888% wide with 2.66666% gutters. Prefix with 'sb-large'.
-@include grid-generator('sb-large', 1030px, 12, 5.88888888888583%, 2.666666666667%,  -12px);
-
-
-
-.sb-large-row {
-	@extend %sb-large-container;
+.sb-l-container {
+	@extend %sb-l-container;
+	@extend %sb-xl-container;
 }
 
-.sb-large-1 {
-	@extend %sb-large-1;
+.sb-l-row {
+	@extend %sb-l-row;
+	@extend %sb-xl-row;
 }
 
-.sb-large-2 {
-	@extend %sb-large-2;
+.sb-l-1 {
+	@extend %sb-l-1;
+	@extend %sb-xl-1;
+	padding: 10px;
+	background-color: #fdadad;
 }
 
-.sb-large-3 {
-	@extend %sb-large-3;
+.sb-l-2 {
+	@extend %sb-l-2;
+	@extend %sb-xl-2;
+	padding: 10px;
+	background-color: #fdadad;
 }
 
-.sb-large-4 {
-	@extend %sb-large-4;
+.sb-l-3 {
+	@extend %sb-l-3;
+	@extend %sb-xl-3;
+	padding: 10px;
+	background-color: #fdadad;
+}
+
+.sb-l-4 {
+	@extend %sb-l-4;
+	@extend %sb-xl-4;
+	padding: 10px;
+	background-color: #fdadad;
 }

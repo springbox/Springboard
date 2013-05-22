@@ -96,50 +96,164 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-bottom: 12px;
 }
 
-/* line 74, ../scss/core/layout/_grid-generator.scss */
-.sb-large-row {
-  width: 102.66667%;
-  max-width: 1030px;
-  padding: 0;
-  margin-left: -2.66667%;
-  zoom: 1;
-  list-style: none;
-  margin: 0 auto;
-}
-/* line 85, ../scss/core/layout/_grid-generator.scss */
-.sb-large-row:before, .sb-large-row:after {
-  content: " ";
-  display: table;
-}
-/* line 90, ../scss/core/layout/_grid-generator.scss */
-.sb-large-row:after {
-  clear: both;
+/* line 17, ../scss/core/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 104, ../scss/core/layout/_grid-generator.scss */
-.sb-large-1 {
-  width: 8.33333%;
-  padding-left: 2.66667%;
-  float: left;
+@media (min-width: 60em) {
+  /* line 19, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    zoom: 1;
+  }
+  /* line 31, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-container:before, .sb-l-container:after {
+    content: " ";
+    display: table;
+  }
+  /* line 36, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-container:after {
+    clear: both;
+  }
+
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-row {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: -1.33333%;
+    zoom: 1;
+  }
+  /* line 54, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-row:before, .sb-l-row:after {
+    content: " ";
+    display: table;
+  }
+  /* line 59, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-row:after {
+    clear: both;
+  }
+
+  /* line 74, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-1 {
+    width: 8.33333%;
+    margin-left: 2.66667%;
+    float: left;
+  }
+
+  /* line 74, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-2 {
+    width: 16.66667%;
+    margin-left: 2.66667%;
+    float: left;
+  }
+
+  /* line 74, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-3 {
+    width: 25%;
+    margin-left: 2.66667%;
+    float: left;
+  }
+
+  /* line 74, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-4 {
+    width: 33.33333%;
+    margin-left: 2.66667%;
+    float: left;
+  }
+}
+@media (min-width: 85em) {
+  /* line 19, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-container {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    zoom: 1;
+  }
+  /* line 31, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-container:before, .sb-l-container:after {
+    content: " ";
+    display: table;
+  }
+  /* line 36, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-container:after {
+    clear: both;
+  }
+
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-row {
+    width: 1320px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: -5px;
+    zoom: 1;
+  }
+  /* line 54, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-row:before, .sb-l-row:after {
+    content: " ";
+    display: table;
+  }
+  /* line 59, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-row:after {
+    clear: both;
+  }
+
+  /* line 74, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-1 {
+    width: 100px;
+    margin-left: 10px;
+    float: left;
+  }
+
+  /* line 74, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-2 {
+    width: 210px;
+    margin-left: 10px;
+    float: left;
+  }
+
+  /* line 74, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-3 {
+    width: 320px;
+    margin-left: 10px;
+    float: left;
+  }
+
+  /* line 74, ../scss/core/layout/_grid-generator.scss */
+  .sb-l-4 {
+    width: 430px;
+    margin-left: 10px;
+    float: left;
+  }
+}
+/* line 39, ../scss/core/layout/_grid.scss */
+.sb-l-1 {
+  padding: 10px;
+  background-color: #fdadad;
 }
 
-/* line 104, ../scss/core/layout/_grid-generator.scss */
-.sb-large-2 {
-  width: 16.66667%;
-  padding-left: 2.66667%;
-  float: left;
+/* line 46, ../scss/core/layout/_grid.scss */
+.sb-l-2 {
+  padding: 10px;
+  background-color: #fdadad;
 }
 
-/* line 104, ../scss/core/layout/_grid-generator.scss */
-.sb-large-3 {
-  width: 25%;
-  padding-left: 2.66667%;
-  float: left;
+/* line 53, ../scss/core/layout/_grid.scss */
+.sb-l-3 {
+  padding: 10px;
+  background-color: #fdadad;
 }
 
-/* line 104, ../scss/core/layout/_grid-generator.scss */
-.sb-large-4 {
-  width: 33.33333%;
-  padding-left: 2.66667%;
-  float: left;
+/* line 60, ../scss/core/layout/_grid.scss */
+.sb-l-4 {
+  padding: 10px;
+  background-color: #fdadad;
 }
