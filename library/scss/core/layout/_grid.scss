@@ -27,13 +27,13 @@ $sb-l-prefix: 			'sb-l'	!default;
 $sb-l-column-count:	 	12		!default;
 $sb-l-column-width:	 	'%'		!default;
 $sb-l-gutter: 			1%		!default;
-$sb-l-max-width:		95%		!default;
+$sb-l-max-width:		85%		!default;
 
 // Extra-Large (woah)
 $sb-xl-visible: 			true	!default;
 $sb-xl-prefix: 				'sb-xl'	!default;
 $sb-xl-column-count:	 	12		!default;
-$sb-xl-column-width:	 	5rem	!default;
+$sb-xl-column-width:	 	5.5rem	!default;
 $sb-xl-gutter: 				1.5rem	!default;
 $sb-xl-max-width:			false	!default;
 
@@ -102,5 +102,23 @@ $sb-xl-max-width:			false	!default;
 		@if $sb-l-visible == true {
 			@extend %sb-visible-grid;
 		}
+	}
+}
+
+.sb-grid-10 .sb-grid-row {
+	.sb-grid-5 {
+		@extend %sb-l-push-2;
+		@extend %sb-xl-pull-3;
+	}
+
+	.sb-grid-2 {
+		@extend %sb-l-pull-5;
+		@include respond-to('sb-xl') {
+			position: static;
+		}
+	}
+
+	.sb-grid-3 {
+		@extend %sb-xl-push-5;
 	}
 }

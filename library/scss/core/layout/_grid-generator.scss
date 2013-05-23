@@ -41,6 +41,7 @@
 	@for $sb-gg-column-count from 1 through $sb-gg-total-columns {
 		
 		%#{$sb-gg-prefix}-#{$sb-gg-column-count} {
+			position: static;
 			
 			@if $sb-gg-column-width == '%' {
 				width: percentage($sb-gg-column-count / $sb-gg-total-columns) - $sb-gg-gutter;
@@ -58,15 +59,24 @@
 	// separate these out so they override the above
 	// TODO: make a for loop? It didn't like repeating the for loop...
 	$sb-gg-column-counter: 1;
-	@while $sb-gg-column-counter < $sb-gg-total-columns {
+	@for $sb-gg-column-count from 1 through $sb-gg-total-columns {
 		%#{$sb-gg-prefix}-push-#{$sb-gg-column-counter} {
-			display: none;
-			//margin-left: $sb-gg-column-counter * $sb-gg-column-width + $sb-gg-column-counter * $sb-gg-gutter + $sb-gg-gutter;
+			position: relative;
+			@if $sb-gg-column-width == '%' {
+				left: percentage($sb-gg-column-count / $sb-gg-total-columns);
+			} @else {
+				left: $sb-gg-column-width * $sb-gg-column-count + $sb-gg-gutter * ($sb-gg-column-count);
+			}
 		}
 
 		%#{$sb-gg-prefix}-pull-#{$sb-gg-column-counter} {
-			display: none;
-			//margin-left: ($sb-gg-column-counter * $sb-gg-column-width + $sb-gg-column-counter * $sb-gg-gutter + $sb-gg-gutter) * -1;
+			position: relative;
+
+			@if $sb-gg-column-width == '%' {
+				left: -(percentage($sb-gg-column-count / $sb-gg-total-columns));
+			} @else {
+				left: -($sb-gg-column-width * $sb-gg-column-count + $sb-gg-gutter * ($sb-gg-column-count));
+			}
 		}
 
 		$sb-gg-column-counter: $sb-gg-column-counter + 1;

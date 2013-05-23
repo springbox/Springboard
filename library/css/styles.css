@@ -129,6 +129,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-1 {
+  position: static;
   width: 7.33333%;
   margin-left: 1%;
   float: left;
@@ -136,6 +137,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-2 {
+  position: static;
   width: 15.66667%;
   margin-left: 1%;
   float: left;
@@ -143,6 +145,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-3 {
+  position: static;
   width: 24%;
   margin-left: 1%;
   float: left;
@@ -150,6 +153,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-4 {
+  position: static;
   width: 32.33333%;
   margin-left: 1%;
   float: left;
@@ -157,6 +161,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-5 {
+  position: static;
   width: 40.66667%;
   margin-left: 1%;
   float: left;
@@ -164,6 +169,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-6 {
+  position: static;
   width: 49%;
   margin-left: 1%;
   float: left;
@@ -171,6 +177,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-7 {
+  position: static;
   width: 57.33333%;
   margin-left: 1%;
   float: left;
@@ -178,6 +185,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-8 {
+  position: static;
   width: 65.66667%;
   margin-left: 1%;
   float: left;
@@ -185,6 +193,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-9 {
+  position: static;
   width: 74%;
   margin-left: 1%;
   float: left;
@@ -192,6 +201,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-10 {
+  position: static;
   width: 82.33333%;
   margin-left: 1%;
   float: left;
@@ -199,6 +209,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-11 {
+  position: static;
   width: 90.66667%;
   margin-left: 1%;
   float: left;
@@ -206,6 +217,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-12 {
+  position: static;
   width: 99%;
   margin-left: 1%;
   float: left;
@@ -227,6 +239,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-1 {
+    position: static;
     width: 7.33333%;
     margin-left: 1%;
     float: left;
@@ -234,6 +247,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-2 {
+    position: static;
     width: 15.66667%;
     margin-left: 1%;
     float: left;
@@ -241,6 +255,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-3 {
+    position: static;
     width: 24%;
     margin-left: 1%;
     float: left;
@@ -248,6 +263,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-4 {
+    position: static;
     width: 32.33333%;
     margin-left: 1%;
     float: left;
@@ -255,6 +271,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-5 {
+    position: static;
     width: 40.66667%;
     margin-left: 1%;
     float: left;
@@ -262,6 +279,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-6 {
+    position: static;
     width: 49%;
     margin-left: 1%;
     float: left;
@@ -269,6 +287,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-7 {
+    position: static;
     width: 57.33333%;
     margin-left: 1%;
     float: left;
@@ -276,6 +295,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-8 {
+    position: static;
     width: 65.66667%;
     margin-left: 1%;
     float: left;
@@ -283,6 +303,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-9 {
+    position: static;
     width: 74%;
     margin-left: 1%;
     float: left;
@@ -290,6 +311,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 {
+    position: static;
     width: 82.33333%;
     margin-left: 1%;
     float: left;
@@ -297,6 +319,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-11 {
+    position: static;
     width: 90.66667%;
     margin-left: 1%;
     float: left;
@@ -304,6 +327,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-12 {
+    position: static;
     width: 99%;
     margin-left: 1%;
     float: left;
@@ -314,7 +338,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .sb-grid-container {
     width: 100%;
     margin: 0 auto;
-    max-width: 95%;
+    max-width: 85%;
   }
 
   /* line 34, ../scss/core/layout/_grid-generator.scss */
@@ -325,6 +349,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-1 {
+    position: static;
     width: 7.33333%;
     margin-left: 1%;
     float: left;
@@ -332,6 +357,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-2 {
+    position: static;
     width: 15.66667%;
     margin-left: 1%;
     float: left;
@@ -339,6 +365,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-3 {
+    position: static;
     width: 24%;
     margin-left: 1%;
     float: left;
@@ -346,6 +373,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-4 {
+    position: static;
     width: 32.33333%;
     margin-left: 1%;
     float: left;
@@ -353,6 +381,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-5 {
+    position: static;
     width: 40.66667%;
     margin-left: 1%;
     float: left;
@@ -360,6 +389,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-6 {
+    position: static;
     width: 49%;
     margin-left: 1%;
     float: left;
@@ -367,6 +397,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-7 {
+    position: static;
     width: 57.33333%;
     margin-left: 1%;
     float: left;
@@ -374,6 +405,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-8 {
+    position: static;
     width: 65.66667%;
     margin-left: 1%;
     float: left;
@@ -381,6 +413,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-9 {
+    position: static;
     width: 74%;
     margin-left: 1%;
     float: left;
@@ -388,6 +421,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 {
+    position: static;
     width: 82.33333%;
     margin-left: 1%;
     float: left;
@@ -395,6 +429,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-11 {
+    position: static;
     width: 90.66667%;
     margin-left: 1%;
     float: left;
@@ -402,15 +437,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-12 {
+    position: static;
     width: 99%;
     margin-left: 1%;
     float: left;
+  }
+
+  /* line 63, ../scss/core/layout/_grid-generator.scss */
+  .sb-grid-10 .sb-grid-row .sb-grid-5 {
+    position: relative;
+    left: 16.66667%;
+  }
+
+  /* line 72, ../scss/core/layout/_grid-generator.scss */
+  .sb-grid-10 .sb-grid-row .sb-grid-2 {
+    position: relative;
+    left: -41.66667%;
   }
 }
 @media (min-width: 85em) {
   /* line 21, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-container {
-    width: 76.5rem;
+    width: 82.5rem;
     margin: 0 auto;
     max-width: none;
   }
@@ -423,86 +471,110 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-1 {
-    width: 5rem;
+    position: static;
+    width: 5.5rem;
     margin-left: 1.5rem;
     float: left;
   }
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-2 {
-    width: 11.5rem;
+    position: static;
+    width: 12.5rem;
     margin-left: 1.5rem;
     float: left;
   }
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-3 {
-    width: 18rem;
+    position: static;
+    width: 19.5rem;
     margin-left: 1.5rem;
     float: left;
   }
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-4 {
-    width: 24.5rem;
+    position: static;
+    width: 26.5rem;
     margin-left: 1.5rem;
     float: left;
   }
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-5 {
-    width: 31rem;
+    position: static;
+    width: 33.5rem;
     margin-left: 1.5rem;
     float: left;
   }
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-6 {
-    width: 37.5rem;
+    position: static;
+    width: 40.5rem;
     margin-left: 1.5rem;
     float: left;
   }
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-7 {
-    width: 44rem;
+    position: static;
+    width: 47.5rem;
     margin-left: 1.5rem;
     float: left;
   }
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-8 {
-    width: 50.5rem;
+    position: static;
+    width: 54.5rem;
     margin-left: 1.5rem;
     float: left;
   }
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-9 {
-    width: 57rem;
+    position: static;
+    width: 61.5rem;
     margin-left: 1.5rem;
     float: left;
   }
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 {
-    width: 63.5rem;
+    position: static;
+    width: 68.5rem;
     margin-left: 1.5rem;
     float: left;
   }
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-11 {
-    width: 70rem;
+    position: static;
+    width: 75.5rem;
     margin-left: 1.5rem;
     float: left;
   }
 
   /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-12 {
-    width: 76.5rem;
+    position: static;
+    width: 82.5rem;
     margin-left: 1.5rem;
     float: left;
+  }
+
+  /* line 72, ../scss/core/layout/_grid-generator.scss */
+  .sb-grid-10 .sb-grid-row .sb-grid-5 {
+    position: relative;
+    left: -21rem;
+  }
+
+  /* line 63, ../scss/core/layout/_grid-generator.scss */
+  .sb-grid-10 .sb-grid-row .sb-grid-3 {
+    position: relative;
+    left: 35rem;
   }
 }
 /* line 59, ../scss/core/layout/_grid.scss */
@@ -511,4 +583,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 85em) {
+  /* line 114, ../scss/core/layout/_grid.scss */
+  .sb-grid-10 .sb-grid-row .sb-grid-2 {
+    position: static;
+  }
 }
