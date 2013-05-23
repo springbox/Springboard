@@ -63,6 +63,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 11, ../scss/core/helpers/_clearfix.scss */
+.sb-grid-container, .sb-grid-row {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.sb-grid-container:after, .sb-grid-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* line 14, ../scss/core/base/_navigation.scss */
 .sb-bar-nav {
   width: 100%;
@@ -103,752 +114,401 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
 }
 
-/* line 23, ../scss/core/layout/_grid-generator.scss */
+/* line 21, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-container {
-  max-width: 65em;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  zoom: 1;
-}
-/* line 36, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-container:before, .sb-grid-container:after {
-  content: " ";
-  display: table;
-}
-/* line 41, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-container:after {
-  clear: both;
-}
-
-/* line 48, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-row {
   width: 100%;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-left: -1.33333%;
-  zoom: 1;
-  list-style: none;
-  font-size: 0px;
-  letter-spacing: 0;
-  word-spacing: 0;
-}
-/* line 57, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-row:before, .sb-grid-row:after {
-  content: " ";
-  display: table;
-}
-/* line 62, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-row:after {
-  clear: both;
+  margin: 0 auto;
+  max-width: 95%;
 }
 
-/* line 77, ../scss/core/layout/_grid-generator.scss */
+/* line 34, ../scss/core/layout/_grid-generator.scss */
+.sb-grid-row {
+  width: auto;
+  margin-left: -1%;
+}
+
+/* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-1 {
-  width: 5.88889%;
-  margin-left: 2.66667%;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-  word-spacing: normal;
-  font-size: 1rem;
+  width: 7.33333%;
+  margin-left: 1%;
+  float: left;
 }
 
-/* line 77, ../scss/core/layout/_grid-generator.scss */
+/* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-2 {
-  width: 14.44444%;
-  margin-left: 2.66667%;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-  word-spacing: normal;
-  font-size: 1rem;
+  width: 15.66667%;
+  margin-left: 1%;
+  float: left;
 }
 
-/* line 77, ../scss/core/layout/_grid-generator.scss */
+/* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-3 {
-  width: 23.0%;
-  margin-left: 2.66667%;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-  word-spacing: normal;
-  font-size: 1rem;
+  width: 24%;
+  margin-left: 1%;
+  float: left;
 }
 
-/* line 77, ../scss/core/layout/_grid-generator.scss */
+/* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-4 {
-  width: 31.55556%;
-  margin-left: 2.66667%;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-  word-spacing: normal;
-  font-size: 1rem;
+  width: 32.33333%;
+  margin-left: 1%;
+  float: left;
 }
 
-/* line 77, ../scss/core/layout/_grid-generator.scss */
+/* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-5 {
-  width: 40.11111%;
-  margin-left: 2.66667%;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-  word-spacing: normal;
-  font-size: 1rem;
+  width: 40.66667%;
+  margin-left: 1%;
+  float: left;
 }
 
-/* line 77, ../scss/core/layout/_grid-generator.scss */
+/* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-6 {
-  width: 48.66667%;
-  margin-left: 2.66667%;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-  word-spacing: normal;
-  font-size: 1rem;
+  width: 49%;
+  margin-left: 1%;
+  float: left;
 }
 
-/* line 77, ../scss/core/layout/_grid-generator.scss */
+/* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-7 {
-  width: 57.22222%;
-  margin-left: 2.66667%;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-  word-spacing: normal;
-  font-size: 1rem;
+  width: 57.33333%;
+  margin-left: 1%;
+  float: left;
 }
 
-/* line 77, ../scss/core/layout/_grid-generator.scss */
+/* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-8 {
-  width: 65.77778%;
-  margin-left: 2.66667%;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-  word-spacing: normal;
-  font-size: 1rem;
+  width: 65.66667%;
+  margin-left: 1%;
+  float: left;
 }
 
-/* line 77, ../scss/core/layout/_grid-generator.scss */
+/* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-9 {
-  width: 74.33333%;
-  margin-left: 2.66667%;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-  word-spacing: normal;
-  font-size: 1rem;
+  width: 74%;
+  margin-left: 1%;
+  float: left;
 }
 
-/* line 77, ../scss/core/layout/_grid-generator.scss */
+/* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-10 {
-  width: 82.88889%;
-  margin-left: 2.66667%;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-  word-spacing: normal;
-  font-size: 1rem;
+  width: 82.33333%;
+  margin-left: 1%;
+  float: left;
 }
 
-/* line 77, ../scss/core/layout/_grid-generator.scss */
+/* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-11 {
-  width: 91.44444%;
-  margin-left: 2.66667%;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-  word-spacing: normal;
-  font-size: 1rem;
+  width: 90.66667%;
+  margin-left: 1%;
+  float: left;
 }
 
-/* line 77, ../scss/core/layout/_grid-generator.scss */
+/* line 43, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-12 {
-  width: 100.0%;
-  margin-left: 2.66667%;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: top;
-  letter-spacing: normal;
-  word-spacing: normal;
-  font-size: 1rem;
+  width: 99%;
+  margin-left: 1%;
+  float: left;
 }
 
 @media (min-width: 44em) {
-  /* line 23, ../scss/core/layout/_grid-generator.scss */
+  /* line 21, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-container {
-    max-width: 65em;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    zoom: 1;
-  }
-  /* line 36, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-container:before, .sb-grid-container:after {
-    content: " ";
-    display: table;
-  }
-  /* line 41, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-container:after {
-    clear: both;
-  }
-
-  /* line 48, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-row {
     width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-left: -1.33333%;
-    zoom: 1;
-    list-style: none;
-    font-size: 0px;
-    letter-spacing: 0;
-    word-spacing: 0;
-  }
-  /* line 57, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-row:before, .sb-grid-row:after {
-    content: " ";
-    display: table;
-  }
-  /* line 62, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-row:after {
-    clear: both;
+    margin: 0 auto;
+    max-width: 90%;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 34, ../scss/core/layout/_grid-generator.scss */
+  .sb-grid-row {
+    width: auto;
+    margin-left: -1%;
+  }
+
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-1 {
-    width: 5.88889%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 7.33333%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-2 {
-    width: 14.44444%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 15.66667%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-3 {
-    width: 23.0%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 24%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-4 {
-    width: 31.55556%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 32.33333%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-5 {
-    width: 40.11111%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 40.66667%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-6 {
-    width: 48.66667%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 49%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-7 {
-    width: 57.22222%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 57.33333%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-8 {
-    width: 65.77778%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 65.66667%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-9 {
-    width: 74.33333%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 74%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 {
-    width: 82.88889%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 82.33333%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-11 {
-    width: 91.44444%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 90.66667%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-12 {
-    width: 100.0%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 99%;
+    margin-left: 1%;
+    float: left;
   }
 }
 @media (min-width: 60em) {
-  /* line 23, ../scss/core/layout/_grid-generator.scss */
+  /* line 21, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-container {
-    max-width: 82.5;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    zoom: 1;
-  }
-  /* line 36, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-container:before, .sb-grid-container:after {
-    content: " ";
-    display: table;
-  }
-  /* line 41, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-container:after {
-    clear: both;
-  }
-
-  /* line 48, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-row {
     width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-left: -1.33333%;
-    zoom: 1;
-    list-style: none;
-    font-size: 0px;
-    letter-spacing: 0;
-    word-spacing: 0;
-  }
-  /* line 57, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-row:before, .sb-grid-row:after {
-    content: " ";
-    display: table;
-  }
-  /* line 62, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-row:after {
-    clear: both;
+    margin: 0 auto;
+    max-width: 95%;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 34, ../scss/core/layout/_grid-generator.scss */
+  .sb-grid-row {
+    width: auto;
+    margin-left: -1%;
+  }
+
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-1 {
-    width: 5.88889%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 7.33333%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-2 {
-    width: 14.44444%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 15.66667%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-3 {
-    width: 23.0%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 24%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-4 {
-    width: 31.55556%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 32.33333%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-5 {
-    width: 40.11111%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 40.66667%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-6 {
-    width: 48.66667%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 49%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-7 {
-    width: 57.22222%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 57.33333%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-8 {
-    width: 65.77778%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 65.66667%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-9 {
-    width: 74.33333%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 74%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 {
-    width: 82.88889%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 82.33333%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-11 {
-    width: 91.44444%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 90.66667%;
+    margin-left: 1%;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-12 {
-    width: 100.0%;
-    margin-left: 2.66667%;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 99%;
+    margin-left: 1%;
+    float: left;
   }
 }
 @media (min-width: 85em) {
-  /* line 23, ../scss/core/layout/_grid-generator.scss */
+  /* line 21, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-container {
-    max-width: none;
-    width: 89.5em;
+    width: 76.5rem;
     margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    zoom: 1;
-  }
-  /* line 36, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-container:before, .sb-grid-container:after {
-    content: " ";
-    display: table;
-  }
-  /* line 41, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-container:after {
-    clear: both;
+    max-width: none;
   }
 
-  /* line 48, ../scss/core/layout/_grid-generator.scss */
+  /* line 34, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-row {
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-left: -1em;
-    zoom: 1;
-    list-style: none;
-    font-size: 0px;
-    letter-spacing: 0;
-    word-spacing: 0;
-  }
-  /* line 57, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-row:before, .sb-grid-row:after {
-    content: " ";
-    display: table;
-  }
-  /* line 62, ../scss/core/layout/_grid-generator.scss */
-  .sb-grid-row:after {
-    clear: both;
+    width: auto;
+    margin-left: -1.5rem;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-1 {
-    width: 5.45833em;
-    margin-left: 2em;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 5rem;
+    margin-left: 1.5rem;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-2 {
-    width: 12.91667em;
-    margin-left: 2em;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 11.5rem;
+    margin-left: 1.5rem;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-3 {
-    width: 20.375em;
-    margin-left: 2em;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 18rem;
+    margin-left: 1.5rem;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-4 {
-    width: 27.83333em;
-    margin-left: 2em;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 24.5rem;
+    margin-left: 1.5rem;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-5 {
-    width: 35.29167em;
-    margin-left: 2em;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 31rem;
+    margin-left: 1.5rem;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-6 {
-    width: 42.75em;
-    margin-left: 2em;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 37.5rem;
+    margin-left: 1.5rem;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-7 {
-    width: 50.20833em;
-    margin-left: 2em;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 44rem;
+    margin-left: 1.5rem;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-8 {
-    width: 57.66667em;
-    margin-left: 2em;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 50.5rem;
+    margin-left: 1.5rem;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-9 {
-    width: 65.125em;
-    margin-left: 2em;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 57rem;
+    margin-left: 1.5rem;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 {
-    width: 72.58333em;
-    margin-left: 2em;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 63.5rem;
+    margin-left: 1.5rem;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-11 {
-    width: 80.04167em;
-    margin-left: 2em;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 70rem;
+    margin-left: 1.5rem;
+    float: left;
   }
 
-  /* line 77, ../scss/core/layout/_grid-generator.scss */
+  /* line 43, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-12 {
-    width: 87.5em;
-    margin-left: 2em;
-    padding-left: 0;
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: normal;
-    word-spacing: normal;
-    font-size: 1rem;
+    width: 76.5rem;
+    margin-left: 1.5rem;
+    float: left;
   }
 }
-/* line 27, ../scss/core/layout/_grid.scss */
-.sb-grid-1, .sb-grid-2, .sb-grid-3, .sb-grid-4, .sb-grid-5, .sb-grid-6, .sb-grid-7, .sb-grid-8, .sb-grid-9, .sb-grid-10, .sb-grid-11, .sb-grid-12 {
-  padding: 10px;
-  background-color: #fdadad;
+/* line 59, ../scss/core/layout/_grid.scss */
+.sb-grid-container, .sb-grid-row, .sb-grid-1, .sb-grid-2, .sb-grid-3, .sb-grid-4, .sb-grid-5, .sb-grid-6, .sb-grid-7, .sb-grid-8, .sb-grid-9, .sb-grid-10, .sb-grid-11, .sb-grid-12 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
 }
