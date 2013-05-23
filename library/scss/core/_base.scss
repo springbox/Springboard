@@ -5,14 +5,30 @@
 
 
 // ----- Base settings ----- //
+
+// Print classes?
+// 
 //$print-base-nav-classes: false;
+//$print-base-heading-classes: false;
+
+
+// Font settings
+//
+//$sb-font-roboto:					true				!default;
+//$sb-font-roboto-slab:				true				!default;
+//$sb-font-ubuntu:					true				!default;
+
+// Misc
+// 
 //$border-box-all-the-things: false;
 
 
 // ----- Base import ----- //
 @import "base/navigation";
+@import "base/typography";
 
 
+// ----- Base styles ----- //
 @if $border-box-all-the-things == true {
 	* {
 		@include box-sizing(border-box);
