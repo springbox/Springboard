@@ -1,0 +1,13 @@
+//-------------------------------------
+//  Springboard: core/helpers/clearfix
+//-------------------------------------
+
+// Uses's Compass' clearfix: 
+@import "compass/utilities/general/clearfix";
+
+// Extend this to cut down on extraneous CSS.
+// 
+// Note: this is not nestable into other placeholder selectors.
+%clearfix {
+	@include pie-clearfix;
+}
