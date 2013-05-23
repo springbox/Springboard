@@ -1,0 +1,31 @@
+//-------------------------------------
+//  Springboard: core/base/typography
+//  Adjust the kerning 1px to the left.
+//-------------------------------------
+
+
+// ----- Typography settings ----- //
+$sb-visible-baseline-grid:			true	!default;
+
+
+
+// ----- Typography import ----- //
+@import "typography/fonts";
+@import "typography/headings";
+
+
+
+// ----- Basic Typography styles ----- //
+body {
+	font-family: $sans;
+	line-height: 1.5;
+	
+
+	@if $sb-visible-baseline-grid == true {
+		background: url('http://www.baselineme.com/14') center top repeat;
+
+		@include respond-to('sb-l') {
+			background: url('http://www.baselineme.com/16') center top repeat;
+		}
+	}
+}
