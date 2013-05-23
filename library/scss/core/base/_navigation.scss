@@ -26,24 +26,24 @@ $sb-bar-nav-color:	#d1d1d1	!default;
 }
 
 %sb-has-fixed-nav {
-	padding-top: 2.25rem;
-
 	@if $ie8-support == true {
-		padding-top: 2.25 * $rem;
+		padding-top: 4 * $rem;
 	}
+
+	padding-top: 4rem;
 }
 
 %sb-nav-item {
-	display: inline-block;
-	padding-top: .5rem;
-	padding-bottom: .75rem;
-	margin-left: .75rem;
-
 	@if $ie8-support == true {
-		padding-top: .5 * $rem;
+		padding-top: .6 * $rem;
+		padding-bottom: .875 * $rem;
 		margin-left: .75 * $rem;
-		padding-bottom: .75 * $rem;
 	}
+
+	display: inline-block;
+	padding-top: .6rem;
+	padding-bottom: .875rem;
+	margin-left: .75rem;
 }
 
 
