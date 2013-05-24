@@ -11,4 +11,11 @@ $mono: UbuntuMono, Monaco, Consolas, "Lucida Console", monospace;
 $rem: 16px;
 
 // ----- Colors ----- //
+$sb-green: #77bc13;
+$sb-teal: #139b8a; 
+$sb-orange: #ee5a22;
+$sb-yellow: #efc217;
+$sb-blue: #093b51;
+
 $sb-font-color: #222222;
+$sb-link-color:	lighten($sb-blue, 15%);
