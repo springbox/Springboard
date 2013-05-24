@@ -24,3 +24,6 @@ color_output = false
 # and then run:
 # sass-convert -R --from scss --to sass library/scss scss && rm -rf sass && mv scss sass
 preferred_syntax = :scss
+
+# Default setting truncates numbers too short, make them longer
+Sass::Script::Number.precision = 13
