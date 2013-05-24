@@ -9,15 +9,17 @@
 // Print classes?
 // 
 $print-layout-grid-classes:		$print-layout-classes		!default;
+$print-layout-callout-classes:	$print-layout-classes		!default;
 
 // Show the grid?
-$sb-visible-grid:				true		!default;
-$sb-visible-baseline-grid:		true		!default;
+$sb-visible-grid:				false		!default;
+$sb-visible-baseline-grid:		false		!default;
 
 
 // ----- Layout import ----- //
 @import "layout/grid-generator";
 @import "layout/grid";
+@import "layout/callout";
 
 
 // ----- Layout styles ----- //
