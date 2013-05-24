@@ -586,6 +586,20 @@ blockquote {
   hyphens: auto;
 }
 
+/* line 31, ../scss/core/base/_typography.scss */
+a {
+  color: #116d96;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 35, ../scss/core/base/_typography.scss */
+a:hover {
+  color: #093b51;
+}
+
 /* line 33, ../scss/core/_base.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -1073,7 +1087,32 @@ blockquote {
   }
 }
 
-/* line 24, ../scss/core/_layout.scss */
+/* line 10, ../scss/core/layout/_callout.scss */
+.sb-callout-container {
+  margin-bottom: 1.5rem;
+  background-color: white;
+  -webkit-box-shadow: #aaaaaa 0px 0px 3px;
+  -moz-box-shadow: #aaaaaa 0px 0px 3px;
+  box-shadow: #aaaaaa 0px 0px 3px;
+}
+
+/* line 16, ../scss/core/layout/_callout.scss */
+.sb-callout-title {
+  padding: .75rem;
+  border-bottom: 1px solid #a2a2a2;
+  background-color: #f1f1f1;
+}
+/* line 20, ../scss/core/layout/_callout.scss */
+.sb-callout-title h1, .sb-callout-title h2, .sb-callout-title h3, .sb-callout-title h4, .sb-callout-title h5, .sb-callout-title h6, .sb-callout-title .sb-h1, .sb-callout-title .sb-h2, .sb-callout-title .sb-h3, .sb-callout-title .sb-h4, .sb-callout-title .sb-h6 {
+  margin-bottom: 0;
+}
+
+/* line 25, ../scss/core/layout/_callout.scss */
+.sb-callout-body {
+  padding: .75rem;
+}
+
+/* line 26, ../scss/core/_layout.scss */
 body {
   background-image: -webkit-linear-gradient(rgba(102, 204, 255, 0.5) 1px, transparent 1px);
   background-image: -moz-linear-gradient(rgba(102, 204, 255, 0.5) 1px, transparent 1px);
