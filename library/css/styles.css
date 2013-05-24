@@ -81,29 +81,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #d1d1d1;
 }
 
-/* line 20, ../scss/core/base/_navigation.scss */
-.sb-fixed-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+@media (min-width: 44em) {
+  /* line 20, ../scss/core/base/_navigation.scss */
+  .sb-fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 }
 
-/* line 28, ../scss/core/base/_navigation.scss */
-.sb-has-fixed-nav {
-  padding-top: 64px;
-  padding-top: 4rem;
+@media (min-width: 44em) {
+  /* line 30, ../scss/core/base/_navigation.scss */
+  .sb-has-fixed-nav {
+    padding-top: 0px;
+    padding-top: 4.5rem;
+  }
 }
 
-/* line 36, ../scss/core/base/_navigation.scss */
+/* line 40, ../scss/core/base/_navigation.scss */
 .sb-bar-nav .sb-nav-item {
   padding-top: 9.6px;
-  padding-bottom: 14px;
   margin-left: 12px;
   display: inline-block;
   padding-top: .6rem;
-  padding-bottom: .875rem;
+  height: 3rem;
   margin-left: .75rem;
 }
 
@@ -269,158 +272,318 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 11, ../scss/core/base/typography/_headings-generator.scss */
 h1, .sb-h1, h2, .sb-h2, h3, .sb-h3, h4, .sb-h4, h5, .sb-h5, h6, .sb-h6 {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /* line 15, ../scss/core/base/typography/_headings-generator.scss */
 h1, .sb-h1 {
-  font-size: 2.625rem;
-  line-height: 1;
-  margin-bottom: 0.5rem;
+  font-size: 2.625em;
+  line-height: 1.1428571428571;
+  margin-bottom: 0.5714285714286em;
 }
 
 /* line 23, ../scss/core/base/typography/_headings-generator.scss */
 h2, .sb-h2 {
-  font-size: 1.96875rem;
-  line-height: 1.33333;
-  margin-bottom: 0.66667rem;
+  font-size: 1.96875em;
+  line-height: 1.5238095238095;
+  margin-bottom: 0.7619047619048em;
 }
 
 /* line 31, ../scss/core/base/typography/_headings-generator.scss */
 h3, .sb-h3 {
-  font-size: 1.3125rem;
-  line-height: 1;
-  margin-bottom: 1rem;
+  font-size: 1.3125em;
+  line-height: 1.1428571428571;
+  margin-bottom: 1.1428571428571em;
 }
 
 /* line 39, ../scss/core/base/typography/_headings-generator.scss */
 h4, .sb-h4 {
-  font-size: 1.14844rem;
-  line-height: 1.14286;
-  margin-bottom: 1.14286rem;
+  font-size: 1.1484375em;
+  line-height: 1.3061224489796;
+  margin-bottom: 1.3061224489796em;
 }
 
 /* line 47, ../scss/core/base/typography/_headings-generator.scss */
 h5, .sb-h5 {
-  font-size: 0.98438rem;
-  line-height: 1.33333;
-  margin-bottom: 1.33333rem;
+  font-size: 0.984375em;
+  line-height: 1.5238095238095;
+  margin-bottom: 1.5238095238095em;
 }
 
 /* line 55, ../scss/core/base/typography/_headings-generator.scss */
 h6, .sb-h6 {
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
+  font-size: 0.875em;
+  line-height: 1.7142857142857;
+  margin-bottom: 1.7142857142857em;
+}
+
+/* line 11, ../scss/core/base/typography/_headings-generator.scss */
+.sb-h1-subhead, .sb-h2-subhead, .sb-h3-subhead, .sb-h4-subhead, .sb-h5-subhead, .sb-h6-subhead {
+  font-weight: 300;
+}
+
+/* line 15, ../scss/core/base/typography/_headings-generator.scss */
+.sb-h1-subhead {
+  font-size: 2.25em;
+  line-height: 1.3333333333333;
+  margin-bottom: 0.6666666666667em;
+}
+
+/* line 23, ../scss/core/base/typography/_headings-generator.scss */
+.sb-h2-subhead {
+  font-size: 1.6875em;
+  line-height: 1.7777777777778;
+  margin-bottom: 0.8888888888889em;
+}
+
+/* line 31, ../scss/core/base/typography/_headings-generator.scss */
+.sb-h3-subhead {
+  font-size: 1.125em;
+  line-height: 1.3333333333333;
+  margin-bottom: 1.3333333333333em;
+}
+
+/* line 39, ../scss/core/base/typography/_headings-generator.scss */
+.sb-h4-subhead {
+  font-size: 0.984375em;
+  line-height: 1.5238095238095;
+  margin-bottom: 1.5238095238095em;
+}
+
+/* line 47, ../scss/core/base/typography/_headings-generator.scss */
+.sb-h5-subhead {
+  font-size: 0.84375em;
+  line-height: 1.7777777777778;
+  margin-bottom: 1.7777777777778em;
+}
+
+/* line 55, ../scss/core/base/typography/_headings-generator.scss */
+.sb-h6-subhead {
+  font-size: 0.75em;
+  line-height: 2;
+  margin-bottom: 2em;
 }
 
 @media (min-width: 44em) {
   /* line 11, ../scss/core/base/typography/_headings-generator.scss */
   h1, .sb-h1, h2, .sb-h2, h3, .sb-h3, h4, .sb-h4, h5, .sb-h5, h6, .sb-h6 {
-    font-weight: 300;
+    font-weight: 700;
   }
 
   /* line 15, ../scss/core/base/typography/_headings-generator.scss */
   h1, .sb-h1 {
-    font-size: 2.8125rem;
-    line-height: 1;
-    margin-bottom: 0.5rem;
+    font-size: 2.8125em;
+    line-height: 1.0666666666667;
+    margin-bottom: 0.5333333333333em;
   }
 
   /* line 23, ../scss/core/base/typography/_headings-generator.scss */
   h2, .sb-h2 {
-    font-size: 2.10938rem;
-    line-height: 1.33333;
-    margin-bottom: 0.66667rem;
+    font-size: 2.109375em;
+    line-height: 1.4222222222222;
+    margin-bottom: 0.7111111111111em;
   }
 
   /* line 31, ../scss/core/base/typography/_headings-generator.scss */
   h3, .sb-h3 {
-    font-size: 1.40625rem;
-    line-height: 1;
-    margin-bottom: 1rem;
+    font-size: 1.40625em;
+    line-height: 1.0666666666667;
+    margin-bottom: 1.0666666666667em;
   }
 
   /* line 39, ../scss/core/base/typography/_headings-generator.scss */
   h4, .sb-h4 {
-    font-size: 1.23047rem;
-    line-height: 1.14286;
-    margin-bottom: 1.14286rem;
+    font-size: 1.23046875em;
+    line-height: 1.2190476190476;
+    margin-bottom: 1.2190476190476em;
   }
 
   /* line 47, ../scss/core/base/typography/_headings-generator.scss */
   h5, .sb-h5 {
-    font-size: 1.05469rem;
-    line-height: 1.33333;
-    margin-bottom: 1.33333rem;
+    font-size: 1.0546875em;
+    line-height: 1.4222222222222;
+    margin-bottom: 1.4222222222222em;
   }
 
   /* line 55, ../scss/core/base/typography/_headings-generator.scss */
   h6, .sb-h6 {
-    font-size: 0.9375rem;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
+    font-size: 0.9375em;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+  }
+
+  /* line 11, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h1-subhead, .sb-h2-subhead, .sb-h3-subhead, .sb-h4-subhead, .sb-h5-subhead, .sb-h6-subhead {
+    font-weight: 300;
+  }
+
+  /* line 15, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h1-subhead {
+    font-size: 2.25em;
+    line-height: 1.3333333333333;
+    margin-bottom: 0.6666666666667em;
+  }
+
+  /* line 23, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h2-subhead {
+    font-size: 1.6875em;
+    line-height: 1.7777777777778;
+    margin-bottom: 0.8888888888889em;
+  }
+
+  /* line 31, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h3-subhead {
+    font-size: 1.125em;
+    line-height: 1.3333333333333;
+    margin-bottom: 1.3333333333333em;
+  }
+
+  /* line 39, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h4-subhead {
+    font-size: 0.984375em;
+    line-height: 1.5238095238095;
+    margin-bottom: 1.5238095238095em;
+  }
+
+  /* line 47, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h5-subhead {
+    font-size: 0.84375em;
+    line-height: 1.7777777777778;
+    margin-bottom: 1.7777777777778em;
+  }
+
+  /* line 55, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h6-subhead {
+    font-size: 0.75em;
+    line-height: 2;
+    margin-bottom: 2em;
   }
 }
 @media (min-width: 85em) {
   /* line 11, ../scss/core/base/typography/_headings-generator.scss */
   h1, .sb-h1, h2, .sb-h2, h3, .sb-h3, h4, .sb-h4, h5, .sb-h5, h6, .sb-h6 {
-    font-weight: 100;
+    font-weight: 700;
   }
 
   /* line 15, ../scss/core/base/typography/_headings-generator.scss */
   h1, .sb-h1 {
-    font-size: 3rem;
+    font-size: 3em;
     line-height: 1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
   }
 
   /* line 23, ../scss/core/base/typography/_headings-generator.scss */
   h2, .sb-h2 {
-    font-size: 2.25rem;
-    line-height: 1.33333;
-    margin-bottom: 0.66667rem;
+    font-size: 2.25em;
+    line-height: 1.3333333333333;
+    margin-bottom: 0.6666666666667em;
   }
 
   /* line 31, ../scss/core/base/typography/_headings-generator.scss */
   h3, .sb-h3 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     line-height: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
   }
 
   /* line 39, ../scss/core/base/typography/_headings-generator.scss */
   h4, .sb-h4 {
-    font-size: 1.3125rem;
-    line-height: 1.14286;
-    margin-bottom: 1.14286rem;
+    font-size: 1.3125em;
+    line-height: 1.1428571428571;
+    margin-bottom: 1.1428571428571em;
   }
 
   /* line 47, ../scss/core/base/typography/_headings-generator.scss */
   h5, .sb-h5 {
-    font-size: 1.125rem;
-    line-height: 1.33333;
-    margin-bottom: 1.33333rem;
+    font-size: 1.125em;
+    line-height: 1.3333333333333;
+    margin-bottom: 1.3333333333333em;
   }
 
   /* line 55, ../scss/core/base/typography/_headings-generator.scss */
   h6, .sb-h6 {
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.5;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5em;
+  }
+
+  /* line 11, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h1-subhead, .sb-h2-subhead, .sb-h3-subhead, .sb-h4-subhead, .sb-h5-subhead, .sb-h6-subhead {
+    font-weight: 300;
+  }
+
+  /* line 15, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h1-subhead {
+    font-size: 2.25em;
+    line-height: 1.3333333333333;
+    margin-bottom: 0.6666666666667em;
+  }
+
+  /* line 23, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h2-subhead {
+    font-size: 1.6875em;
+    line-height: 1.7777777777778;
+    margin-bottom: 0.8888888888889em;
+  }
+
+  /* line 31, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h3-subhead {
+    font-size: 1.125em;
+    line-height: 1.3333333333333;
+    margin-bottom: 1.3333333333333em;
+  }
+
+  /* line 39, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h4-subhead {
+    font-size: 0.984375em;
+    line-height: 1.5238095238095;
+    margin-bottom: 1.5238095238095em;
+  }
+
+  /* line 47, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h5-subhead {
+    font-size: 0.84375em;
+    line-height: 1.7777777777778;
+    margin-bottom: 1.7777777777778em;
+  }
+
+  /* line 55, ../scss/core/base/typography/_headings-generator.scss */
+  .sb-h6-subhead {
+    font-size: 0.75em;
+    line-height: 2;
+    margin-bottom: 2em;
   }
 }
-/* line 19, ../scss/core/base/_typography.scss */
+/* line 46, ../scss/core/base/typography/_headings.scss */
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .sb-h1 small, .sb-h2 small, .sb-h3 small, .sb-h4 small, .sb-h6 small {
+  font-size: .66666666em;
+  color: #555555;
+}
+
+/* line 52, ../scss/core/base/typography/_headings.scss */
+.sb-hgroup {
+  margin-bottom: 1.5em;
+}
+/* line 55, ../scss/core/base/typography/_headings.scss */
+.sb-hgroup h1, .sb-hgroup h2, .sb-hgroup h3, .sb-hgroup h4, .sb-hgroup h5, .sb-hgroup h6, .sb-hgroup .sb-h1, .sb-hgroup .sb-h2, .sb-hgroup .sb-h3, .sb-hgroup .sb-h4, .sb-hgroup .sb-h6 {
+  margin-bottom: 0;
+}
+
+/* line 18, ../scss/core/base/_typography.scss */
 body {
   font-family: Roboto, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 300;
   line-height: 1.5;
-  background: url("http://www.baselineme.com/14") center top repeat;
+  color: #222222;
 }
-@media (min-width: 60em) {
-  /* line 19, ../scss/core/base/_typography.scss */
-  body {
-    background: url("http://www.baselineme.com/16") center top repeat;
-  }
+
+/* line 26, ../scss/core/base/_typography.scss */
+p,
+blockquote {
+  margin-bottom: 1.5rem;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 /* line 33, ../scss/core/_base.scss */
@@ -430,36 +593,43 @@ body {
   box-sizing: border-box;
 }
 
+/* line 49, ../scss/core/layout/_grid.scss */
+[class*="sb-grid"], .sb-grid-row, .sb-grid-1, .sb-grid-2, .sb-grid-3, .sb-grid-4, .sb-grid-5, .sb-grid-6, .sb-grid-7, .sb-grid-8, .sb-grid-9, .sb-grid-10, .sb-grid-11, .sb-grid-12 {
+  margin-bottom: .75rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* line 21, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-container {
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 95%;
 }
 
-/* line 34, ../scss/core/layout/_grid-generator.scss */
+/* line 35, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-row {
   width: auto;
   margin-left: -1%;
 }
 
-/* line 43, ../scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-1 {
   position: static;
-  width: 7.33333%;
+  width: 7.3333333333333%;
   margin-left: 1%;
   float: left;
 }
 
-/* line 43, ../scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-2 {
   position: static;
-  width: 15.66667%;
+  width: 15.6666666666667%;
   margin-left: 1%;
   float: left;
 }
 
-/* line 43, ../scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-3 {
   position: static;
   width: 24%;
@@ -467,23 +637,23 @@ body {
   float: left;
 }
 
-/* line 43, ../scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-4 {
   position: static;
-  width: 32.33333%;
+  width: 32.3333333333333%;
   margin-left: 1%;
   float: left;
 }
 
-/* line 43, ../scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-5 {
   position: static;
-  width: 40.66667%;
+  width: 40.6666666666667%;
   margin-left: 1%;
   float: left;
 }
 
-/* line 43, ../scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-6 {
   position: static;
   width: 49%;
@@ -491,23 +661,23 @@ body {
   float: left;
 }
 
-/* line 43, ../scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-7 {
   position: static;
-  width: 57.33333%;
+  width: 57.3333333333333%;
   margin-left: 1%;
   float: left;
 }
 
-/* line 43, ../scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-8 {
   position: static;
-  width: 65.66667%;
+  width: 65.6666666666667%;
   margin-left: 1%;
   float: left;
 }
 
-/* line 43, ../scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-9 {
   position: static;
   width: 74%;
@@ -515,23 +685,23 @@ body {
   float: left;
 }
 
-/* line 43, ../scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-10 {
   position: static;
-  width: 82.33333%;
+  width: 82.3333333333333%;
   margin-left: 1%;
   float: left;
 }
 
-/* line 43, ../scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-11 {
   position: static;
-  width: 90.66667%;
+  width: 90.6666666666667%;
   margin-left: 1%;
   float: left;
 }
 
-/* line 43, ../scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-12 {
   position: static;
   width: 99%;
@@ -543,33 +713,34 @@ body {
   /* line 21, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-container {
     width: 100%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 90%;
   }
 
-  /* line 34, ../scss/core/layout/_grid-generator.scss */
+  /* line 35, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-row {
     width: auto;
     margin-left: -1%;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-1 {
     position: static;
-    width: 7.33333%;
+    width: 7.3333333333333%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-2 {
     position: static;
-    width: 15.66667%;
+    width: 15.6666666666667%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-3 {
     position: static;
     width: 24%;
@@ -577,23 +748,23 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-4 {
     position: static;
-    width: 32.33333%;
+    width: 32.3333333333333%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-5 {
     position: static;
-    width: 40.66667%;
+    width: 40.6666666666667%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-6 {
     position: static;
     width: 49%;
@@ -601,23 +772,23 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-7 {
     position: static;
-    width: 57.33333%;
+    width: 57.3333333333333%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-8 {
     position: static;
-    width: 65.66667%;
+    width: 65.6666666666667%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-9 {
     position: static;
     width: 74%;
@@ -625,23 +796,23 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 {
     position: static;
-    width: 82.33333%;
+    width: 82.3333333333333%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-11 {
     position: static;
-    width: 90.66667%;
+    width: 90.6666666666667%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-12 {
     position: static;
     width: 99%;
@@ -653,33 +824,34 @@ body {
   /* line 21, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-container {
     width: 100%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 85%;
   }
 
-  /* line 34, ../scss/core/layout/_grid-generator.scss */
+  /* line 35, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-row {
     width: auto;
     margin-left: -1%;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-1 {
     position: static;
-    width: 7.33333%;
+    width: 7.3333333333333%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-2 {
     position: static;
-    width: 15.66667%;
+    width: 15.6666666666667%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-3 {
     position: static;
     width: 24%;
@@ -687,23 +859,23 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-4 {
     position: static;
-    width: 32.33333%;
+    width: 32.3333333333333%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-5 {
     position: static;
-    width: 40.66667%;
+    width: 40.6666666666667%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-6 {
     position: static;
     width: 49%;
@@ -711,23 +883,23 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-7 {
     position: static;
-    width: 57.33333%;
+    width: 57.3333333333333%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-8 {
     position: static;
-    width: 65.66667%;
+    width: 65.6666666666667%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-9 {
     position: static;
     width: 74%;
@@ -735,23 +907,23 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 {
     position: static;
-    width: 82.33333%;
+    width: 82.3333333333333%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-11 {
     position: static;
-    width: 90.66667%;
+    width: 90.6666666666667%;
     margin-left: 1%;
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-12 {
     position: static;
     width: 99%;
@@ -759,33 +931,34 @@ body {
     float: left;
   }
 
-  /* line 63, ../scss/core/layout/_grid-generator.scss */
+  /* line 64, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 .sb-grid-row .sb-grid-5 {
     position: relative;
-    left: 16.66667%;
+    left: 16.6666666666667%;
   }
 
-  /* line 72, ../scss/core/layout/_grid-generator.scss */
+  /* line 73, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 .sb-grid-row .sb-grid-2 {
     position: relative;
-    left: -41.66667%;
+    left: -41.6666666666667%;
   }
 }
 @media (min-width: 85em) {
   /* line 21, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-container {
     width: 82.5rem;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: none;
   }
 
-  /* line 34, ../scss/core/layout/_grid-generator.scss */
+  /* line 35, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-row {
     width: auto;
     margin-left: -1.5rem;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-1 {
     position: static;
     width: 5.5rem;
@@ -793,7 +966,7 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-2 {
     position: static;
     width: 12.5rem;
@@ -801,7 +974,7 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-3 {
     position: static;
     width: 19.5rem;
@@ -809,7 +982,7 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-4 {
     position: static;
     width: 26.5rem;
@@ -817,7 +990,7 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-5 {
     position: static;
     width: 33.5rem;
@@ -825,7 +998,7 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-6 {
     position: static;
     width: 40.5rem;
@@ -833,7 +1006,7 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-7 {
     position: static;
     width: 47.5rem;
@@ -841,7 +1014,7 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-8 {
     position: static;
     width: 54.5rem;
@@ -849,7 +1022,7 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-9 {
     position: static;
     width: 61.5rem;
@@ -857,7 +1030,7 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 {
     position: static;
     width: 68.5rem;
@@ -865,7 +1038,7 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-11 {
     position: static;
     width: 75.5rem;
@@ -873,7 +1046,7 @@ body {
     float: left;
   }
 
-  /* line 43, ../scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-12 {
     position: static;
     width: 82.5rem;
@@ -881,27 +1054,29 @@ body {
     float: left;
   }
 
-  /* line 72, ../scss/core/layout/_grid-generator.scss */
+  /* line 73, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 .sb-grid-row .sb-grid-5 {
     position: relative;
     left: -21rem;
   }
 
-  /* line 63, ../scss/core/layout/_grid-generator.scss */
+  /* line 64, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 .sb-grid-row .sb-grid-3 {
     position: relative;
     left: 35rem;
   }
 }
-/* line 59, ../scss/core/layout/_grid.scss */
-.sb-grid-container, .sb-grid-row, .sb-grid-1, .sb-grid-2, .sb-grid-3, .sb-grid-4, .sb-grid-5, .sb-grid-6, .sb-grid-7, .sb-grid-8, .sb-grid-9, .sb-grid-10, .sb-grid-11, .sb-grid-12 {
-  margin-bottom: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 @media (min-width: 85em) {
-  /* line 112, ../scss/core/layout/_grid.scss */
+  /* line 126, ../scss/core/layout/_grid.scss */
   .sb-grid-10 .sb-grid-row .sb-grid-2 {
     position: static;
   }
+}
+
+/* line 24, ../scss/core/_layout.scss */
+body {
+  background-image: -webkit-linear-gradient(rgba(102, 204, 255, 0.5) 1px, transparent 1px);
+  background-image: -moz-linear-gradient(rgba(102, 204, 255, 0.5) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(102, 204, 255, 0.5) 1px, transparent 1px);
+  background-size: 1.5em 1.5em;
 }
