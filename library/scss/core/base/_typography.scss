@@ -27,3 +27,14 @@ blockquote {
 	margin-bottom: 1.5rem;
 	@include hyphens(auto);
 }
+
+a {
+	color: lighten($sb-blue, 15%);
+	text-decoration: none;
+	
+	&:hover {
+		color: $sb-blue;
+	}
+
+	@include transition(color .2s ease);
+}
