@@ -18,31 +18,34 @@ $sb-bar-nav-color:	#d1d1d1	!default;
 }
 
 %sb-fixed-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1000;
+	@include respond-to('sb-m'){
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+	}
 }
 
 %sb-has-fixed-nav {
-	@if $ie8-support == true {
-		padding-top: 4 * $rem;
-	}
+	@include respond-to('sb-m') {
+		@if $ie8-support == true {
+			padding-top: 0 * $rem;
+		}
 
-	padding-top: 4rem;
+		padding-top: 4.5rem;
+	}
 }
 
 %sb-nav-item {
 	@if $ie8-support == true {
 		padding-top: .6 * $rem;
-		padding-bottom: .875 * $rem;
 		margin-left: .75 * $rem;
 	}
 
 	display: inline-block;
 	padding-top: .6rem;
-	padding-bottom: .875rem;
+	height: 3rem;
 	margin-left: .75rem;
 }
 
