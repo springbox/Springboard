@@ -7,7 +7,7 @@
 // and open sourcing it for the basic maths: 
 // http://joshnh.com/tools/em-baseline-generator.html
 
-@mixin sb-heading-generator($sb-heading-prefix: 'sb', $sb-base-font-size: 1rem, $sb-base-line-height: 1.5rem, $sb-font-weight: 700) {
+@mixin sb-heading-generator($sb-heading-prefix: 'sb', $sb-base-font-size: 1em, $sb-base-line-height: 1.5em, $sb-font-weight: 700) {
 	%#{$sb-heading-prefix}-heading {
 		font-weight: $sb-font-weight;
 	}
@@ -15,7 +15,7 @@
 	%#{$sb-heading-prefix}-h1 {
 		font-size: 3 * $sb-base-font-size;
 		line-height: sb-h1-line-height($sb-base-font-size, $sb-base-line-height);
-		margin-bottom: sb-h1-margin-bottom($sb-base-font-size, $sb-base-line-height) * 1rem;
+		margin-bottom: sb-h1-margin-bottom($sb-base-font-size, $sb-base-line-height) * 1em;
 
 		@extend %#{$sb-heading-prefix}-heading;
 	}
@@ -23,7 +23,7 @@
 	%#{$sb-heading-prefix}-h2 {
 		font-size: 2.25 * $sb-base-font-size;
 		line-height: sb-h2-line-height($sb-base-font-size, $sb-base-line-height);
-		margin-bottom: sb-h2-margin-bottom($sb-base-font-size, $sb-base-line-height) * 1rem;
+		margin-bottom: sb-h2-margin-bottom($sb-base-font-size, $sb-base-line-height) * 1em;
 
 		@extend %#{$sb-heading-prefix}-heading;
 	}
@@ -31,7 +31,7 @@
 	%#{$sb-heading-prefix}-h3 {
 		font-size: 1.5 * $sb-base-font-size;
 		line-height: sb-h3-line-height($sb-base-font-size, $sb-base-line-height);
-		margin-bottom: sb-h3-margin-bottom($sb-base-font-size, $sb-base-line-height) * 1rem;
+		margin-bottom: sb-h3-margin-bottom($sb-base-font-size, $sb-base-line-height) * 1em;
 
 		@extend %#{$sb-heading-prefix}-heading;
 	}
@@ -39,7 +39,7 @@
 	%#{$sb-heading-prefix}-h4 {
 		font-size: 1.3125 * $sb-base-font-size;
 		line-height: sb-h4-line-height($sb-base-font-size, $sb-base-line-height);
-		margin-bottom: sb-h4-margin-bottom($sb-base-font-size, $sb-base-line-height) * 1rem;
+		margin-bottom: sb-h4-margin-bottom($sb-base-font-size, $sb-base-line-height) * 1em;
 
 		@extend %#{$sb-heading-prefix}-heading;
 	}
@@ -47,7 +47,7 @@
 	%#{$sb-heading-prefix}-h5 {
 		font-size: 1.125 * $sb-base-font-size;
 		line-height: sb-h5-line-height($sb-base-font-size, $sb-base-line-height);
-		margin-bottom: sb-h5-margin-bottom($sb-base-font-size, $sb-base-line-height) * 1rem;
+		margin-bottom: sb-h5-margin-bottom($sb-base-font-size, $sb-base-line-height) * 1em;
 
 		@extend %#{$sb-heading-prefix}-heading;
 	}
@@ -55,7 +55,7 @@
 	%#{$sb-heading-prefix}-h6 {
 		font-size: $sb-base-font-size;
 		line-height: sb-h6-line-height($sb-base-font-size, $sb-base-line-height);
-		margin-bottom: sb-h6-margin-bottom($sb-base-font-size, $sb-base-line-height) * 1rem;
+		margin-bottom: sb-h6-margin-bottom($sb-base-font-size, $sb-base-line-height) * 1em;
 
 		@extend %#{$sb-heading-prefix}-heading;
 	}
