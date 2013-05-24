@@ -8,8 +8,8 @@
 
 // Print classes?
 // 
-//$print-base-nav-classes: false;
-//$print-base-heading-classes: false;
+$print-base-nav-classes:		$print-base-classes		!default;
+$print-base-heading-classes:	$print-base-classes		!default;
 
 
 // Font settings
