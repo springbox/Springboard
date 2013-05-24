@@ -11,7 +11,10 @@
 // ----- Settings ----- //
 $print-base-heading-classes: 	true	!default;
 
+
+// ----- Imports ----- //
 @import "headings-generator";
+
 
 // ----- Placeholders ----- //
 @include sb-heading-generator('sb-s', .875rem, 1.3125rem, 500);
@@ -25,9 +28,7 @@ $print-base-heading-classes: 	true	!default;
 }
 
 
-
-
-// ----- Styles ----- //
+// ----- Base Styles ----- //
 h1 {
 	@extend %sb-s-h1;
 	@extend %sb-m-h1;
@@ -63,6 +64,8 @@ h6 {
 	@extend %sb-m-h6;
 	@extend %sb-xl-h6;
 }
+
+// ----- Classes ----- //
 
 @if $print-base-heading-classes == true {
 	.sb-h1 {
