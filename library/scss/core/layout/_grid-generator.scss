@@ -20,7 +20,8 @@
 	// placeholder for container
 	%#{$sb-gg-prefix}-container { 
 		width: $sb-gg-width;
-		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
 
 		@if $sb-gg-max-width != false {
 			max-width: $sb-gg-max-width;
