@@ -11,6 +11,10 @@
 $print-base-classes:		true		!default;
 $print-layout-classes:		true		!default;
 
+//
+$sb-visible-grid:				true		!default;
+$sb-visible-baseline-grid:		true		!default;
+
 
 // Predefine your breakpoints
 $breakpoints: 	'sb-xl' (85em),
