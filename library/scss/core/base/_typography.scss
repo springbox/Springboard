@@ -5,7 +5,6 @@
 
 
 // ----- Typography settings ----- //
-$sb-visible-baseline-grid:			true	!default;
 
 
 
@@ -18,14 +17,13 @@ $sb-visible-baseline-grid:			true	!default;
 // ----- Basic Typography styles ----- //
 body {
 	font-family: $sans;
+	font-weight: 300;
 	line-height: 1.5;
-	
+	color: $sb-font-color;
+}
 
-	@if $sb-visible-baseline-grid == true {
-		background: url('http://www.baselineme.com/14') center top repeat;
-
-		@include respond-to('sb-l') {
-			background: url('http://www.baselineme.com/16') center top repeat;
-		}
-	}
+p,
+blockquote {
+	margin-bottom: 1.5rem;
+	@include hyphens(auto);
 }
