@@ -8,12 +8,40 @@ $print-base-paragraph-classes:		$print-base-typography-classes		!default;
 
 
 // ----- Basic styles ----- //
-p{
+%sb-paragraph {
 	margin-bottom: $sb-m-spacing;
 	@include hyphens(auto);
 }
 
 // ----- Placeholders ----- //
+%sb-lead {
+	@include sb-baseline(1.5em, 2.25em);
+}
 
+%sb-secondary {
+	@include sb-baseline(0.9375em, 1.5em);
+}
+
+%sb-tertiary {
+	@include sb-baseline(0.75em, 0.75em);
+}
+
+// ----- Base Styles ----- //
+p {
+	@extend %sb-paragraph;
+}
 
 // ----- Classes ----- //
+@if $print-base-paragraph-classes == true {
+	.sb-lead {
+		@extend %sb-lead;
+	}
+
+	.sb-secondary {
+		@extend %sb-secondary;
+	}
+
+	.sb-tertiary {
+		@extend %sb-tertiary;
+	}
+}
