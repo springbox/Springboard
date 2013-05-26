@@ -30,7 +30,7 @@ $sb-bar-nav-color:	#d1d1d1	!default;
 %sb-has-fixed-nav {
 	@include respond-to('sb-m') {
 		@if $ie8-support == true {
-			padding-top: 0 * $rem;
+			padding-top: 0 * $sb-rem;
 		}
 
 		padding-top: 4.5rem;
@@ -39,8 +39,8 @@ $sb-bar-nav-color:	#d1d1d1	!default;
 
 %sb-nav-item {
 	@if $ie8-support == true {
-		padding-top: .6 * $rem;
-		margin-left: .75 * $rem;
+		padding-top: .6 * $sb-rem;
+		margin-left: .75 * $sb-rem;
 	}
 
 	display: inline-block;

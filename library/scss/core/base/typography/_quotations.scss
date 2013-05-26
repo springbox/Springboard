@@ -1,0 +1,104 @@
+//-------------------------------------
+//  Springboard: core/base/typography/quotations
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-quotation-classes:		$print-base-typography-classes		!default;
+
+
+
+// ----- Placeholders ----- //
+%sb-blockquote {
+	padding: $sb-s-spacing;
+	border-left: 5px solid lighten($sb-blue, 30%);
+
+	font-family: $sb-serif;
+	font-style: italic;
+	color: lighten($sb-font-color, 10%);
+
+	@include sb-baseline(1.125em, 2.25em);
+	@extend %sb-paragraph;
+}
+
+%sb-pullquote {
+	position: relative;
+	font-family: $sb-serif;
+	font-style: italic;
+	padding: $sb-m-spacing $sb-m-spacing $sb-m-spacing $sb-l-spacing;
+	background-color: lighten($sb-font-color, 80%);
+
+	@extend %sb-paragraph;
+
+	&:before, &:after {
+		position: absolute;
+		font-size: 4em;
+		height: 1em;
+		color: lighten($sb-font-color, 40%);
+		opacity: .5;
+	}
+
+	&:before {
+		content: "“";
+		position: absolute;
+		top: 0;
+		left: $sb-s-spacing / 4;
+	}
+}
+
+%sb-citation {
+	padding-top: $sb-s-spacing;
+	display: block;
+	font-weight: 700;
+
+	&:before {
+		content: "—";
+	}
+}
+
+%sb-inline-quote {
+	font-family: $sb-serif;
+	font-style: italic;
+	//color: lighten($sb-font-color, 20%);
+	background-color: lighten($sb-font-color, 75%);
+
+	&:before {
+		content: "“";
+	}
+
+	&:after {
+		content: "”";
+	}
+}
+
+// ----- Basic styles ----- //
+blockquote {
+	@extend %sb-blockquote;
+
+	cite {
+		@extend %sb-citation;
+	}
+}
+
+q {
+	@extend %sb-inline-quote;
+}
+
+// ----- Classes ----- //
+@if $print-base-quotation-classes == true {
+	.sb-blockquote {
+		@extend %sb-blockquote;
+	}
+
+	.sb-citation {
+		@extend %sb-citation;
+	}
+
+	.sb-pullquote {
+		@extend %sb-pullquote;
+	}
+
+	.sb-inline-quote {
+		@extend %sb-inline-quote;
+	}
+}
