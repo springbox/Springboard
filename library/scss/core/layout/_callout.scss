@@ -14,7 +14,7 @@
 }
 
 %sb-callout-title {
-	padding: .75rem;
+	padding: $sb-s-spacing;
 	border-bottom: 1px solid lighten($sb-font-color, 50%);
 	background-color: #f1f1f1;
 	%sb-heading {
@@ -23,7 +23,8 @@
 }
 
 %sb-callout-body {
-	padding: .75rem;
+	padding: $sb-s-spacing;
+	@extend %clearfix;
 }
 
 // ----- Classes ----- //
