@@ -45,7 +45,7 @@ $sb-xl-max-width:			false				!default;
 // Extend this if you'd like your own class names be visible
 @if($sb-visible-grid) {
 	%sb-visible-grid {
-		margin-bottom: .75rem;
+		margin-bottom: $sb-s-spacing;
 		background-color: rgba(#000000, .1);
 	}
 }

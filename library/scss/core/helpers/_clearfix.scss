@@ -7,7 +7,7 @@
 
 // Extend this to cut down on extraneous CSS.
 // 
-// Note: this is not nestable into other placeholder selectors.
+// Note: this is not nestable into other placeholder selectors that reside in MQs
 %clearfix {
 	@include pie-clearfix;
 }
