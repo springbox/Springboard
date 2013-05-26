@@ -9,23 +9,20 @@ $print-base-typography-classes:		$print-base-classes		!default;
 
 
 // ----- Typography import ----- //
+@import "typography/baseline";
 @import "typography/fonts";
 @import "typography/headings";
 @import "typography/paragraphs";
-
+@import "typography/quotations";
+@import "typography/alignment";
 
 
 // ----- Basic Typography styles ----- //
 body {
-	font-family: $sans;
+	font-family: $sb-sans;
 	font-weight: 300;
 	line-height: 1.5;
 	color: $sb-font-color;
-}
-
-blockquote {
-	margin-bottom: $sb-m-spacing;
-	@include hyphens(auto);
 }
 
 a {
