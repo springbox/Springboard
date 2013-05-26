@@ -1,0 +1,24 @@
+//-------------------------------------
+//  Springboard: core/base/typography/baseline
+//  
+//-------------------------------------
+
+@mixin sb-baseline($sb-base-font-size, $sb-base-line-height) {
+	font-size: $sb-base-font-size;
+	line-height: sb-baseline-lh($sb-base-font-size, $sb-base-line-height);
+	margin-bottom: sb-baseline-mb($sb-base-font-size, $sb-base-line-height) * 1em;
+}
+
+@function sb-baseline-lh($sb-base-font-size, $sb-base-line-height) {
+	$sb-baseline-height: 0;
+	@if sb-baseline-mb($sb-base-font-size, $sb-base-line-height) >= 1 {
+		$sb-baseline-height: sb-baseline-mb($sb-base-font-size, $sb-base-line-height);
+	} @else {
+		$sb-baseline-height: sb-baseline-mb($sb-base-font-size, $sb-base-line-height) * 2;
+	}
+	@return $sb-baseline-height;
+}
+
+@function sb-baseline-mb($sb-base-font-size, $sb-base-line-height) {
+	@return ($sb-base-line-height / $sb-base-font-size);
+}
