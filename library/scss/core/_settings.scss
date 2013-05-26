@@ -10,23 +10,20 @@
 // Want to use Springboard classes in your HTML?
 $print-base-classes:		true		!default;
 $print-layout-classes:		true		!default;
+$print-helpers-classes:		true		!default;
+
+
 
 //
 $sb-visible-grid:				true		!default;
 $sb-visible-baseline-grid:		true		!default;
 
 
-// Predefine your breakpoints
-$breakpoints: 	'sb-xl' (85em),
-				'sb-l' (60em),
-				'sb-m' (44em) !default;
-
-
 
 // Consistent box sizing
-$border-box-all-the-things: true !default;
+$border-box-all-the-things:		true		!default;
 
 
 
 // Prints various CSS to support IE8
-$ie8-support: true !default;
+$ie8-support:		true		!default;
