@@ -8,9 +8,11 @@
 // 
 
 // Want to use Springboard classes in your HTML?
-$print-base-classes:		true		!default;
-$print-layout-classes:		true		!default;
-$print-helpers-classes:		true		!default;
+$print-springboard-classes:	true							!default;
+
+$print-base-classes:		$print-springboard-classes		!default;
+$print-layout-classes:		$print-springboard-classes		!default;
+$print-helpers-classes:		$print-springboard-classes		!default;
 
 
 

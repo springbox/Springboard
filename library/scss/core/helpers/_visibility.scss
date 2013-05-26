@@ -5,7 +5,7 @@
 
 // Extend this to cut down on extraneous CSS.
 // 
-// Note: this is not nestable into other placeholder selectors.
+// Note: these is not nestable into other placeholder selectors that reside in MQs
 %sb-hidden {
 	display: none;
 }
@@ -34,7 +34,7 @@
 
 // ----- Classes ----- //
 
-@if $print-visibility-classes == true {
+@if $print-helpers-visibility-classes == true {
 	.sb-hidden {
 		@extend %sb-hidden;
 	}
