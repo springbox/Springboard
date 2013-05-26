@@ -1,0 +1,49 @@
+//-------------------------------------
+//  Springboard: core/helpers/visibility
+//-------------------------------------
+
+
+// Extend this to cut down on extraneous CSS.
+// 
+// Note: this is not nestable into other placeholder selectors.
+%sb-hidden {
+	display: none;
+}
+
+%sb-visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px; 
+	margin: -1px;
+	padding: 0;
+	border: 0; 
+}
+
+%sb-visually-hidden-but-focusable {
+	&:active, &:focus { 
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+}
+
+// ----- Classes ----- //
+
+@if $print-visibility-classes == true {
+	.sb-hidden {
+		@extend %sb-hidden;
+	}
+
+	.sb-visually-hidden {
+		@extend %sb-visually-hidden;
+	}
+
+	.sb-visually-hidden-but-focusable {
+		@extend %sb-visually-hidden-but-focusable;
+	}
+}
