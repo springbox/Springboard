@@ -5,12 +5,13 @@
 
 
 // ----- Typography settings ----- //
-
+$print-base-typography-classes:		$print-base-classes		!default;
 
 
 // ----- Typography import ----- //
 @import "typography/fonts";
 @import "typography/headings";
+@import "typography/paragraphs";
 
 
 
@@ -22,9 +23,8 @@ body {
 	color: $sb-font-color;
 }
 
-p,
 blockquote {
-	margin-bottom: 1.5rem;
+	margin-bottom: $sb-m-spacing;
 	@include hyphens(auto);
 }
 

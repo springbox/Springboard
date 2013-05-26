@@ -1,0 +1,19 @@
+//-------------------------------------
+//  Springboard: core/base/typography/paragraphs
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-paragraph-classes:		$print-base-typography-classes		!default;
+
+
+// ----- Basic styles ----- //
+p{
+	margin-bottom: $sb-m-spacing;
+	@include hyphens(auto);
+}
+
+// ----- Placeholders ----- //
+
+
+// ----- Classes ----- //
