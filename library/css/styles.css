@@ -1,3 +1,4 @@
+@charset "IBM437";
 /* line 17, C:/Users/Rachael/AppData/Local/Temp/Mixture/Tools/Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -64,11 +65,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 11, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/helpers/_clearfix.scss */
-.sb-grid-container, .sb-grid-row {
+.clearfix, .sb-grid-container, .sb-grid-row, .sb-callout-body {
   *zoom: 1;
 }
 /* line 38, C:/Users/Rachael/AppData/Local/Temp/Mixture/Tools/Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.sb-grid-container:after, .sb-grid-row:after {
+.clearfix:after, .sb-grid-container:after, .sb-grid-row:after, .sb-callout-body:after {
   content: "";
   display: table;
   clear: both;
@@ -234,34 +235,66 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @font-face {
-  font-family: 'RobotoSlab';
-  src: url("../fonts/robotoslab-bold-webfont.eot");
-  src: url("../fonts/robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-bold-webfont.woff") format("woff"), url("../fonts/robotoslab-bold-webfont.ttf") format("truetype"), url("../fonts/robotoslab-bold-webfont.svg#roboto_slabbold") format("svg");
-  font-weight: 700;
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-black-webfont.eot");
+  src: url("../fonts/merriweather-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-black-webfont.woff") format("woff"), url("../fonts/merriweather-black-webfont.ttf") format("truetype"), url("../fonts/merriweather-black-webfont.svg#merriweatherheavy") format("svg");
+  font-weight: normal;
+  font-style: 900;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-bold-webfont.eot");
+  src: url("../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-bold-webfont.woff") format("woff"), url("../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  font-weight: normal;
+  font-style: 700;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  font-weight: italic;
+  font-style: 700;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-heavyitalic-webfont.eot");
+  src: url("../fonts/merriweather-heavyitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-heavyitalic-webfont.woff") format("woff"), url("../fonts/merriweather-heavyitalic-webfont.ttf") format("truetype"), url("../fonts/merriweather-heavyitalic-webfont.svg#merriweatherheavy_italic") format("svg");
+  font-weight: italic;
+  font-style: 900;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-italic-webfont.eot");
+  src: url("../fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-italic-webfont.woff") format("woff"), url("../fonts/merriweather-italic-webfont.ttf") format("truetype"), url("../fonts/merriweather-italic-webfont.svg#merriweatheritalic") format("svg");
+  font-weight: italic;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'RobotoSlab';
-  src: url("../fonts/robotoslab-light-webfont.eot");
-  src: url("../fonts/robotoslab-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-light-webfont.woff") format("woff"), url("../fonts/robotoslab-light-webfont.ttf") format("truetype"), url("../fonts/robotoslab-light-webfont.svg#roboto_slablight") format("svg");
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-light-webfont.eot");
+  src: url("../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-light-webfont.woff") format("woff"), url("../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'RobotoSlab';
-  src: url("../fonts/robotoslab-regular-webfont.eot");
-  src: url("../fonts/robotoslab-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-regular-webfont.woff") format("woff"), url("../fonts/robotoslab-regular-webfont.ttf") format("truetype"), url("../fonts/robotoslab-regular-webfont.svg#roboto_slabregular") format("svg");
-  font-weight: 400;
-  font-style: normal;
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-lightitalic-webfont.eot");
+  src: url("../fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'RobotoSlab';
-  src: url("../fonts/robotoslab-thin-webfont.eot");
-  src: url("../fonts/robotoslab-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-thin-webfont.woff") format("woff"), url("../fonts/robotoslab-thin-webfont.ttf") format("truetype"), url("../fonts/robotoslab-thin-webfont.svg#roboto_slabthin") format("svg");
-  font-weight: 100;
+  font-family: 'Merriweather';
+  src: url("../fonts/merriweather-regular-webfont.eot");
+  src: url("../fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-regular-webfont.woff") format("woff"), url("../fonts/merriweather-regular-webfont.ttf") format("truetype"), url("../fonts/merriweather-regular-webfont.svg#merriweatherregular") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -596,7 +629,118 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .sb-h1 small, .sb-h2
   margin-bottom: 0;
 }
 
-/* line 18, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
+/* line 11, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_paragraphs.scss */
+p, blockquote, .sb-blockquote, .sb-pullquote {
+  margin-bottom: 1.5rem;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+/* line 17, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_paragraphs.scss */
+.sb-lead {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+
+/* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_paragraphs.scss */
+.sb-secondary {
+  font-size: 0.9375em;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+}
+
+/* line 25, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_paragraphs.scss */
+.sb-tertiary {
+  font-size: 0.75em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+/* line 12, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+blockquote, .sb-blockquote {
+  padding: 0.75rem;
+  border-left: 5px solid #189fdb;
+  font-family: Merriweather, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  color: #3c3c3c;
+  font-size: 1.125em;
+  line-height: 2;
+  margin-bottom: 2em;
+}
+
+/* line 24, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+.sb-pullquote {
+  position: relative;
+  font-family: Merriweather, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  background-color: #eeeeee;
+}
+/* line 33, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+.sb-pullquote:before, .sb-pullquote:after {
+  position: absolute;
+  font-size: 4em;
+  height: 1em;
+  color: #888888;
+  opacity: .5;
+}
+/* line 41, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+.sb-pullquote:before {
+  content: "“";
+  position: absolute;
+  top: 0;
+  left: 0.1875rem;
+}
+
+/* line 49, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+blockquote cite, .sb-citation {
+  padding-top: 0.75rem;
+  display: block;
+  font-weight: 700;
+}
+/* line 54, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+blockquote cite:before, .sb-citation:before {
+  content: "—";
+}
+
+/* line 59, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+q, .sb-inline-quote {
+  font-family: Merriweather, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  background-color: #e1e1e1;
+}
+/* line 65, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+q:before, .sb-inline-quote:before {
+  content: "“";
+}
+/* line 69, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+q:after, .sb-inline-quote:after {
+  content: "”";
+}
+
+/* line 12, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_alignment.scss */
+.sb-align-left {
+  text-align: left;
+}
+
+/* line 16, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_alignment.scss */
+.sb-align-right {
+  text-align: right;
+}
+
+/* line 20, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_alignment.scss */
+.sb-align-center {
+  text-align: center;
+}
+
+/* line 24, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_alignment.scss */
+.sb-align-justified {
+  text-align: justify;
+}
+
+/* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
 body {
   font-family: Roboto, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 300;
@@ -604,16 +748,7 @@ body {
   color: #222222;
 }
 
-/* line 26, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
-p,
-blockquote {
-  margin-bottom: 1.5rem;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-}
-
-/* line 31, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
+/* line 28, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
 a {
   color: #116d96;
   text-decoration: none;
@@ -622,7 +757,7 @@ a {
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 35, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
+/* line 32, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
 a:hover {
   color: #093b51;
 }
@@ -632,12 +767,6 @@ a:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-/* line 49, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid.scss */
-[class*="sb-grid"], .sb-grid-row, .sb-grid-1, .sb-grid-2, .sb-grid-3, .sb-grid-4, .sb-grid-5, .sb-grid-6, .sb-grid-7, .sb-grid-8, .sb-grid-9, .sb-grid-10, .sb-grid-11, .sb-grid-12 {
-  margin-bottom: .75rem;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
@@ -1108,7 +1237,7 @@ a:hover {
   }
 }
 @media (min-width: 85em) {
-  /* line 126, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid.scss */
+  /* line 124, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid.scss */
   .sb-grid-10 .sb-grid-row .sb-grid-2 {
     position: static;
   }
@@ -1125,7 +1254,7 @@ a:hover {
 
 /* line 16, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_callout.scss */
 .sb-callout-title {
-  padding: .75rem;
+  padding: 0.75rem;
   border-bottom: 1px solid #a2a2a2;
   background-color: #f1f1f1;
 }
@@ -1136,13 +1265,5 @@ a:hover {
 
 /* line 25, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_callout.scss */
 .sb-callout-body {
-  padding: .75rem;
-}
-
-/* line 26, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/_layout.scss */
-body {
-  background-image: -webkit-linear-gradient(rgba(102, 204, 255, 0.5) 1px, transparent 1px);
-  background-image: -moz-linear-gradient(rgba(102, 204, 255, 0.5) 1px, transparent 1px);
-  background-image: linear-gradient(rgba(102, 204, 255, 0.5) 1px, transparent 1px);
-  background-size: 1.5em 1.5em;
+  padding: 0.75rem;
 }
