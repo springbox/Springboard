@@ -5,8 +5,6 @@
 
 // ----- Settings ----- //
  
-// TODO: allow lower settings to override this one;
-$sb-visible-grid:		true	!default;
 
 // Small (mobile first)
 $sb-s-visible: 			$sb-visible-grid	!default;
@@ -75,62 +73,63 @@ $sb-xl-max-width:			false				!default;
 
 
 // ----- Classes ----- //
-
-@if $sb-visible-grid == true {
-	[class*="sb-grid"] {
-		@extend %sb-visible-grid;
-	}
-}
-
-.sb-grid-container {
-	@extend %sb-s-container;
-	@extend %sb-m-container;
-	@extend %sb-l-container;
-	@extend %sb-xl-container;
-	@extend %clearfix;
-}
-
-.sb-grid-row {
-	@extend %sb-s-row;
-	@extend %sb-m-row;
-	@extend %sb-l-row;
-	@extend %sb-xl-row;
-	@extend %clearfix;
-	
-
-	@if $sb-l-visible == true {
-		@extend %sb-visible-grid;
-	}
-}
-
-
-@for $i from 1 through 12 {
-	.sb-grid-#{$i} {
-		@extend %sb-s-#{$i};
-		@extend %sb-m-#{$i};
-		@extend %sb-l-#{$i};
-		@extend %sb-xl-#{$i};
-
-		@if $sb-l-visible == true {
+@if $print-layout-grid-classes {
+	@if $sb-visible-grid == true {
+		[class*="sb-grid"] {
 			@extend %sb-visible-grid;
 		}
 	}
-}
 
-.sb-grid-10 .sb-grid-row {
-	.sb-grid-5 {
-		@extend %sb-l-push-2;
-		@extend %sb-xl-pull-3;
+	.sb-grid-container {
+		@extend %sb-s-container;
+		@extend %sb-m-container;
+		@extend %sb-l-container;
+		@extend %sb-xl-container;
+		@extend %clearfix;
 	}
 
-	.sb-grid-2 {
-		@extend %sb-l-pull-5;
-		@include respond-to('sb-xl') {
-			position: static;
+	.sb-grid-row {
+		@extend %sb-s-row;
+		@extend %sb-m-row;
+		@extend %sb-l-row;
+		@extend %sb-xl-row;
+		@extend %clearfix;
+		
+		// TODO: allow lower settings to override the visible grid
+		@if $sb-visible-grid == true {
+			@extend %sb-visible-grid;
 		}
 	}
 
-	.sb-grid-3 {
-		@extend %sb-xl-push-5;
+
+	@for $i from 1 through 12 {
+		.sb-grid-#{$i} {
+			@extend %sb-s-#{$i};
+			@extend %sb-m-#{$i};
+			@extend %sb-l-#{$i};
+			@extend %sb-xl-#{$i};
+
+			@if $sb-visible-grid == true {
+				@extend %sb-visible-grid;
+			}
+		}
+	}
+
+	.sb-grid-10 .sb-grid-row {
+		.sb-grid-5 {
+			@extend %sb-l-push-2;
+			@extend %sb-xl-pull-3;
+		}
+
+		.sb-grid-2 {
+			@extend %sb-l-pull-5;
+			@include respond-to('sb-xl') {
+				position: static;
+			}
+		}
+
+		.sb-grid-3 {
+			@extend %sb-xl-push-5;
+		}
 	}
 }
