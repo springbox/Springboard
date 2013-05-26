@@ -106,11 +106,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .sb-bar-nav {
   width: 100%;
   list-style: none;
+  margin-left: 0;
+  padding-left: 0;
   background-color: #d1d1d1;
+}
+/* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_navigation.scss */
+.sb-bar-nav li {
+  margin-bottom: 0;
 }
 
 @media (min-width: 44em) {
-  /* line 20, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_navigation.scss */
+  /* line 26, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_navigation.scss */
   .sb-fixed-nav {
     position: fixed;
     top: 0;
@@ -121,14 +127,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @media (min-width: 44em) {
-  /* line 30, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_navigation.scss */
+  /* line 36, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_navigation.scss */
   .sb-has-fixed-nav {
     padding-top: 0px;
     padding-top: 4.5rem;
   }
 }
 
-/* line 40, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_navigation.scss */
+/* line 46, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_navigation.scss */
 .sb-bar-nav .sb-nav-item {
   padding-top: 9.6px;
   margin-left: 12px;
@@ -645,7 +651,7 @@ p, blockquote, .sb-blockquote, .sb-pullquote {
 }
 
 /* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_paragraphs.scss */
-.sb-secondary {
+.sb-caption, .sb-secondary {
   font-size: 0.9375em;
   line-height: 1.6;
   margin-bottom: 1.6em;
@@ -656,6 +662,11 @@ p, blockquote, .sb-blockquote, .sb-pullquote {
   font-size: 0.75em;
   line-height: 1;
   margin-bottom: 1em;
+}
+
+/* line 29, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_paragraphs.scss */
+.sb-caption {
+  font-style: italic;
 }
 
 /* line 12, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
@@ -740,7 +751,53 @@ q:after, .sb-inline-quote:after {
   text-align: justify;
 }
 
-/* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
+/* line 10, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+ul, .sb-unordered-list, ol, .sb-ordered-list {
+  padding-left: 1.5rem;
+  list-style-position: outside;
+  margin-bottom: 1.5rem;
+}
+/* line 15, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+ul ul, .sb-unordered-list ul, ol ul, .sb-ordered-list ul, ul ol, .sb-unordered-list ol, ol ol, .sb-ordered-list ol {
+  margin-bottom: 0.75rem;
+}
+/* line 19, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+ul li, .sb-unordered-list li, ol li, .sb-ordered-list li {
+  margin-bottom: 0.75rem;
+}
+
+/* line 24, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+dl, .sb-definition-list {
+  margin-bottom: 1.5rem;
+}
+/* line 27, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+dl dt, .sb-definition-list dt {
+  font-weight: 700;
+}
+/* line 31, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+dl dd, .sb-definition-list dd {
+  margin-bottom: 0.75rem;
+}
+
+/* line 36, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+ul, .sb-unordered-list {
+  list-style-type: disc;
+}
+/* line 39, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+ul ul, .sb-unordered-list ul {
+  list-style-type: circle;
+}
+
+/* line 46, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+ol, .sb-ordered-list {
+  list-style-type: decimal;
+}
+/* line 49, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+ol ol, .sb-ordered-list ol {
+  list-style-type: lower-alpha;
+}
+
+/* line 22, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
 body {
   font-family: Roboto, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 300;
@@ -748,7 +805,7 @@ body {
   color: #222222;
 }
 
-/* line 28, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
+/* line 29, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
 a {
   color: #116d96;
   text-decoration: none;
@@ -757,12 +814,51 @@ a {
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 32, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
+/* line 33, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
 a:hover {
   color: #093b51;
 }
 
-/* line 33, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/_base.scss */
+/* line 40, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
+address {
+  padding: 0.75rem;
+  background-color: #f1f1f1;
+}
+
+/* line 16, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_images.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_images.scss */
+.sb-rounded {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 25, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_images.scss */
+.sb-circular {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+
+/* line 29, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_images.scss */
+.sb-bordered {
+  padding: 3px;
+  background-color: white;
+  -webkit-box-shadow: #aaaaaa 0px 0px 3px;
+  -moz-box-shadow: #aaaaaa 0px 0px 3px;
+  box-shadow: #aaaaaa 0px 0px 3px;
+}
+
+/* line 34, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/_base.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
