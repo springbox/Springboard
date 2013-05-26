@@ -1,0 +1,83 @@
+//-------------------------------------
+//  Springboard: core/base/typography/lists
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-list-classes:		$print-base-classes		!default;
+
+// ----- Placeholder styles ----- //
+%sb-list {
+	padding-left: $sb-m-spacing;
+	list-style-position: outside;
+	margin-bottom: $sb-m-spacing;
+
+	ul, ol {
+		margin-bottom: $sb-s-spacing;
+	}
+
+	li {
+		margin-bottom: $sb-s-spacing;
+	}
+}
+
+%sb-definition-list {
+	margin-bottom: $sb-m-spacing;
+
+	dt {
+		font-weight: 700;
+	}
+
+	dd {
+		margin-bottom: $sb-s-spacing;
+	}
+}
+
+%sb-unordered-list {
+	list-style-type: disc;
+
+	ul {
+		list-style-type: circle;
+	}
+
+	@extend %sb-list;
+}
+
+%sb-ordered-list {
+	list-style-type: decimal;
+
+	ol {
+		list-style-type: lower-alpha;
+	}
+
+	@extend %sb-list;
+}
+
+// ----- Element styles ----- //
+ul {
+	@extend %sb-unordered-list;
+}
+
+ol {
+	@extend %sb-ordered-list;
+}
+
+dl {
+	@extend %sb-definition-list;
+}
+
+
+// ----- Class styles ----- //
+@if $print-base-list-classes == true {
+	.sb-unordered-list {
+		@extend %sb-unordered-list;
+	}
+
+	.sb-ordered-list {
+		@extend %sb-ordered-list;
+	}
+
+	.sb-definition-list {
+		@extend %sb-definition-list;
+	}
+}

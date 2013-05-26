@@ -14,7 +14,13 @@ $sb-bar-nav-color:	#d1d1d1	!default;
 %sb-bar-nav {
 	width: 100%;
 	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
 	background-color: $sb-bar-nav-color;
+
+	li {
+		margin-bottom: 0;
+	}
 }
 
 %sb-fixed-nav {

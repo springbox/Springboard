@@ -15,6 +15,7 @@ $print-base-typography-classes:		$print-base-classes		!default;
 @import "typography/paragraphs";
 @import "typography/quotations";
 @import "typography/alignment";
+@import "typography/lists";
 
 
 // ----- Basic Typography styles ----- //
@@ -34,4 +35,9 @@ a {
 	}
 
 	@include transition(color .2s ease);
+}
+
+address {
+	padding: $sb-s-spacing;
+	background-color: #f1f1f1;
 }

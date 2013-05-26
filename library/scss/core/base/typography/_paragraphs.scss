@@ -26,6 +26,11 @@ $print-base-paragraph-classes:		$print-base-typography-classes		!default;
 	@include sb-baseline(0.75em, 0.75em);
 }
 
+%sb-caption {
+	@extend %sb-secondary;
+	font-style: italic;
+}
+
 // ----- Base Styles ----- //
 p {
 	@extend %sb-paragraph;
@@ -43,5 +48,9 @@ p {
 
 	.sb-tertiary {
 		@extend %sb-tertiary;
+	}
+
+	.sb-caption {
+		@extend %sb-caption;
 	}
 }
