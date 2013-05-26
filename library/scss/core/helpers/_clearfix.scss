@@ -11,3 +11,10 @@
 %clearfix {
 	@include pie-clearfix;
 }
+
+// ----- Classes ----- //
+@if $print-helpers-clearfix-classes == true {
+	.clearfix {
+		@extend %clearfix;
+	}
+}
