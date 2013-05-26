@@ -19,3 +19,8 @@ $sb-blue: #093b51;
 
 $sb-font-color: #222222;
 $sb-link-color:	lighten($sb-blue, 15%);
+
+// Predefine your breakpoints
+$breakpoints: 	'sb-xl' (85em),
+				'sb-l' (60em),
+				'sb-m' (44em) !default;
