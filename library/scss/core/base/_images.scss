@@ -1,0 +1,51 @@
+//-------------------------------------
+//  Springboard: core/base/image
+//  
+//-------------------------------------
+
+
+// ----- Images settings ----- //
+$print-base-images-classes:		$print-base-classes		!default;
+
+
+// ----- Images import ----- //
+
+
+// ----- Image Placeholders ----- //
+
+%sb-image {
+	max-width: 100%;
+	height: auto;
+}
+
+%sb-rounded {
+	@include border-radius(5px);
+}
+
+%sb-circular {
+	@include border-radius(100%);
+}
+
+%sb-bordered {
+	padding: 3px;
+	background-color: white;
+	@include box-shadow(#aaaaaa 0px 0px 3px);
+}
+
+
+// ----- Image styles & classes ----- //
+img {
+	@extend %sb-image;
+}
+
+.sb-rounded {
+	@extend %sb-rounded;
+}
+
+.sb-circular {
+	@extend %sb-circular;
+}
+
+.sb-bordered {
+	@extend %sb-bordered;
+}
