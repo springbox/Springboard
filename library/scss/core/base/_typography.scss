@@ -41,3 +41,12 @@ address {
 	padding: $sb-s-spacing;
 	background-color: #f1f1f1;
 }
+
+hr {
+	height: 3px;
+	margin-top: $sb-m-spacing;
+	margin-bottom: $sb-l-spacing;
+	border: none;
+	border-top: 1px solid $sb-font-color;
+	border-bottom: 1px solid $sb-font-color;
+}
