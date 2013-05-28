@@ -63,23 +63,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 11, ../scss/core/helpers/_clearfix.scss */
-.clearfix, .sb-grid-container, .sb-grid-row, .sb-callout-body {
+/* line 15, ../scss/core/helpers/_clearfix.scss */
+.sb-grid-row, .sb-callout-body {
   *zoom: 1;
 }
 /* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.clearfix:after, .sb-grid-container:after, .sb-grid-row:after, .sb-callout-body:after {
+.sb-grid-row:after, .sb-callout-body:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 9, ../scss/core/helpers/_visibility.scss */
+/* line 34, ../scss/core/helpers/_visibility.scss */
 .sb-hidden {
   display: none;
 }
 
-/* line 13, ../scss/core/helpers/_visibility.scss */
+/* line 38, ../scss/core/helpers/_visibility.scss */
 .sb-visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -91,7 +91,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: 0;
 }
 
-/* line 25, ../scss/core/helpers/_visibility.scss */
+/* line 23, ../scss/core/helpers/_visibility.scss */
 .sb-visually-hidden-but-focusable:active, .sb-visually-hidden-but-focusable:focus {
   clip: auto;
   height: auto;
@@ -101,14 +101,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: auto;
 }
 
-/* line 14, ../scss/core/base/_navigation.scss */
+/* line 49, ../scss/core/base/_navigation.scss */
 .sb-bar-nav {
   width: 100%;
   background-color: #d1d1d1;
 }
 
 @media (min-width: 44em) {
-  /* line 21, ../scss/core/base/_navigation.scss */
+  /* line 53, ../scss/core/base/_navigation.scss */
   .sb-fixed-nav {
     position: fixed;
     top: 0;
@@ -119,14 +119,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @media (min-width: 44em) {
-  /* line 31, ../scss/core/base/_navigation.scss */
+  /* line 57, ../scss/core/base/_navigation.scss */
   .sb-has-fixed-nav {
     padding-top: 0px;
     padding-top: 4.5rem;
   }
 }
 
-/* line 41, ../scss/core/base/_navigation.scss */
+/* line 61, ../scss/core/base/_navigation.scss */
 .sb-bar-nav .sb-nav-item {
   padding: 0.75rem;
   margin: 0;
@@ -609,22 +609,22 @@ h6, .sb-h6 {
     margin-bottom: 2em;
   }
 }
-/* line 46, ../scss/core/base/typography/_headings.scss */
+/* line 44, ../scss/core/base/typography/_headings.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .sb-h1 small, .sb-h2 small, .sb-h3 small, .sb-h4 small, .sb-h6 small {
   font-size: .66666666em;
   color: #555555;
 }
 
-/* line 52, ../scss/core/base/typography/_headings.scss */
+/* line 50, ../scss/core/base/typography/_headings.scss */
 .sb-hgroup {
   margin-bottom: 1.5em;
 }
-/* line 55, ../scss/core/base/typography/_headings.scss */
+/* line 53, ../scss/core/base/typography/_headings.scss */
 .sb-hgroup h1, .sb-hgroup h2, .sb-hgroup h3, .sb-hgroup h4, .sb-hgroup h5, .sb-hgroup h6, .sb-hgroup .sb-h1, .sb-hgroup .sb-h2, .sb-hgroup .sb-h3, .sb-hgroup .sb-h4, .sb-hgroup .sb-h6 {
   margin-bottom: 0;
 }
 
-/* line 11, ../scss/core/base/typography/_paragraphs.scss */
+/* line 35, ../scss/core/base/typography/_paragraphs.scss */
 p, blockquote, .sb-blockquote, .sb-pullquote {
   margin-bottom: 1.5rem;
   -webkit-hyphens: auto;
@@ -632,29 +632,33 @@ p, blockquote, .sb-blockquote, .sb-pullquote {
   hyphens: auto;
 }
 
-/* line 17, ../scss/core/base/typography/_paragraphs.scss */
+/* line 39, ../scss/core/base/typography/_paragraphs.scss */
 .sb-lead {
   font-size: 1.5em;
   line-height: 1.5;
   margin-bottom: 1.5em;
 }
 
-/* line 21, ../scss/core/base/typography/_paragraphs.scss */
-.sb-caption, .sb-secondary {
+/* line 43, ../scss/core/base/typography/_paragraphs.scss */
+.sb-secondary {
   font-size: 0.9375em;
   line-height: 1.6;
   margin-bottom: 1.6em;
 }
 
-/* line 25, ../scss/core/base/typography/_paragraphs.scss */
+/* line 47, ../scss/core/base/typography/_paragraphs.scss */
 .sb-tertiary {
   font-size: 0.75em;
   line-height: 1;
   margin-bottom: 1em;
 }
 
-/* line 29, ../scss/core/base/typography/_paragraphs.scss */
+/* line 51, ../scss/core/base/typography/_paragraphs.scss */
 .sb-caption {
+  font-size: 0.9375em;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  font-style: italic;
   font-style: italic;
 }
 
@@ -720,59 +724,63 @@ q:after, .sb-inline-quote:after {
   content: "”";
 }
 
-/* line 12, ../scss/core/base/typography/_alignment.scss */
+/* line 29, ../scss/core/base/typography/_alignment.scss */
 .sb-align-left {
   text-align: left;
 }
 
-/* line 16, ../scss/core/base/typography/_alignment.scss */
+/* line 33, ../scss/core/base/typography/_alignment.scss */
 .sb-align-right {
   text-align: right;
 }
 
-/* line 20, ../scss/core/base/typography/_alignment.scss */
+/* line 37, ../scss/core/base/typography/_alignment.scss */
 .sb-align-center {
   text-align: center;
 }
 
-/* line 24, ../scss/core/base/typography/_alignment.scss */
+/* line 41, ../scss/core/base/typography/_alignment.scss */
 .sb-align-justified {
   text-align: justify;
 }
 
-/* line 11, ../scss/core/base/typography/lists/_generic-list.scss */
-.sb-list, ul, .sb-unordered-list, ol, .sb-ordered-list {
+/* line 25, ../scss/core/base/typography/lists/_generic-list.scss */
+.sb-list {
   padding-left: 1.5rem;
   list-style-position: outside;
   margin-bottom: 1.5rem;
 }
-/* line 16, ../scss/core/base/typography/lists/_generic-list.scss */
-.sb-list ul, ul ul, .sb-unordered-list ul, ol ul, .sb-ordered-list ul, .sb-list ol, ul ol, .sb-unordered-list ol, ol ol, .sb-ordered-list ol {
+/* line 15, ../scss/core/base/typography/lists/_generic-list.scss */
+.sb-list ul, .sb-list ol {
   margin-bottom: 0.75rem;
 }
-/* line 20, ../scss/core/base/typography/lists/_generic-list.scss */
-.sb-list li, ul li, .sb-unordered-list li, ol li, .sb-ordered-list li {
+/* line 19, ../scss/core/base/typography/lists/_generic-list.scss */
+.sb-list li {
   margin-bottom: 0.75rem;
 }
 
-/* line 11, ../scss/core/base/typography/lists/_definition-list.scss */
-dl, .sb-definition-list, .sb-side-by-side-list {
+/* line 25, ../scss/core/base/typography/lists/_definition-list.scss */
+dl, .sb-definition-list {
   margin-bottom: 1.5rem;
 }
 /* line 14, ../scss/core/base/typography/lists/_definition-list.scss */
-dl dt, .sb-definition-list dt, .sb-side-by-side-list dt {
+dl dt, .sb-definition-list dt {
   font-weight: 700;
 }
 /* line 18, ../scss/core/base/typography/lists/_definition-list.scss */
-dl dd, .sb-definition-list dd, .sb-side-by-side-list dd {
+dl dd, .sb-definition-list dd {
   margin-bottom: 0.75rem;
 }
 
-/* line 12, ../scss/core/base/typography/lists/_side-by-side-list.scss */
+/* line 32, ../scss/core/base/typography/lists/_side-by-side-list.scss */
+.sb-side-by-side-list {
+  margin-bottom: 1.5rem;
+}
+/* line 11, ../scss/core/base/typography/lists/_side-by-side-list.scss */
 .sb-side-by-side-list dt, .sb-side-by-side-list dd {
   float: left;
 }
-/* line 16, ../scss/core/base/typography/lists/_side-by-side-list.scss */
+/* line 15, ../scss/core/base/typography/lists/_side-by-side-list.scss */
 .sb-side-by-side-list dt {
   width: 30%;
   overflow: hidden;
@@ -780,43 +788,73 @@ dl dd, .sb-definition-list dd, .sb-side-by-side-list dd {
   text-overflow: ellipsis;
   margin-right: 5%;
 }
-/* line 24, ../scss/core/base/typography/lists/_side-by-side-list.scss */
+/* line 23, ../scss/core/base/typography/lists/_side-by-side-list.scss */
 .sb-side-by-side-list dd {
   width: 65%;
 }
+/* line 14, ../scss/core/base/typography/lists/_definition-list.scss */
+.sb-side-by-side-list dt {
+  font-weight: 700;
+}
+/* line 18, ../scss/core/base/typography/lists/_definition-list.scss */
+.sb-side-by-side-list dd {
+  margin-bottom: 0.75rem;
+}
 
-/* line 10, ../scss/core/base/typography/lists/_unordered-list.scss */
+/* line 21, ../scss/core/base/typography/lists/_unordered-list.scss */
 ul, .sb-unordered-list {
   list-style-type: disc;
+  padding-left: 1.5rem;
+  list-style-position: outside;
+  margin-bottom: 1.5rem;
 }
 /* line 13, ../scss/core/base/typography/lists/_unordered-list.scss */
 ul ul, .sb-unordered-list ul {
   list-style-type: circle;
 }
+/* line 15, ../scss/core/base/typography/lists/_generic-list.scss */
+ul ul, .sb-unordered-list ul, ul ol, .sb-unordered-list ol {
+  margin-bottom: 0.75rem;
+}
+/* line 19, ../scss/core/base/typography/lists/_generic-list.scss */
+ul li, .sb-unordered-list li {
+  margin-bottom: 0.75rem;
+}
 
-/* line 9, ../scss/core/base/typography/lists/_ordered-list.scss */
+/* line 21, ../scss/core/base/typography/lists/_ordered-list.scss */
 ol, .sb-ordered-list {
   list-style-type: decimal;
+  padding-left: 1.5rem;
+  list-style-position: outside;
+  margin-bottom: 1.5rem;
 }
-/* line 12, ../scss/core/base/typography/lists/_ordered-list.scss */
+/* line 13, ../scss/core/base/typography/lists/_ordered-list.scss */
 ol ol, .sb-ordered-list ol {
   list-style-type: lower-alpha;
 }
+/* line 15, ../scss/core/base/typography/lists/_generic-list.scss */
+ol ul, .sb-ordered-list ul, ol ol, .sb-ordered-list ol {
+  margin-bottom: 0.75rem;
+}
+/* line 19, ../scss/core/base/typography/lists/_generic-list.scss */
+ol li, .sb-ordered-list li {
+  margin-bottom: 0.75rem;
+}
 
-/* line 11, ../scss/core/base/typography/lists/_inline-list.scss */
+/* line 30, ../scss/core/base/typography/lists/_inline-list.scss */
 .sb-bar-nav, .sb-inline-list {
   padding: 0;
 }
-/* line 14, ../scss/core/base/typography/lists/_inline-list.scss */
+/* line 13, ../scss/core/base/typography/lists/_inline-list.scss */
 .sb-bar-nav li, .sb-inline-list li {
   display: inline-block;
   margin: 0 0 0 0.75rem;
 }
-/* line 18, ../scss/core/base/typography/lists/_inline-list.scss */
+/* line 17, ../scss/core/base/typography/lists/_inline-list.scss */
 .sb-bar-nav li:first-child, .sb-inline-list li:first-child {
   margin-left: 0;
 }
-/* line 23, ../scss/core/base/typography/lists/_inline-list.scss */
+/* line 22, ../scss/core/base/typography/lists/_inline-list.scss */
 .sb-bar-nav ul, .sb-inline-list ul {
   display: inline;
   padding: 0;
@@ -1392,7 +1430,7 @@ img {
   }
 }
 
-/* line 10, ../scss/core/layout/_callout.scss */
+/* line 30, ../scss/core/layout/_callout.scss */
 .sb-callout-container {
   margin-bottom: 1.5rem;
   background-color: white;
@@ -1401,18 +1439,18 @@ img {
   box-shadow: #aaaaaa 0px 0px 3px;
 }
 
-/* line 16, ../scss/core/layout/_callout.scss */
+/* line 34, ../scss/core/layout/_callout.scss */
 .sb-callout-title {
   padding: 0.75rem;
   border-bottom: 1px solid #a2a2a2;
   background-color: #f1f1f1;
 }
-/* line 20, ../scss/core/layout/_callout.scss */
+/* line 19, ../scss/core/layout/_callout.scss */
 .sb-callout-title h1, .sb-callout-title h2, .sb-callout-title h3, .sb-callout-title h4, .sb-callout-title h5, .sb-callout-title h6, .sb-callout-title .sb-h1, .sb-callout-title .sb-h2, .sb-callout-title .sb-h3, .sb-callout-title .sb-h4, .sb-callout-title .sb-h6 {
   margin-bottom: 0;
 }
 
-/* line 25, ../scss/core/layout/_callout.scss */
+/* line 38, ../scss/core/layout/_callout.scss */
 .sb-callout-body {
   padding: 0.75rem;
 }

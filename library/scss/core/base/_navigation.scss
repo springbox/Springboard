@@ -9,16 +9,15 @@ $print-base-nav-classes:	$print-base-classes	!default;
 $sb-bar-nav-color:	#d1d1d1	!default;
 
 
-// ----- Placeholders ----- //
-
-%sb-bar-nav {
+// ----- Mixins ----- //
+@mixin sb-bar-nav {
 	width: 100%;
 	background-color: $sb-bar-nav-color;
 
 	@extend %sb-inline-list;
 }
 
-%sb-fixed-nav {
+@mixin sb-fixed-nav {
 	@include respond-to('sb-m'){
 		position: fixed;
 		top: 0;
@@ -28,7 +27,7 @@ $sb-bar-nav-color:	#d1d1d1	!default;
 	}
 }
 
-%sb-has-fixed-nav {
+@mixin sb-has-fixed-nav {
 	@include respond-to('sb-m') {
 		@if $ie8-support == true {
 			padding-top: 0 * $sb-rem;
@@ -38,10 +37,29 @@ $sb-bar-nav-color:	#d1d1d1	!default;
 	}
 }
 
-%sb-nav-item {
+@mixin sb-nav-item {
 	padding: $sb-s-spacing;
 	margin: 0;
 	height: 3rem;
+}
+
+
+// ----- Placeholders ----- //
+
+%sb-bar-nav {
+	@include sb-bar-nav;
+}
+
+%sb-fixed-nav {
+	@include sb-fixed-nav;
+}
+
+%sb-has-fixed-nav {
+	@include sb-has-fixed-nav;
+}
+
+%sb-nav-item {
+	@include sb-nav-item;
 }
 
 

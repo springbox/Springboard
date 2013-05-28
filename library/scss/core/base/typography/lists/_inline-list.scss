@@ -6,9 +6,8 @@
 // ----- Settings ----- //
 $print-base-list-classes:		$print-base-classes		!default;
 
-
-// ----- Placeholder styles ----- //
-%sb-inline-list {
+// ----- Mixins ----- //
+@mixin sb-inline-list {
 	padding: 0;
 
 	li {
@@ -25,6 +24,11 @@ $print-base-list-classes:		$print-base-classes		!default;
 		padding: 0;
 		margin: 0;
 	}
+}
+
+// ----- Placeholder styles ----- //
+%sb-inline-list {
+	@include sb-inline-list;
 }
 
 

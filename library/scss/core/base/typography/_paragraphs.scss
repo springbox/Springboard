@@ -7,27 +7,49 @@
 $print-base-paragraph-classes:		$print-base-typography-classes		!default;
 
 
-// ----- Basic styles ----- //
-%sb-paragraph {
+// ----- Mixins ----- //
+@mixin sb-paragraph {
 	margin-bottom: $sb-m-spacing;
 	@include hyphens(auto);
 }
 
-// ----- Placeholders ----- //
-%sb-lead {
+@mixin sb-lead {
 	@include sb-baseline(1.5em, 2.25em);
 }
 
-%sb-secondary {
+@mixin sb-secondary {
 	@include sb-baseline(0.9375em, 1.5em);
 }
 
-%sb-tertiary {
+@mixin sb-tertiary {
 	@include sb-baseline(0.75em, 0.75em);
 }
 
+@mixin sb-caption {
+	@include sb-secondary;
+	font-style: italic;
+}
+
+
+// ----- Placeholders ----- //
+%sb-paragraph {
+	@include sb-paragraph;
+}
+
+%sb-lead {
+	@include sb-lead;
+}
+
+%sb-secondary {
+	@include sb-secondary;
+}
+
+%sb-tertiary {
+	@include sb-tertiary;
+}
+
 %sb-caption {
-	@extend %sb-secondary;
+	@include sb-caption;
 	font-style: italic;
 }
 

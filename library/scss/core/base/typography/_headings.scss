@@ -40,8 +40,6 @@ $sb-include-subheads:			true	!default;
 	}
 }
 
-
-// ----- Base Styles ----- //
 %sb-heading {
 	small {
 		font-size: .66666666em;
@@ -56,6 +54,10 @@ $sb-include-subheads:			true	!default;
 		margin-bottom: 0;
 	}
 }
+
+
+// ----- Base Styles ----- //
+
 
 h1 {
 	@extend %sb-s-h1;

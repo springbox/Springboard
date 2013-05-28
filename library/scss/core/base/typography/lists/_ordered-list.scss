@@ -6,14 +6,20 @@
 // ----- Settings ----- //
 $print-base-list-classes:		$print-base-classes		!default;
 
-%sb-ordered-list {
+// ----- Mixins ----- //
+@mixin sb-ordered-list {
 	list-style-type: decimal;
 
 	ol {
 		list-style-type: lower-alpha;
 	}
 
-	@extend %sb-list;
+	@include sb-list;
+}
+
+// ----- Placeholders ----- //
+%sb-ordered-list {
+	@include sb-ordered-list;
 }
 
 // ----- Element styles ----- //

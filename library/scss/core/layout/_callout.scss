@@ -5,15 +5,14 @@
 
 // ----- Settings ----- //
 
-
-// ----- Placeholders ----- //
-%sb-callout-container {
+// ----- Mixins ----- //
+@mixin sb-callout-container {
 	margin-bottom: 1.5rem;
 	background-color: white;
 	@include box-shadow(#aaaaaa 0px 0px 3px);
 }
 
-%sb-callout-title {
+@mixin sb-callout-title {
 	padding: $sb-s-spacing;
 	border-bottom: 1px solid lighten($sb-font-color, 50%);
 	background-color: #f1f1f1;
@@ -22,9 +21,22 @@
 	}
 }
 
-%sb-callout-body {
+@mixin sb-callout-body {
 	padding: $sb-s-spacing;
-	@extend %clearfix;
+	@extend %sb-clearfix;
+}
+
+// ----- Placeholders ----- //
+%sb-callout-container {
+	@include sb-callout-container;
+}
+
+%sb-callout-title {
+	@include sb-callout-title;
+}
+
+%sb-callout-body {
+	@include sb-callout-body;
 }
 
 // ----- Classes ----- //

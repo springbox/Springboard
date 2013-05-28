@@ -7,8 +7,8 @@
 $print-base-list-classes:		$print-base-classes		!default;
 
 
-// ----- Placeholder styles ----- //
-%sb-definition-list {
+// ----- Mixins ----- //
+@mixin sb-definition-list {
 	margin-bottom: $sb-m-spacing;
 
 	dt {
@@ -18,6 +18,12 @@ $print-base-list-classes:		$print-base-classes		!default;
 	dd {
 		margin-bottom: $sb-s-spacing;
 	}
+}
+
+
+// ----- Placeholder styles ----- //
+%sb-definition-list {
+	@include sb-definition-list;
 }
 
 // ----- Element styles ----- //

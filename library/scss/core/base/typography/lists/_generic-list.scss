@@ -6,9 +6,8 @@
 // ----- Settings ----- //
 $print-base-list-classes:		$print-base-classes		!default;
 
-
-// ----- Placeholder styles ----- //
-%sb-list {
+// ----- Mixins ----- //
+@mixin sb-list {
 	padding-left: $sb-m-spacing;
 	list-style-position: outside;
 	margin-bottom: $sb-m-spacing;
@@ -20,6 +19,11 @@ $print-base-list-classes:		$print-base-classes		!default;
 	li {
 		margin-bottom: $sb-s-spacing;
 	}
+}
+
+// ----- Placeholder styles ----- //
+%sb-list {
+	@include sb-list;
 }
 
 

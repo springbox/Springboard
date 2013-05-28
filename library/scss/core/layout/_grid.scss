@@ -85,7 +85,7 @@ $sb-xl-max-width:			false				!default;
 		@extend %sb-m-container;
 		@extend %sb-l-container;
 		@extend %sb-xl-container;
-		@extend %clearfix;
+		@extend %sb-learfix;
 	}
 
 	.sb-grid-row {
@@ -93,7 +93,7 @@ $sb-xl-max-width:			false				!default;
 		@extend %sb-m-row;
 		@extend %sb-l-row;
 		@extend %sb-xl-row;
-		@extend %clearfix;
+		@extend %sb-clearfix;
 		
 		// TODO: allow lower settings to override the visible grid
 		@if $sb-visible-grid == true {

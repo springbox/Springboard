@@ -6,15 +6,20 @@
 // ----- Settings ----- //
 $print-base-list-classes:		$print-base-classes		!default;
 
-// ----- Placeholder styles ----- //
-%sb-unordered-list {
+// ----- Mixins ----- //
+@mixin sb-unordered-list {
 	list-style-type: disc;
 
 	ul {
 		list-style-type: circle;
 	}
 
-	@extend %sb-list;
+	@include sb-list;
+}
+
+// ----- Placeholder styles ----- //
+%sb-unordered-list {
+	@include sb-unordered-list;
 }
 
 // ----- Element styles ----- //

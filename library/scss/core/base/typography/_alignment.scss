@@ -7,22 +7,39 @@
 $print-base-alignment-classes:		$print-base-typography-classes		!default;
 
 
-
-// ----- Placeholders ----- //
-%sb-align-left {
+// ----- Mixins ----- //
+@mixin sb-align-left {
 	text-align: left;
 }
 
-%sb-align-right {
+@mixin sb-align-right {
 	text-align: right;
 }
 
-%sb-align-center {
+@mixin sb-align-center {
 	text-align: center;
 }
 
-%sb-align-justified {
+@mixin sb-align-justified {
 	text-align: justify;
+}
+
+
+// ----- Placeholders ----- //
+%sb-align-left {
+	@include sb-align-left;
+}
+
+%sb-align-right {
+	@include sb-align-right;
+}
+
+%sb-align-center {
+	@include sb-align-center;
+}
+
+%sb-align-justified {
+	@include sb-align-justified;
 }
 
 

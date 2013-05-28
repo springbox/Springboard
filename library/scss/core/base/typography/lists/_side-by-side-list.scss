@@ -6,9 +6,8 @@
 // ----- Settings ----- //
 $print-base-list-classes:		$print-base-classes		!default;
 
-
-// ----- Placeholder styles ----- //
-%sb-side-by-side-list {
+// ----- Mixins ----- //
+@mixin sb-side-by-side-list {
 	dt, dd {
 		float: left;
 	}
@@ -25,7 +24,13 @@ $print-base-list-classes:		$print-base-classes		!default;
 		width: 65%;
 	}
 
-	@extend %sb-definition-list;
+	@include sb-definition-list;
+}
+
+
+// ----- Placeholder styles ----- //
+%sb-side-by-side-list {
+	@include sb-side-by-side-list;
 }
 
 
