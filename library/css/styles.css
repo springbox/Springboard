@@ -1,5 +1,4 @@
-@charset "IBM437";
-/* line 17, C:/Users/Rachael/AppData/Local/Temp/Mixture/Tools/Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,66 +20,66 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Users/Rachael/AppData/Local/Temp/Mixture/Tools/Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Users/Rachael/AppData/Local/Temp/Mixture/Tools/Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Users/Rachael/AppData/Local/Temp/Mixture/Tools/Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Users/Rachael/AppData/Local/Temp/Mixture/Tools/Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Users/Rachael/AppData/Local/Temp/Mixture/Tools/Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Users/Rachael/AppData/Local/Temp/Mixture/Tools/Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Users/Rachael/AppData/Local/Temp/Mixture/Tools/Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Users/Rachael/AppData/Local/Temp/Mixture/Tools/Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 11, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/helpers/_clearfix.scss */
+/* line 11, ../scss/core/helpers/_clearfix.scss */
 .clearfix, .sb-grid-container, .sb-grid-row, .sb-callout-body {
   *zoom: 1;
 }
-/* line 38, C:/Users/Rachael/AppData/Local/Temp/Mixture/Tools/Ruby/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .clearfix:after, .sb-grid-container:after, .sb-grid-row:after, .sb-callout-body:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 9, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/helpers/_visibility.scss */
+/* line 9, ../scss/core/helpers/_visibility.scss */
 .sb-hidden {
   display: none;
 }
 
-/* line 13, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/helpers/_visibility.scss */
+/* line 13, ../scss/core/helpers/_visibility.scss */
 .sb-visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -92,7 +91,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: 0;
 }
 
-/* line 25, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/helpers/_visibility.scss */
+/* line 25, ../scss/core/helpers/_visibility.scss */
 .sb-visually-hidden-but-focusable:active, .sb-visually-hidden-but-focusable:focus {
   clip: auto;
   height: auto;
@@ -102,21 +101,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: auto;
 }
 
-/* line 14, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_navigation.scss */
+/* line 14, ../scss/core/base/_navigation.scss */
 .sb-bar-nav {
   width: 100%;
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
   background-color: #d1d1d1;
-}
-/* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_navigation.scss */
-.sb-bar-nav li {
-  margin-bottom: 0;
 }
 
 @media (min-width: 44em) {
-  /* line 26, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_navigation.scss */
+  /* line 21, ../scss/core/base/_navigation.scss */
   .sb-fixed-nav {
     position: fixed;
     top: 0;
@@ -127,21 +119,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @media (min-width: 44em) {
-  /* line 36, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_navigation.scss */
+  /* line 31, ../scss/core/base/_navigation.scss */
   .sb-has-fixed-nav {
     padding-top: 0px;
     padding-top: 4.5rem;
   }
 }
 
-/* line 46, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_navigation.scss */
+/* line 41, ../scss/core/base/_navigation.scss */
 .sb-bar-nav .sb-nav-item {
-  padding-top: 9.6px;
-  margin-left: 12px;
-  display: inline-block;
-  padding-top: .6rem;
+  padding: 0.75rem;
+  margin: 0;
   height: 3rem;
-  margin-left: .75rem;
 }
 
 @font-face {
@@ -336,94 +325,94 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
 }
 
-/* line 11, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 11, ../scss/core/base/typography/_headings-generator.scss */
 h1, .sb-h1, h2, .sb-h2, h3, .sb-h3, h4, .sb-h4, h5, .sb-h5, h6, .sb-h6 {
   font-weight: 700;
 }
 
-/* line 15, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 15, ../scss/core/base/typography/_headings-generator.scss */
 h1, .sb-h1 {
   font-size: 2.625em;
   line-height: 1.1428571428571;
   margin-bottom: 0.5714285714286em;
 }
 
-/* line 23, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 23, ../scss/core/base/typography/_headings-generator.scss */
 h2, .sb-h2 {
   font-size: 1.96875em;
   line-height: 1.5238095238095;
   margin-bottom: 0.7619047619048em;
 }
 
-/* line 31, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 31, ../scss/core/base/typography/_headings-generator.scss */
 h3, .sb-h3 {
   font-size: 1.3125em;
   line-height: 1.1428571428571;
   margin-bottom: 1.1428571428571em;
 }
 
-/* line 39, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 39, ../scss/core/base/typography/_headings-generator.scss */
 h4, .sb-h4 {
   font-size: 1.1484375em;
   line-height: 1.3061224489796;
   margin-bottom: 1.3061224489796em;
 }
 
-/* line 47, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 47, ../scss/core/base/typography/_headings-generator.scss */
 h5, .sb-h5 {
   font-size: 0.984375em;
   line-height: 1.5238095238095;
   margin-bottom: 1.5238095238095em;
 }
 
-/* line 55, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 55, ../scss/core/base/typography/_headings-generator.scss */
 h6, .sb-h6 {
   font-size: 0.875em;
   line-height: 1.7142857142857;
   margin-bottom: 1.7142857142857em;
 }
 
-/* line 11, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 11, ../scss/core/base/typography/_headings-generator.scss */
 .sb-h1-subhead, .sb-h2-subhead, .sb-h3-subhead, .sb-h4-subhead, .sb-h5-subhead, .sb-h6-subhead {
   font-weight: 300;
 }
 
-/* line 15, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 15, ../scss/core/base/typography/_headings-generator.scss */
 .sb-h1-subhead {
   font-size: 2.25em;
   line-height: 1.3333333333333;
   margin-bottom: 0.6666666666667em;
 }
 
-/* line 23, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 23, ../scss/core/base/typography/_headings-generator.scss */
 .sb-h2-subhead {
   font-size: 1.6875em;
   line-height: 1.7777777777778;
   margin-bottom: 0.8888888888889em;
 }
 
-/* line 31, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 31, ../scss/core/base/typography/_headings-generator.scss */
 .sb-h3-subhead {
   font-size: 1.125em;
   line-height: 1.3333333333333;
   margin-bottom: 1.3333333333333em;
 }
 
-/* line 39, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 39, ../scss/core/base/typography/_headings-generator.scss */
 .sb-h4-subhead {
   font-size: 0.984375em;
   line-height: 1.5238095238095;
   margin-bottom: 1.5238095238095em;
 }
 
-/* line 47, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 47, ../scss/core/base/typography/_headings-generator.scss */
 .sb-h5-subhead {
   font-size: 0.84375em;
   line-height: 1.7777777777778;
   margin-bottom: 1.7777777777778em;
 }
 
-/* line 55, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+/* line 55, ../scss/core/base/typography/_headings-generator.scss */
 .sb-h6-subhead {
   font-size: 0.75em;
   line-height: 2;
@@ -431,94 +420,94 @@ h6, .sb-h6 {
 }
 
 @media (min-width: 44em) {
-  /* line 11, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 11, ../scss/core/base/typography/_headings-generator.scss */
   h1, .sb-h1, h2, .sb-h2, h3, .sb-h3, h4, .sb-h4, h5, .sb-h5, h6, .sb-h6 {
     font-weight: 700;
   }
 
-  /* line 15, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 15, ../scss/core/base/typography/_headings-generator.scss */
   h1, .sb-h1 {
     font-size: 2.8125em;
     line-height: 1.0666666666667;
     margin-bottom: 0.5333333333333em;
   }
 
-  /* line 23, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 23, ../scss/core/base/typography/_headings-generator.scss */
   h2, .sb-h2 {
     font-size: 2.109375em;
     line-height: 1.4222222222222;
     margin-bottom: 0.7111111111111em;
   }
 
-  /* line 31, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 31, ../scss/core/base/typography/_headings-generator.scss */
   h3, .sb-h3 {
     font-size: 1.40625em;
     line-height: 1.0666666666667;
     margin-bottom: 1.0666666666667em;
   }
 
-  /* line 39, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 39, ../scss/core/base/typography/_headings-generator.scss */
   h4, .sb-h4 {
     font-size: 1.23046875em;
     line-height: 1.2190476190476;
     margin-bottom: 1.2190476190476em;
   }
 
-  /* line 47, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 47, ../scss/core/base/typography/_headings-generator.scss */
   h5, .sb-h5 {
     font-size: 1.0546875em;
     line-height: 1.4222222222222;
     margin-bottom: 1.4222222222222em;
   }
 
-  /* line 55, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 55, ../scss/core/base/typography/_headings-generator.scss */
   h6, .sb-h6 {
     font-size: 0.9375em;
     line-height: 1.6;
     margin-bottom: 1.6em;
   }
 
-  /* line 11, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 11, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h1-subhead, .sb-h2-subhead, .sb-h3-subhead, .sb-h4-subhead, .sb-h5-subhead, .sb-h6-subhead {
     font-weight: 300;
   }
 
-  /* line 15, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 15, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h1-subhead {
     font-size: 2.25em;
     line-height: 1.3333333333333;
     margin-bottom: 0.6666666666667em;
   }
 
-  /* line 23, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 23, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h2-subhead {
     font-size: 1.6875em;
     line-height: 1.7777777777778;
     margin-bottom: 0.8888888888889em;
   }
 
-  /* line 31, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 31, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h3-subhead {
     font-size: 1.125em;
     line-height: 1.3333333333333;
     margin-bottom: 1.3333333333333em;
   }
 
-  /* line 39, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 39, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h4-subhead {
     font-size: 0.984375em;
     line-height: 1.5238095238095;
     margin-bottom: 1.5238095238095em;
   }
 
-  /* line 47, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 47, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h5-subhead {
     font-size: 0.84375em;
     line-height: 1.7777777777778;
     margin-bottom: 1.7777777777778em;
   }
 
-  /* line 55, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 55, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h6-subhead {
     font-size: 0.75em;
     line-height: 2;
@@ -526,116 +515,116 @@ h6, .sb-h6 {
   }
 }
 @media (min-width: 85em) {
-  /* line 11, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 11, ../scss/core/base/typography/_headings-generator.scss */
   h1, .sb-h1, h2, .sb-h2, h3, .sb-h3, h4, .sb-h4, h5, .sb-h5, h6, .sb-h6 {
     font-weight: 700;
   }
 
-  /* line 15, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 15, ../scss/core/base/typography/_headings-generator.scss */
   h1, .sb-h1 {
     font-size: 3em;
     line-height: 1;
     margin-bottom: 0.5em;
   }
 
-  /* line 23, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 23, ../scss/core/base/typography/_headings-generator.scss */
   h2, .sb-h2 {
     font-size: 2.25em;
     line-height: 1.3333333333333;
     margin-bottom: 0.6666666666667em;
   }
 
-  /* line 31, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 31, ../scss/core/base/typography/_headings-generator.scss */
   h3, .sb-h3 {
     font-size: 1.5em;
     line-height: 1;
     margin-bottom: 1em;
   }
 
-  /* line 39, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 39, ../scss/core/base/typography/_headings-generator.scss */
   h4, .sb-h4 {
     font-size: 1.3125em;
     line-height: 1.1428571428571;
     margin-bottom: 1.1428571428571em;
   }
 
-  /* line 47, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 47, ../scss/core/base/typography/_headings-generator.scss */
   h5, .sb-h5 {
     font-size: 1.125em;
     line-height: 1.3333333333333;
     margin-bottom: 1.3333333333333em;
   }
 
-  /* line 55, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 55, ../scss/core/base/typography/_headings-generator.scss */
   h6, .sb-h6 {
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 1.5em;
   }
 
-  /* line 11, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 11, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h1-subhead, .sb-h2-subhead, .sb-h3-subhead, .sb-h4-subhead, .sb-h5-subhead, .sb-h6-subhead {
     font-weight: 300;
   }
 
-  /* line 15, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 15, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h1-subhead {
     font-size: 2.25em;
     line-height: 1.3333333333333;
     margin-bottom: 0.6666666666667em;
   }
 
-  /* line 23, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 23, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h2-subhead {
     font-size: 1.6875em;
     line-height: 1.7777777777778;
     margin-bottom: 0.8888888888889em;
   }
 
-  /* line 31, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 31, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h3-subhead {
     font-size: 1.125em;
     line-height: 1.3333333333333;
     margin-bottom: 1.3333333333333em;
   }
 
-  /* line 39, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 39, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h4-subhead {
     font-size: 0.984375em;
     line-height: 1.5238095238095;
     margin-bottom: 1.5238095238095em;
   }
 
-  /* line 47, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 47, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h5-subhead {
     font-size: 0.84375em;
     line-height: 1.7777777777778;
     margin-bottom: 1.7777777777778em;
   }
 
-  /* line 55, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings-generator.scss */
+  /* line 55, ../scss/core/base/typography/_headings-generator.scss */
   .sb-h6-subhead {
     font-size: 0.75em;
     line-height: 2;
     margin-bottom: 2em;
   }
 }
-/* line 46, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings.scss */
+/* line 46, ../scss/core/base/typography/_headings.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .sb-h1 small, .sb-h2 small, .sb-h3 small, .sb-h4 small, .sb-h6 small {
   font-size: .66666666em;
   color: #555555;
 }
 
-/* line 52, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings.scss */
+/* line 52, ../scss/core/base/typography/_headings.scss */
 .sb-hgroup {
   margin-bottom: 1.5em;
 }
-/* line 55, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_headings.scss */
+/* line 55, ../scss/core/base/typography/_headings.scss */
 .sb-hgroup h1, .sb-hgroup h2, .sb-hgroup h3, .sb-hgroup h4, .sb-hgroup h5, .sb-hgroup h6, .sb-hgroup .sb-h1, .sb-hgroup .sb-h2, .sb-hgroup .sb-h3, .sb-hgroup .sb-h4, .sb-hgroup .sb-h6 {
   margin-bottom: 0;
 }
 
-/* line 11, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_paragraphs.scss */
+/* line 11, ../scss/core/base/typography/_paragraphs.scss */
 p, blockquote, .sb-blockquote, .sb-pullquote {
   margin-bottom: 1.5rem;
   -webkit-hyphens: auto;
@@ -643,33 +632,33 @@ p, blockquote, .sb-blockquote, .sb-pullquote {
   hyphens: auto;
 }
 
-/* line 17, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_paragraphs.scss */
+/* line 17, ../scss/core/base/typography/_paragraphs.scss */
 .sb-lead {
   font-size: 1.5em;
   line-height: 1.5;
   margin-bottom: 1.5em;
 }
 
-/* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_paragraphs.scss */
+/* line 21, ../scss/core/base/typography/_paragraphs.scss */
 .sb-caption, .sb-secondary {
   font-size: 0.9375em;
   line-height: 1.6;
   margin-bottom: 1.6em;
 }
 
-/* line 25, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_paragraphs.scss */
+/* line 25, ../scss/core/base/typography/_paragraphs.scss */
 .sb-tertiary {
   font-size: 0.75em;
   line-height: 1;
   margin-bottom: 1em;
 }
 
-/* line 29, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_paragraphs.scss */
+/* line 29, ../scss/core/base/typography/_paragraphs.scss */
 .sb-caption {
   font-style: italic;
 }
 
-/* line 12, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+/* line 12, ../scss/core/base/typography/_quotations.scss */
 blockquote, .sb-blockquote {
   padding: 0.75rem;
   border-left: 5px solid #189fdb;
@@ -681,7 +670,7 @@ blockquote, .sb-blockquote {
   margin-bottom: 2em;
 }
 
-/* line 24, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+/* line 24, ../scss/core/base/typography/_quotations.scss */
 .sb-pullquote {
   position: relative;
   font-family: Merriweather, Georgia, Times, "Times New Roman", serif;
@@ -689,7 +678,7 @@ blockquote, .sb-blockquote {
   padding: 1.5rem 1.5rem 1.5rem 3rem;
   background-color: #eeeeee;
 }
-/* line 33, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+/* line 33, ../scss/core/base/typography/_quotations.scss */
 .sb-pullquote:before, .sb-pullquote:after {
   position: absolute;
   font-size: 4em;
@@ -697,7 +686,7 @@ blockquote, .sb-blockquote {
   color: #888888;
   opacity: .5;
 }
-/* line 41, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+/* line 41, ../scss/core/base/typography/_quotations.scss */
 .sb-pullquote:before {
   content: "“";
   position: absolute;
@@ -705,99 +694,153 @@ blockquote, .sb-blockquote {
   left: 0.1875rem;
 }
 
-/* line 49, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+/* line 49, ../scss/core/base/typography/_quotations.scss */
 blockquote cite, .sb-citation {
   padding-top: 0.75rem;
   display: block;
   font-weight: 700;
 }
-/* line 54, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+/* line 54, ../scss/core/base/typography/_quotations.scss */
 blockquote cite:before, .sb-citation:before {
   content: "—";
 }
 
-/* line 59, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+/* line 59, ../scss/core/base/typography/_quotations.scss */
 q, .sb-inline-quote {
   font-family: Merriweather, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   background-color: #e1e1e1;
 }
-/* line 65, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+/* line 65, ../scss/core/base/typography/_quotations.scss */
 q:before, .sb-inline-quote:before {
   content: "“";
 }
-/* line 69, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_quotations.scss */
+/* line 69, ../scss/core/base/typography/_quotations.scss */
 q:after, .sb-inline-quote:after {
   content: "”";
 }
 
-/* line 12, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_alignment.scss */
+/* line 12, ../scss/core/base/typography/_alignment.scss */
 .sb-align-left {
   text-align: left;
 }
 
-/* line 16, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_alignment.scss */
+/* line 16, ../scss/core/base/typography/_alignment.scss */
 .sb-align-right {
   text-align: right;
 }
 
-/* line 20, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_alignment.scss */
+/* line 20, ../scss/core/base/typography/_alignment.scss */
 .sb-align-center {
   text-align: center;
 }
 
-/* line 24, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_alignment.scss */
+/* line 24, ../scss/core/base/typography/_alignment.scss */
 .sb-align-justified {
   text-align: justify;
 }
 
-/* line 10, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
-ul, .sb-unordered-list, ol, .sb-ordered-list {
+/* line 11, ../scss/core/base/typography/lists/_generic-list.scss */
+.sb-list, ul, .sb-unordered-list, ol, .sb-ordered-list {
   padding-left: 1.5rem;
   list-style-position: outside;
   margin-bottom: 1.5rem;
 }
-/* line 15, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
-ul ul, .sb-unordered-list ul, ol ul, .sb-ordered-list ul, ul ol, .sb-unordered-list ol, ol ol, .sb-ordered-list ol {
+/* line 16, ../scss/core/base/typography/lists/_generic-list.scss */
+.sb-list ul, ul ul, .sb-unordered-list ul, ol ul, .sb-ordered-list ul, .sb-list ol, ul ol, .sb-unordered-list ol, ol ol, .sb-ordered-list ol {
   margin-bottom: 0.75rem;
 }
-/* line 19, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
-ul li, .sb-unordered-list li, ol li, .sb-ordered-list li {
+/* line 20, ../scss/core/base/typography/lists/_generic-list.scss */
+.sb-list li, ul li, .sb-unordered-list li, ol li, .sb-ordered-list li {
   margin-bottom: 0.75rem;
 }
 
-/* line 24, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
-dl, .sb-definition-list {
+/* line 11, ../scss/core/base/typography/lists/_definition-list.scss */
+dl, .sb-definition-list, .sb-side-by-side-list {
   margin-bottom: 1.5rem;
 }
-/* line 27, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
-dl dt, .sb-definition-list dt {
+/* line 14, ../scss/core/base/typography/lists/_definition-list.scss */
+dl dt, .sb-definition-list dt, .sb-side-by-side-list dt {
   font-weight: 700;
 }
-/* line 31, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
-dl dd, .sb-definition-list dd {
+/* line 18, ../scss/core/base/typography/lists/_definition-list.scss */
+dl dd, .sb-definition-list dd, .sb-side-by-side-list dd {
   margin-bottom: 0.75rem;
 }
 
-/* line 36, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+/* line 12, ../scss/core/base/typography/lists/_side-by-side-list.scss */
+.sb-side-by-side-list dt, .sb-side-by-side-list dd {
+  float: left;
+}
+/* line 16, ../scss/core/base/typography/lists/_side-by-side-list.scss */
+.sb-side-by-side-list dt {
+  width: 30%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 5%;
+}
+/* line 24, ../scss/core/base/typography/lists/_side-by-side-list.scss */
+.sb-side-by-side-list dd {
+  width: 65%;
+}
+
+/* line 10, ../scss/core/base/typography/lists/_unordered-list.scss */
 ul, .sb-unordered-list {
   list-style-type: disc;
 }
-/* line 39, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+/* line 13, ../scss/core/base/typography/lists/_unordered-list.scss */
 ul ul, .sb-unordered-list ul {
   list-style-type: circle;
 }
 
-/* line 46, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+/* line 9, ../scss/core/base/typography/lists/_ordered-list.scss */
 ol, .sb-ordered-list {
   list-style-type: decimal;
 }
-/* line 49, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/typography/_lists.scss */
+/* line 12, ../scss/core/base/typography/lists/_ordered-list.scss */
 ol ol, .sb-ordered-list ol {
   list-style-type: lower-alpha;
 }
 
-/* line 22, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
+/* line 11, ../scss/core/base/typography/lists/_inline-list.scss */
+.sb-bar-nav, .sb-inline-list {
+  padding: 0;
+}
+/* line 14, ../scss/core/base/typography/lists/_inline-list.scss */
+.sb-bar-nav li, .sb-inline-list li {
+  display: inline-block;
+  margin: 0 0 0 0.75rem;
+}
+/* line 18, ../scss/core/base/typography/lists/_inline-list.scss */
+.sb-bar-nav li:first-child, .sb-inline-list li:first-child {
+  margin-left: 0;
+}
+/* line 23, ../scss/core/base/typography/lists/_inline-list.scss */
+.sb-bar-nav ul, .sb-inline-list ul {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 27, ../scss/core/base/typography/lists/_block-list.scss */
+.sb-block-list {
+  list-style-type: none;
+  padding-left: 0;
+  border: 1px solid #222222;
+}
+/* line 15, ../scss/core/base/typography/lists/_block-list.scss */
+.sb-block-list li {
+  padding: 0.75rem;
+  margin-bottom: 0;
+  border-top: 1px solid #222222;
+}
+/* line 20, ../scss/core/base/typography/lists/_block-list.scss */
+.sb-block-list li:first-child {
+  border-top: none;
+}
+
+/* line 22, ../scss/core/base/_typography.scss */
 body {
   font-family: Roboto, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 300;
@@ -805,7 +848,7 @@ body {
   color: #222222;
 }
 
-/* line 29, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
+/* line 29, ../scss/core/base/_typography.scss */
 a {
   color: #116d96;
   text-decoration: none;
@@ -814,24 +857,34 @@ a {
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 33, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
+/* line 33, ../scss/core/base/_typography.scss */
 a:hover {
   color: #093b51;
 }
 
-/* line 40, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_typography.scss */
+/* line 40, ../scss/core/base/_typography.scss */
 address {
   padding: 0.75rem;
   background-color: #f1f1f1;
 }
 
-/* line 16, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_images.scss */
+/* line 45, ../scss/core/base/_typography.scss */
+hr {
+  height: 3px;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  border: none;
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+}
+
+/* line 16, ../scss/core/base/_images.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_images.scss */
+/* line 21, ../scss/core/base/_images.scss */
 .sb-rounded {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -840,7 +893,7 @@ img {
   border-radius: 5px;
 }
 
-/* line 25, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_images.scss */
+/* line 25, ../scss/core/base/_images.scss */
 .sb-circular {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -849,7 +902,7 @@ img {
   border-radius: 100%;
 }
 
-/* line 29, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/base/_images.scss */
+/* line 29, ../scss/core/base/_images.scss */
 .sb-bordered {
   padding: 3px;
   background-color: white;
@@ -858,14 +911,14 @@ img {
   box-shadow: #aaaaaa 0px 0px 3px;
 }
 
-/* line 34, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/_base.scss */
+/* line 34, ../scss/core/_base.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 21, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-container {
   width: 100%;
   margin-left: auto;
@@ -873,13 +926,13 @@ img {
   max-width: 95%;
 }
 
-/* line 35, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 35, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-row {
   width: auto;
   margin-left: -1%;
 }
 
-/* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-1 {
   position: static;
   width: 7.3333333333333%;
@@ -887,7 +940,7 @@ img {
   float: left;
 }
 
-/* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-2 {
   position: static;
   width: 15.6666666666667%;
@@ -895,7 +948,7 @@ img {
   float: left;
 }
 
-/* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-3 {
   position: static;
   width: 24%;
@@ -903,7 +956,7 @@ img {
   float: left;
 }
 
-/* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-4 {
   position: static;
   width: 32.3333333333333%;
@@ -911,7 +964,7 @@ img {
   float: left;
 }
 
-/* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-5 {
   position: static;
   width: 40.6666666666667%;
@@ -919,7 +972,7 @@ img {
   float: left;
 }
 
-/* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-6 {
   position: static;
   width: 49%;
@@ -927,7 +980,7 @@ img {
   float: left;
 }
 
-/* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-7 {
   position: static;
   width: 57.3333333333333%;
@@ -935,7 +988,7 @@ img {
   float: left;
 }
 
-/* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-8 {
   position: static;
   width: 65.6666666666667%;
@@ -943,7 +996,7 @@ img {
   float: left;
 }
 
-/* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-9 {
   position: static;
   width: 74%;
@@ -951,7 +1004,7 @@ img {
   float: left;
 }
 
-/* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-10 {
   position: static;
   width: 82.3333333333333%;
@@ -959,7 +1012,7 @@ img {
   float: left;
 }
 
-/* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-11 {
   position: static;
   width: 90.6666666666667%;
@@ -967,7 +1020,7 @@ img {
   float: left;
 }
 
-/* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+/* line 44, ../scss/core/layout/_grid-generator.scss */
 .sb-grid-12 {
   position: static;
   width: 99%;
@@ -976,7 +1029,7 @@ img {
 }
 
 @media (min-width: 44em) {
-  /* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 21, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-container {
     width: 100%;
     margin-left: auto;
@@ -984,13 +1037,13 @@ img {
     max-width: 90%;
   }
 
-  /* line 35, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 35, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-row {
     width: auto;
     margin-left: -1%;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-1 {
     position: static;
     width: 7.3333333333333%;
@@ -998,7 +1051,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-2 {
     position: static;
     width: 15.6666666666667%;
@@ -1006,7 +1059,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-3 {
     position: static;
     width: 24%;
@@ -1014,7 +1067,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-4 {
     position: static;
     width: 32.3333333333333%;
@@ -1022,7 +1075,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-5 {
     position: static;
     width: 40.6666666666667%;
@@ -1030,7 +1083,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-6 {
     position: static;
     width: 49%;
@@ -1038,7 +1091,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-7 {
     position: static;
     width: 57.3333333333333%;
@@ -1046,7 +1099,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-8 {
     position: static;
     width: 65.6666666666667%;
@@ -1054,7 +1107,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-9 {
     position: static;
     width: 74%;
@@ -1062,7 +1115,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 {
     position: static;
     width: 82.3333333333333%;
@@ -1070,7 +1123,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-11 {
     position: static;
     width: 90.6666666666667%;
@@ -1078,7 +1131,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-12 {
     position: static;
     width: 99%;
@@ -1087,7 +1140,7 @@ img {
   }
 }
 @media (min-width: 60em) {
-  /* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 21, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-container {
     width: 100%;
     margin-left: auto;
@@ -1095,13 +1148,13 @@ img {
     max-width: 85%;
   }
 
-  /* line 35, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 35, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-row {
     width: auto;
     margin-left: -1%;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-1 {
     position: static;
     width: 7.3333333333333%;
@@ -1109,7 +1162,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-2 {
     position: static;
     width: 15.6666666666667%;
@@ -1117,7 +1170,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-3 {
     position: static;
     width: 24%;
@@ -1125,7 +1178,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-4 {
     position: static;
     width: 32.3333333333333%;
@@ -1133,7 +1186,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-5 {
     position: static;
     width: 40.6666666666667%;
@@ -1141,7 +1194,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-6 {
     position: static;
     width: 49%;
@@ -1149,7 +1202,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-7 {
     position: static;
     width: 57.3333333333333%;
@@ -1157,7 +1210,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-8 {
     position: static;
     width: 65.6666666666667%;
@@ -1165,7 +1218,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-9 {
     position: static;
     width: 74%;
@@ -1173,7 +1226,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 {
     position: static;
     width: 82.3333333333333%;
@@ -1181,7 +1234,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-11 {
     position: static;
     width: 90.6666666666667%;
@@ -1189,7 +1242,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-12 {
     position: static;
     width: 99%;
@@ -1197,20 +1250,20 @@ img {
     float: left;
   }
 
-  /* line 64, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 64, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 .sb-grid-row .sb-grid-5 {
     position: relative;
     left: 16.6666666666667%;
   }
 
-  /* line 73, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 73, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 .sb-grid-row .sb-grid-2 {
     position: relative;
     left: -41.6666666666667%;
   }
 }
 @media (min-width: 85em) {
-  /* line 21, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 21, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-container {
     width: 82.5rem;
     margin-left: auto;
@@ -1218,13 +1271,13 @@ img {
     max-width: none;
   }
 
-  /* line 35, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 35, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-row {
     width: auto;
     margin-left: -1.5rem;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-1 {
     position: static;
     width: 5.5rem;
@@ -1232,7 +1285,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-2 {
     position: static;
     width: 12.5rem;
@@ -1240,7 +1293,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-3 {
     position: static;
     width: 19.5rem;
@@ -1248,7 +1301,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-4 {
     position: static;
     width: 26.5rem;
@@ -1256,7 +1309,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-5 {
     position: static;
     width: 33.5rem;
@@ -1264,7 +1317,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-6 {
     position: static;
     width: 40.5rem;
@@ -1272,7 +1325,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-7 {
     position: static;
     width: 47.5rem;
@@ -1280,7 +1333,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-8 {
     position: static;
     width: 54.5rem;
@@ -1288,7 +1341,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-9 {
     position: static;
     width: 61.5rem;
@@ -1296,7 +1349,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 {
     position: static;
     width: 68.5rem;
@@ -1304,7 +1357,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-11 {
     position: static;
     width: 75.5rem;
@@ -1312,7 +1365,7 @@ img {
     float: left;
   }
 
-  /* line 44, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 44, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-12 {
     position: static;
     width: 82.5rem;
@@ -1320,26 +1373,26 @@ img {
     float: left;
   }
 
-  /* line 73, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 73, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 .sb-grid-row .sb-grid-5 {
     position: relative;
     left: -21rem;
   }
 
-  /* line 64, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid-generator.scss */
+  /* line 64, ../scss/core/layout/_grid-generator.scss */
   .sb-grid-10 .sb-grid-row .sb-grid-3 {
     position: relative;
     left: 35rem;
   }
 }
 @media (min-width: 85em) {
-  /* line 124, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_grid.scss */
+  /* line 124, ../scss/core/layout/_grid.scss */
   .sb-grid-10 .sb-grid-row .sb-grid-2 {
     position: static;
   }
 }
 
-/* line 10, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_callout.scss */
+/* line 10, ../scss/core/layout/_callout.scss */
 .sb-callout-container {
   margin-bottom: 1.5rem;
   background-color: white;
@@ -1348,18 +1401,18 @@ img {
   box-shadow: #aaaaaa 0px 0px 3px;
 }
 
-/* line 16, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_callout.scss */
+/* line 16, ../scss/core/layout/_callout.scss */
 .sb-callout-title {
   padding: 0.75rem;
   border-bottom: 1px solid #a2a2a2;
   background-color: #f1f1f1;
 }
-/* line 20, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_callout.scss */
+/* line 20, ../scss/core/layout/_callout.scss */
 .sb-callout-title h1, .sb-callout-title h2, .sb-callout-title h3, .sb-callout-title h4, .sb-callout-title h5, .sb-callout-title h6, .sb-callout-title .sb-h1, .sb-callout-title .sb-h2, .sb-callout-title .sb-h3, .sb-callout-title .sb-h4, .sb-callout-title .sb-h6 {
   margin-bottom: 0;
 }
 
-/* line 25, C:/Users/Rachael/Documents/Projects/Springboard/library/scss/core/layout/_callout.scss */
+/* line 25, ../scss/core/layout/_callout.scss */
 .sb-callout-body {
   padding: 0.75rem;
 }
