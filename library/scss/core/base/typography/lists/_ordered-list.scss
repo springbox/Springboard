@@ -1,0 +1,32 @@
+//-------------------------------------
+//  Springboard: core/base/typography/lists/ordered-list
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-list-classes:		$print-base-classes		!default;
+
+%sb-ordered-list {
+	list-style-type: decimal;
+
+	ol {
+		list-style-type: lower-alpha;
+	}
+
+	@extend %sb-list;
+}
+
+// ----- Element styles ----- //
+ol {
+	@extend %sb-ordered-list;
+}
+
+
+// ----- Class styles ----- //
+@if $print-base-list-classes == true {
+
+	.sb-ordered-list {
+		@extend %sb-ordered-list;
+	}
+
+}

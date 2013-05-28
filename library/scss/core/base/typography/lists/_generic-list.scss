@@ -1,0 +1,31 @@
+//-------------------------------------
+//  Springboard: core/base/typography/lists/generic-list
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-list-classes:		$print-base-classes		!default;
+
+
+// ----- Placeholder styles ----- //
+%sb-list {
+	padding-left: $sb-m-spacing;
+	list-style-position: outside;
+	margin-bottom: $sb-m-spacing;
+
+	ul, ol {
+		margin-bottom: $sb-s-spacing;
+	}
+
+	li {
+		margin-bottom: $sb-s-spacing;
+	}
+}
+
+
+// ----- Class styles ----- //
+@if $print-base-list-classes == true {
+	.sb-list {
+		@extend %sb-list;
+	}
+}

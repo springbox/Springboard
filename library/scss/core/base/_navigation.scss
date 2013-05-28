@@ -13,14 +13,9 @@ $sb-bar-nav-color:	#d1d1d1	!default;
 
 %sb-bar-nav {
 	width: 100%;
-	list-style: none;
-	margin-left: 0;
-	padding-left: 0;
 	background-color: $sb-bar-nav-color;
 
-	li {
-		margin-bottom: 0;
-	}
+	@extend %sb-inline-list;
 }
 
 %sb-fixed-nav {
@@ -44,15 +39,9 @@ $sb-bar-nav-color:	#d1d1d1	!default;
 }
 
 %sb-nav-item {
-	@if $ie8-support == true {
-		padding-top: .6 * $sb-rem;
-		margin-left: .75 * $sb-rem;
-	}
-
-	display: inline-block;
-	padding-top: .6rem;
+	padding: $sb-s-spacing;
+	margin: 0;
 	height: 3rem;
-	margin-left: .75rem;
 }
 
 

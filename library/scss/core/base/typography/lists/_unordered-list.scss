@@ -1,0 +1,31 @@
+//-------------------------------------
+//  Springboard: core/base/typography/lists/unordered-list
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-list-classes:		$print-base-classes		!default;
+
+// ----- Placeholder styles ----- //
+%sb-unordered-list {
+	list-style-type: disc;
+
+	ul {
+		list-style-type: circle;
+	}
+
+	@extend %sb-list;
+}
+
+// ----- Element styles ----- //
+ul {
+	@extend %sb-unordered-list;
+}
+
+
+// ----- Class styles ----- //
+@if $print-base-list-classes == true {
+	.sb-unordered-list {
+		@extend %sb-unordered-list;
+	}
+}

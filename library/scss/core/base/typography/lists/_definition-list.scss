@@ -1,0 +1,36 @@
+//-------------------------------------
+//  Springboard: core/base/typography/lists/definition-list
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-list-classes:		$print-base-classes		!default;
+
+
+// ----- Placeholder styles ----- //
+%sb-definition-list {
+	margin-bottom: $sb-m-spacing;
+
+	dt {
+		font-weight: 700;
+	}
+
+	dd {
+		margin-bottom: $sb-s-spacing;
+	}
+}
+
+// ----- Element styles ----- //
+dl {
+	@extend %sb-definition-list;
+}
+
+
+// ----- Class styles ----- //
+@if $print-base-list-classes == true {
+
+	.sb-definition-list {
+		@extend %sb-definition-list;
+	}
+
+}
