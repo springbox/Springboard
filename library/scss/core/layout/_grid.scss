@@ -68,7 +68,40 @@ $sb-xl-max-width:			false				!default;
 	@include grid-generator('sb-xl', $sb-xl-column-count, $sb-xl-column-width, $sb-xl-gutter,  0, $sb-xl-max-width);
 }
 
+%sb-grid-container {
+	@extend %sb-s-container;
+	@extend %sb-m-container;
+	@extend %sb-l-container;
+	@extend %sb-xl-container;
+	@extend %sb-learfix;
+}
 
+%sb-grid-row {
+	@extend %sb-s-row;
+	@extend %sb-m-row;
+	@extend %sb-l-row;
+	@extend %sb-xl-row;
+	@extend %sb-clearfix;
+	
+	// TODO: allow lower settings to override the visible grid
+	@if $sb-visible-grid == true {
+		@extend %sb-visible-grid;
+	}
+}
+
+
+@for $i from 1 through 12 {
+	%sb-grid-#{$i} {
+		@extend %sb-s-#{$i};
+		@extend %sb-m-#{$i};
+		@extend %sb-l-#{$i};
+		@extend %sb-xl-#{$i};
+
+		@if $sb-visible-grid == true {
+			@extend %sb-visible-grid;
+		}
+	}
+}
 
 
 
@@ -81,55 +114,17 @@ $sb-xl-max-width:			false				!default;
 	}
 
 	.sb-grid-container {
-		@extend %sb-s-container;
-		@extend %sb-m-container;
-		@extend %sb-l-container;
-		@extend %sb-xl-container;
-		@extend %sb-learfix;
+		@extend %sb-grid-container;
 	}
 
 	.sb-grid-row {
-		@extend %sb-s-row;
-		@extend %sb-m-row;
-		@extend %sb-l-row;
-		@extend %sb-xl-row;
-		@extend %sb-clearfix;
-		
-		// TODO: allow lower settings to override the visible grid
-		@if $sb-visible-grid == true {
-			@extend %sb-visible-grid;
-		}
+		@extend %sb-grid-row;
 	}
 
 
 	@for $i from 1 through 12 {
 		.sb-grid-#{$i} {
-			@extend %sb-s-#{$i};
-			@extend %sb-m-#{$i};
-			@extend %sb-l-#{$i};
-			@extend %sb-xl-#{$i};
-
-			@if $sb-visible-grid == true {
-				@extend %sb-visible-grid;
-			}
-		}
-	}
-
-	.sb-grid-10 .sb-grid-row {
-		.sb-grid-5 {
-			@extend %sb-l-push-2;
-			@extend %sb-xl-pull-3;
-		}
-
-		.sb-grid-2 {
-			@extend %sb-l-pull-5;
-			@include respond-to('sb-xl') {
-				position: static;
-			}
-		}
-
-		.sb-grid-3 {
-			@extend %sb-xl-push-5;
+			@extend %sb-grid-#{$i}
 		}
 	}
 }
