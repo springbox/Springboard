@@ -5,7 +5,7 @@
 // ----- Font stacks ----- //
 $sb-serif: Merriweather, Georgia, Times, "Times New Roman", serif;
 $sb-sans: Roboto, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-$sb-mono: UbuntuMono, Monaco, Consolas, "Lucida Console", monospace;
+$sb-mono: Monaco, Consolas, "Lucida Console", monospace;
 
 // ----- Useful numbers ----- //
 $sb-rem: 16px;
@@ -18,8 +18,9 @@ $sb-s-spacing:	0.75rem;
 $sb-green: #77bc13;
 $sb-teal: #139b8a; 
 $sb-orange: #ee5a22;
-$sb-yellow: #efc217;
+$sb-yellow: darken(#efc217, 5%);
 $sb-blue: #093b51;
+$sb-red: #d90b2d;
 
 $sb-font-color: #222222;
 $sb-link-color:	lighten($sb-blue, 15%);
