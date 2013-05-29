@@ -12,7 +12,7 @@ $print-base-list-classes:		$print-base-classes		!default;
 	margin-bottom: $sb-m-spacing;
 
 	dt {
-		font-weight: 700;
+		@include sb-bold;
 	}
 
 	dd {

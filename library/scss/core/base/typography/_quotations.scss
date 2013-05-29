@@ -7,28 +7,26 @@
 $print-base-quotation-classes:		$print-base-typography-classes		!default;
 
 
-
-// ----- Placeholders ----- //
-%sb-blockquote {
+// ----- Mixins ----- //
+@mixin sb-blockquote {
 	padding: $sb-s-spacing;
 	border-left: 5px solid lighten($sb-blue, 30%);
-
-	font-family: $sb-serif;
-	font-style: italic;
 	color: lighten($sb-font-color, 10%);
 
 	@include sb-baseline(1.125em, 2.25em);
-	@extend %sb-paragraph;
+	@include sb-paragraph;
+	@include sb-italic;
 }
 
-%sb-pullquote {
+
+@mixin sb-pullquote {
 	position: relative;
 	font-family: $sb-serif;
 	font-style: italic;
 	padding: $sb-m-spacing $sb-m-spacing $sb-m-spacing $sb-l-spacing;
 	background-color: lighten($sb-font-color, 80%);
 
-	@extend %sb-paragraph;
+	@include sb-paragraph;
 
 	&:before, &:after {
 		position: absolute;
@@ -46,7 +44,7 @@ $print-base-quotation-classes:		$print-base-typography-classes		!default;
 	}
 }
 
-%sb-citation {
+@mixin sb-citation {
 	padding-top: $sb-s-spacing;
 	display: block;
 	font-weight: 700;
@@ -56,11 +54,8 @@ $print-base-quotation-classes:		$print-base-typography-classes		!default;
 	}
 }
 
-%sb-inline-quote {
-	font-family: $sb-serif;
-	font-style: italic;
-	//color: lighten($sb-font-color, 20%);
-	background-color: lighten($sb-font-color, 75%);
+@mixin sb-inline-quote {
+	@include sb-italic;
 
 	&:before {
 		content: "“";
@@ -69,6 +64,24 @@ $print-base-quotation-classes:		$print-base-typography-classes		!default;
 	&:after {
 		content: "”";
 	}
+}
+
+
+// ----- Placeholders ----- //
+%sb-blockquote {
+	@include sb-blockquote;
+}
+
+%sb-pullquote {
+	@include sb-pullquote;
+}
+
+%sb-citation {
+	@include sb-citation;
+}
+
+%sb-inline-quote {
+	@include sb-inline-quote;
 }
 
 // ----- Basic styles ----- //

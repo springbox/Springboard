@@ -1,0 +1,63 @@
+//-------------------------------------
+//  Springboard: core/base/inline/emphasis
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-inline-emphasis-classes:		$print-base-inline-classes		!default;
+
+// ----- Mixins ----- //
+@mixin sb-text-caution {
+	color: $sb-yellow;
+}
+
+@mixin sb-text-stop {
+	color: $sb-red;
+}
+
+@mixin sb-text-go {
+	color: $sb-green;
+}
+
+@mixin sb-text-look {
+	color: lighten($sb-blue, 30%);
+}
+
+
+// ----- Placeholder styles ----- //
+%sb-text-caution {
+	@include sb-text-caution;
+}
+
+%sb-text-stop {
+	@include sb-text-stop;
+}
+
+%sb-text-go {
+	@include sb-text-go;
+}
+
+%sb-text-look {
+	@include sb-text-look;
+}
+
+// ----- Class styles ----- //
+@if $print-base-inline-emphasis-classes == true {
+
+	.sb-text-caution {
+		@extend %sb-text-caution;
+	}
+
+	.sb-text-stop {
+		@extend %sb-text-stop;
+	}
+
+	.sb-text-go {
+		@extend %sb-text-go;
+	}
+
+	.sb-text-look {
+		@extend %sb-text-look;
+	}
+
+}

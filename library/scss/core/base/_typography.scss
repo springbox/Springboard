@@ -16,6 +16,7 @@ $print-base-typography-classes:		$print-base-classes		!default;
 @import "typography/quotations";
 @import "typography/alignment";
 @import "typography/lists";
+@import "typography/code";
 
 
 // ----- Basic Typography styles ----- //
@@ -26,27 +27,10 @@ body {
 	color: $sb-font-color;
 }
 
-a {
-	color: lighten($sb-blue, 15%);
-	text-decoration: none;
-	
-	&:hover {
-		color: $sb-blue;
-	}
-
-	@include transition(color .2s ease);
-}
-
-address {
-	padding: $sb-s-spacing;
-	background-color: #f1f1f1;
-}
-
 hr {
-	height: 3px;
+	height: 0;
 	margin-top: $sb-m-spacing;
 	margin-bottom: $sb-l-spacing;
 	border: none;
 	border-top: 1px solid $sb-font-color;
-	border-bottom: 1px solid $sb-font-color;
 }
