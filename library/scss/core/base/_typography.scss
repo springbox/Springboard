@@ -29,8 +29,8 @@ body {
 
 hr {
 	height: 0;
-	margin-top: $sb-m-spacing;
+	margin-top: $sb-m-spacing - .0625rem;
 	margin-bottom: $sb-l-spacing;
 	border: none;
-	border-top: 1px solid $sb-font-color;
+	border-top: .0625rem solid $sb-font-color;
 }

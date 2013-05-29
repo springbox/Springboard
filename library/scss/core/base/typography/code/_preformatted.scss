@@ -43,6 +43,7 @@ $print-base-code-preformatted-classes:		$print-base-code-classes		!default;
 		margin-bottom: 0;
 		width: auto;
 		white-space: pre-wrap;
+		@include sb-baseline(1em, .75em);
 	}
 }
 
