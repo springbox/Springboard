@@ -10,7 +10,7 @@
 // 
 $print-helpers-clearfix-classes:		$print-helpers-classes		!default;
 $print-helpers-visibility-classes:		$print-helpers-classes		!default;
-
+$print-helpers-flat-classes:			$print-helpers-classes		!default;
 
 // ----- Layout import ----- //
 @import "helpers/clearfix";

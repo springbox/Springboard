@@ -26,10 +26,9 @@ $print-base-heading-classes:	$print-base-classes		!default;
 // ----- Base import ----- //
 @import "base/inline";
 @import "base/typography";
-@import "base/navigation";
 @import "base/images";
 @import "base/buttons";
-
+@import "base/tables";
 
 // ----- Base styles ----- //
 @if $border-box-all-the-things == true {

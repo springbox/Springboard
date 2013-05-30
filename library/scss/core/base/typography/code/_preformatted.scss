@@ -16,7 +16,8 @@ $print-base-code-preformatted-classes:		$print-base-code-classes		!default;
 	font-size: 0.875em;
 	font-weight: normal;
 	background-color: lighten($sb-font-color, 85%);
-	color: lighten($sb-blue, 20%);
+	color: $sb-look;
+	overflow: auto;
 	@include box-shadow(0px 0px 3px #aaaaaa);
 }
 
@@ -34,7 +35,7 @@ $print-base-code-preformatted-classes:		$print-base-code-classes		!default;
 	font-size: 0.875em;
 	font-weight: 700;
 	background-color: lighten($sb-font-color, 85%);
-	color: lighten($sb-blue, 20%);
+	color: $sb-look;
 	@include box-shadow(0px 0px 3px #aaaaaa);
 
 	li {

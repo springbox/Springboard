@@ -1,0 +1,68 @@
+//-------------------------------------
+//  Springboard: core/base/buttons/sizes
+//  
+//-------------------------------------
+
+
+// ----- Buttons settings ----- //
+$print-base-button-size-classes:		$print-base-button-classes		!default;
+
+
+// ----- Mixins ----- //
+
+@mixin sb-button-padding($button-padding: $sb-s-spacing $sb-m-spacing) {
+	padding: $button-padding;
+}
+
+@mixin sb-button-expanded {
+	width: 100%;
+}
+
+// ----- Buttons Placeholders ----- //
+
+
+%sb-button-xl {
+	padding: $sb-m-spacing ($sb-l-spacing * 2);
+	font-size: 1.5em;
+}
+
+%sb-button-l {
+	padding: $sb-m-spacing $sb-l-spacing;
+	font-size: 1.25em;
+}
+
+%sb-button-m {
+	padding: $sb-s-spacing $sb-m-spacing;
+}
+
+%sb-button-s {
+	padding: $sb-s-spacing;
+	font-size: .75em;
+}
+
+%sb-button-expanded {
+	@include sb-button-expanded;
+}
+
+
+
+// ----- Buttons styles & classes ----- //
+.sb-button-xl {
+	@extend %sb-button-xl;
+}
+
+.sb-button-l {
+	@extend %sb-button-l;
+}
+
+.sb-button-m {
+	@extend %sb-button-m;
+}
+
+.sb-button-s {
+	@extend %sb-button-s;
+}
+
+.sb-button-expanded {
+	@extend %sb-button-expanded;
+}

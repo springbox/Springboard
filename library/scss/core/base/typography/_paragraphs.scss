@@ -27,6 +27,7 @@ $print-base-paragraph-classes:		$print-base-typography-classes		!default;
 
 @mixin sb-caption {
 	@include sb-secondary;
+	font-family: $sb-serif;
 	font-style: italic;
 }
 

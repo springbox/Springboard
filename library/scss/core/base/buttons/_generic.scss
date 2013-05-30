@@ -1,0 +1,60 @@
+//-------------------------------------
+//  Springboard: core/base/buttons/singles
+//  
+//-------------------------------------
+
+
+// ----- Buttons settings ----- //
+$print-base-button-single-classes:		$print-base-button-classes		!default;
+
+$sb-button-color:				lighten($sb-font-color, 40%)	!default;
+
+
+// ----- Buttons Mixins ----- //
+@mixin sb-button($button-background: $sb-button-color) {
+	border: 0;
+	font-family: $sb-sans;
+	font-weight: 500;
+	font-size: 1em;
+	cursor: pointer;
+	position: relative;
+	background: $button-background;
+	max-width: 100%;
+	margin: 0;
+	color: white;
+
+	&:hover, &:focus, &%sb-button-hover {
+		@if $button-background != 'transparent' {
+			background: lighten($button-background, 10%);
+		}
+	}
+
+	&:active, &%sb-button-active {
+		top: 2px;
+	}
+
+	&[disabled], &%sb-button-disabled {
+		@if $button-background != 'transparent' {
+			background: lighten($button-background, 30%);
+		}
+		color: lighten($sb-font-color, 30%);
+		cursor: not-allowed;
+		top: 0;
+	}
+}
+
+@mixin sb-button-generator($button-color: $sb-button-color, $padding: $sb-s-spacing $sb-m-spacing){
+	@include sb-button($button-color);
+}
+
+// ----- Buttons Placeholders ----- //
+%sb-button {
+	@include sb-button-generator;
+	padding: $sb-s-spacing $sb-m-spacing;
+}
+
+
+// ----- Buttons styles & classes ----- //
+.sb-button {
+	@extend %sb-button;
+}

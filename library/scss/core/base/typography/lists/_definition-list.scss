@@ -11,11 +11,11 @@ $print-base-list-classes:		$print-base-classes		!default;
 @mixin sb-definition-list {
 	margin-bottom: $sb-m-spacing;
 
-	dt {
+	dt, %sb-dt {
 		@include sb-bold;
 	}
 
-	dd {
+	dd, %sb-dd {
 		margin-bottom: $sb-s-spacing;
 	}
 }
@@ -37,6 +37,14 @@ dl {
 
 	.sb-definition-list {
 		@extend %sb-definition-list;
+
+		.sb-dt {
+			@extend %sb-dt;
+		}
+
+		.sb-dd {
+			@extend %sb-dd;
+		}
 	}
 
 }

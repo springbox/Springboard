@@ -10,11 +10,11 @@ $print-base-inline-generic-classes:		$print-base-inline-classes		!default;
 
 // ----- Mixins ----- //
 @mixin sb-link {
-	color: lighten($sb-blue, 15%);
+	color: $sb-look;
 	text-decoration: none;
 	
 	&:hover {
-		color: $sb-blue;
+		color: $sb-look-light;
 	}
 
 	@include transition(color .2s ease);
@@ -36,15 +36,15 @@ $print-base-inline-generic-classes:		$print-base-inline-classes		!default;
 
 @mixin sb-delete {
 	text-decoration: line-through;
-	background-color: lighten($sb-red, 45%);
+	background-color: $sb-stop-light;
 }
 
 @mixin sb-insert {
-	background-color: lighten($sb-green, 42%);
+	background-color: $sb-go-light;
 }
 
 @mixin sb-mark {
-	background-color: lighten($sb-yellow, 40%);
+	background-color: $sb-warning-light;
 }
 
 @mixin sb-abbreviation {
@@ -75,7 +75,7 @@ $print-base-inline-generic-classes:		$print-base-inline-classes		!default;
 	font-size: 0.875em;
 	font-weight: normal;
 	background-color: lighten($sb-font-color, 80%);
-	color: lighten($sb-blue, 40%);
+	color: $sb-look;
 	white-space: nowrap;
 }
 

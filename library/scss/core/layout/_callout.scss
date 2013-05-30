@@ -19,6 +19,11 @@
 	%sb-heading {
 		margin-bottom: 0;
 	}
+
+	&:last-child {
+		border-bottom:0;
+		border-top: 1px solid lighten($sb-font-color, 50%);
+	}
 }
 
 @mixin sb-callout-body {

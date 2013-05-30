@@ -8,4 +8,6 @@
 $print-base-button-classes:		$print-base-classes		!default;
 
 // ----- Import ----- //
-@import "buttons/singles";
+@import "buttons/generic";
+@import "buttons/sizes";
+@import "buttons/styles";

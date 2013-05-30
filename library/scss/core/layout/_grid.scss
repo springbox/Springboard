@@ -103,6 +103,19 @@ $sb-xl-max-width:			false				!default;
 	}
 }
 
+@for $i from 1 through 12 {
+	%sb-grid-push-#{$i} {
+		@extend %sb-s-push-#{$i};
+		@extend %sb-m-push-#{$i};
+		@extend %sb-l-push-#{$i};
+		@extend %sb-xl-push-#{$i};
+
+		@if $sb-visible-grid == true {
+			@extend %sb-visible-grid;
+		}
+	}
+}
+
 
 
 // ----- Classes ----- //
@@ -125,6 +138,12 @@ $sb-xl-max-width:			false				!default;
 	@for $i from 1 through 12 {
 		.sb-grid-#{$i} {
 			@extend %sb-grid-#{$i}
+		}
+	}
+
+	@for $i from 1 through 12 {
+		.sb-grid-push-#{$i} {
+			@extend %sb-grid-push-#{$i}
 		}
 	}
 }
