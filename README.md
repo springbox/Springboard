@@ -4,7 +4,7 @@ Springboard is a front-end framework to give you a giant leap forward when you b
 
 ## Getting started
 
-There's a number of tools that can help you get started quickly in front-end environments. [Fire.app](http://fireapp.handlino.com/) and [CodeKit](http://incident57.com/codekit/) are two excellent choices that include features like auto-refresh, CSS preprocessor support and HTML/Javascript/CSS build options.
+There's a number of tools that can help you get started quickly in front-end environments. [Fire.app](http://fireapp.handlino.com/), [Mixture](http://mixture.io/) and [CodeKit](http://incident57.com/codekit/) are three excellent choices that include features like auto-refresh, CSS preprocessor support and HTML/Javascript/CSS build options.
 
 ### Javascript
 
