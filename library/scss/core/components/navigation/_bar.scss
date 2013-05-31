@@ -1,0 +1,87 @@
+//-------------------------------------
+//  Springboard: core/components/navigation/bar
+//-------------------------------------
+
+
+// ----- Settings ----- //
+$print-component-nav-bar-classes:	$print-component-nav-classes	!default;
+
+
+$sb-bar-nav-color:	#d1d1d1	!default;
+
+
+// ----- Mixins ----- //
+@mixin sb-nav-bar {
+	width: 100%;
+	margin-bottom: 0;
+	@extend %sb-inline-list;
+}
+
+@mixin sb-nav-bar-fixed {
+	background-color: $sb-bar-nav-color;
+
+	@include respond-to('sb-m'){
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+}
+
+@mixin sb-has-nav-bar-fixed {
+	@include respond-to('sb-m') {
+		@if $ie8-support == true {
+			padding-top: 0 * $sb-rem;
+		}
+
+		padding-top: 4.5rem;
+	}
+}
+
+@mixin sb-nav-bar-item {
+	padding: $sb-s-spacing;
+	margin: 0;
+	height: 3rem;
+}
+
+
+// ----- Placeholders ----- //
+
+%sb-nav-bar {
+	@include sb-nav-bar;
+}
+
+%sb-nav-bar-fixed {
+	@include sb-nav-bar-fixed;
+}
+
+%sb-has-nav-bar-fixed {
+	@include sb-has-nav-bar-fixed;
+}
+
+%sb-nav-bar-item {
+	@include sb-nav-bar-item;
+}
+
+
+// ----- Classes ----- //
+@if $print-component-nav-bar-classes == true {
+
+	.sb-nav-bar-fixed {
+		@extend %sb-nav-bar-fixed;
+	}
+
+	.sb-nav-bar {
+		@extend %sb-nav-bar;
+
+		.sb-nav-bar-item {
+			@extend %sb-nav-bar-item;
+		}
+	}
+
+	.sb-has-nav-bar-fixed {
+		@extend %sb-has-nav-bar-fixed;
+	}
+
+}
