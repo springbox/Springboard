@@ -1,0 +1,11 @@
+//-------------------------------------
+//  Springboard: core/base/forms
+//  
+//-------------------------------------
+
+
+// ----- Inline settings ----- //
+$print-base-form-classes:		$print-base-classes		!default;
+
+// ----- Import ----- //
+@import "forms/generic";

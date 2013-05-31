@@ -9,7 +9,7 @@
 @mixin sb-callout-container {
 	margin-bottom: 1.5rem;
 	background-color: white;
-	@include box-shadow(#aaaaaa 0px 0px 3px);
+	// @include box-shadow(#aaaaaa 0px 0px 3px);
 }
 
 @mixin sb-callout-title {

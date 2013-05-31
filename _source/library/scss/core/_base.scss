@@ -29,6 +29,7 @@ $print-base-heading-classes:	$print-base-classes		!default;
 @import "base/images";
 @import "base/buttons";
 @import "base/tables";
+@import "base/forms";
 
 // ----- Base styles ----- //
 @if $border-box-all-the-things == true {
