@@ -176,7 +176,7 @@ time, .sb-time {
 
 /* line 134, ../scss/core/base/inline/_generic.scss */
 code, var, samp, .sb-code {
-  padding: 0.2em 0.25em 0.125em;
+  padding: .2em .25em .125em;
   font-family: Monaco, Consolas, "Lucida Console", monospace;
   font-size: 0.875em;
   font-weight: normal;
@@ -187,7 +187,7 @@ code, var, samp, .sb-code {
 
 /* line 138, ../scss/core/base/inline/_generic.scss */
 kbd, .sb-keyboard {
-  padding: 0.2em 0.25em 0.125em;
+  padding: .2em .25em .125em;
   font-size: .875em;
   background-color: #eeeeee;
   border: 1px solid #d1d1d1;
@@ -218,7 +218,7 @@ kbd, .sb-keyboard {
   font-weight: 700;
   font-size: 0.875em;
   color: white;
-  padding: 0.125em 0.75em;
+  padding: .125em .75em;
   background-color: #81cff1;
   -webkit-box-shadow: 1px 1px 0px #aaaaaa;
   -moz-box-shadow: 1px 1px 0px #aaaaaa;
@@ -230,7 +230,7 @@ kbd, .sb-keyboard {
   font-weight: 800;
   font-size: 0.875em;
   color: white;
-  padding: 0 0.75em;
+  padding: 0 .75em;
   background-color: #81cff1;
   text-align: center;
   -webkit-box-shadow: 1px 1px 0px #aaaaaa;
@@ -894,11 +894,11 @@ dl, .sb-definition-list {
   margin-bottom: 1.5rem;
 }
 /* line 14, ../scss/core/base/typography/lists/_definition-list.scss */
-dl dt, .sb-definition-list dt, dl .sb-definition-list .sb-dt, .sb-definition-list dl .sb-dt, .sb-definition-list .sb-dt {
+dl dt, .sb-definition-list dt, .sb-definition-list .sb-dt {
   font-weight: 700;
 }
 /* line 18, ../scss/core/base/typography/lists/_definition-list.scss */
-dl dd, .sb-definition-list dd, dl .sb-definition-list .sb-dd, .sb-definition-list dl .sb-dd, .sb-definition-list .sb-dd {
+dl dd, .sb-definition-list dd, .sb-definition-list .sb-dd {
   margin-bottom: 0.75rem;
 }
 
