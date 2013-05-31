@@ -1,0 +1,52 @@
+//-------------------------------------
+//  Springboard
+//  Welcome to Springbox's Springboard.
+//-------------------------------------
+
+
+
+// ----- App Override ----- //
+// On a per-app basis, if you want any settings to change you can set them here without changing core.
+@import "app/override";
+
+// ----- Core settings ----- //
+// Settings
+@import "core/settings";
+@import "core/variables";
+
+
+// ----- Import Compass and Extensions ----- //
+// There's quite a bit included here. For more details see the README.
+@import "compass";
+@import "../ext/breakpoint-2.0.5/stylesheets/breakpoint";
+//@import "../ext/respond-to-custom/compass/stylesheets/respond-to"; // custom removes breakpoint loading
+
+
+
+// ----- Import any Compass styles ----- //
+@import "compass/reset";
+
+
+
+// ----- Import themes ----- //
+@import "themes/default";
+
+
+
+// ----- Import Springboard core styles ----- //
+
+// Helpers
+@import "core/helpers";
+
+// Base
+@import "core/base";
+
+// Layout
+@import "core/layout";
+
+// Components
+@import "core/components";
+
+
+// ----- Import App-specific styles ----- //
+@import "app/main";
