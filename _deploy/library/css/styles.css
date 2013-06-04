@@ -193,45 +193,68 @@ kbd, .sb-keyboard {
   border: 1px solid #d1d1d1;
 }
 
-/* line 28, ../scss/core/base/inline/_emphasis.scss */
+/* line 52, ../scss/core/base/inline/_emphasis.scss */
 .sb-text-caution {
   color: #ddb20f;
 }
 
-/* line 32, ../scss/core/base/inline/_emphasis.scss */
+/* line 56, ../scss/core/base/inline/_emphasis.scss */
 .sb-text-stop {
   color: #d90b2d;
 }
 
-/* line 36, ../scss/core/base/inline/_emphasis.scss */
+/* line 60, ../scss/core/base/inline/_emphasis.scss */
 .sb-text-go {
   color: #77bc13;
 }
 
-/* line 40, ../scss/core/base/inline/_emphasis.scss */
+/* line 64, ../scss/core/base/inline/_emphasis.scss */
 .sb-text-look {
   color: #54bdec;
 }
 
-/* line 20, ../scss/core/base/inline/_labels.scss */
+/* line 68, ../scss/core/base/inline/_emphasis.scss */
+.sb-bg-caution {
+  background-color: #ddb20f;
+}
+
+/* line 72, ../scss/core/base/inline/_emphasis.scss */
+.sb-bg-stop {
+  background-color: #d90b2d;
+}
+
+/* line 76, ../scss/core/base/inline/_emphasis.scss */
+.sb-bg-go {
+  background-color: #77bc13;
+}
+
+/* line 80, ../scss/core/base/inline/_emphasis.scss */
+.sb-bg-look {
+  background-color: #54bdec;
+}
+
+/* line 84, ../scss/core/base/inline/_emphasis.scss */
+.sb-bg-warning {
+  background-color: #e54c12;
+}
+
+/* line 19, ../scss/core/base/inline/_labels.scss */
 .sb-label {
   font-weight: 700;
   font-size: 0.875em;
   color: white;
   padding: .125em .75em;
-  background-color: #81cff1;
   -webkit-box-shadow: 1px 1px 0px #aaaaaa;
   -moz-box-shadow: 1px 1px 0px #aaaaaa;
   box-shadow: 1px 1px 0px #aaaaaa;
 }
 
-/* line 27, ../scss/core/base/inline/_badges.scss */
+/* line 26, ../scss/core/base/inline/_badges.scss */
 .sb-badge {
   font-weight: 800;
   font-size: 0.875em;
   color: white;
   padding: 0 .75em;
-  background-color: #81cff1;
   text-align: center;
   -webkit-box-shadow: 1px 1px 0px #aaaaaa;
   -moz-box-shadow: 1px 1px 0px #aaaaaa;
@@ -242,7 +265,7 @@ kbd, .sb-keyboard {
   -o-border-radius: 0.75em;
   border-radius: 0.75em;
 }
-/* line 21, ../scss/core/base/inline/_badges.scss */
+/* line 20, ../scss/core/base/inline/_badges.scss */
 .sb-badge:empty {
   display: none;
 }
@@ -2688,7 +2711,7 @@ img {
 .sb-button, .sb-button-caution, .sb-button-warning, .sb-button-stop, .sb-button-go, .sb-button-look, .sb-button-link, .sb-button-quiet {
   border: 0;
   font-family: Roboto, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 1em;
   cursor: pointer;
   position: relative;
@@ -3067,7 +3090,12 @@ td, th {
   padding: 0.75rem;
 }
 
-/* line 60, ../scss/core/base/forms/_generic.scss */
+/* line 70, ../scss/core/base/forms/_generic.scss */
+form {
+  margin-bottom: 1.5rem;
+}
+
+/* line 74, ../scss/core/base/forms/_generic.scss */
 input[type="text"], input[type="password"] {
   display: block;
   width: 100%;
@@ -3086,14 +3114,14 @@ input[type="text"]:focus, input[type="password"]:focus {
   border-color: #81cff1;
 }
 
-/* line 64, ../scss/core/base/forms/_generic.scss */
+/* line 78, ../scss/core/base/forms/_generic.scss */
 label {
   display: block;
   cursor: pointer;
   margin-bottom: 1.5rem;
 }
 
-/* line 68, ../scss/core/base/forms/_generic.scss */
+/* line 82, ../scss/core/base/forms/_generic.scss */
 textarea {
   min-height: 5em;
   display: block;
@@ -3113,7 +3141,7 @@ textarea:focus {
   border-color: #81cff1;
 }
 
-/* line 72, ../scss/core/base/forms/_generic.scss */
+/* line 86, ../scss/core/base/forms/_generic.scss */
 input {
   vertical-align: middle;
   border: 1px solid #bbbbbb;
@@ -3124,7 +3152,7 @@ input:focus {
   border-color: #81cff1;
 }
 
-/* line 76, ../scss/core/base/forms/_generic.scss */
+/* line 90, ../scss/core/base/forms/_generic.scss */
 select {
   display: block;
   width: 100%;
@@ -3138,11 +3166,15 @@ select:focus {
   border-color: #81cff1;
 }
 
-/* line 89, ../scss/core/base/forms/_generic.scss */
+/* line 94, ../scss/core/base/forms/_generic.scss */
 input[type="checkbox"], input[type="radio"] {
   vertical-align: middle;
   margin: 0;
   margin-top: -0.25em;
+}
+/* line 64, ../scss/core/base/forms/_generic.scss */
+input[type="checkbox"]:focus, input[type="radio"]:focus {
+  outline: 1px solid #81cff1;
 }
 
 /* line 13, ../scss/core/base/forms/_inline.scss */
@@ -3161,6 +3193,21 @@ input[type="checkbox"], input[type="radio"] {
 /* line 25, ../scss/core/base/forms/_inline.scss */
 .sb-form-inline input[placeholder] {
   width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* line 13, ../scss/core/base/forms/_aligned.scss */
+.sb-form-aligned label {
+  display: inline-block;
+  width: 50%;
+  line-height: 2em;
+  text-align: right;
+  padding-right: 0.75rem;
+}
+/* line 21, ../scss/core/base/forms/_aligned.scss */
+.sb-form-aligned input {
+  display: inline-block;
+  width: auto;
 }
 
 /* line 36, ../scss/core/_base.scss */
@@ -3853,19 +3900,19 @@ input[type="checkbox"], input[type="radio"] {
   background-color: #e6e6e6;
 }
 
-/* line 61, ../scss/core/components/navigation/_bar.scss */
+/* line 69, ../scss/core/components/navigation/_bar.scss */
 .sb-nav-bar {
   width: 100%;
   margin-bottom: 0;
   font-size: 0;
 }
 
-/* line 65, ../scss/core/components/navigation/_bar.scss */
+/* line 73, ../scss/core/components/navigation/_bar.scss */
 .sb-nav-bar-fixed {
   background-color: #f1f1f1;
 }
 @media (min-width: 44em) {
-  /* line 65, ../scss/core/components/navigation/_bar.scss */
+  /* line 73, ../scss/core/components/navigation/_bar.scss */
   .sb-nav-bar-fixed {
     position: fixed;
     top: 0;
@@ -3876,14 +3923,14 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 @media (min-width: 44em) {
-  /* line 69, ../scss/core/components/navigation/_bar.scss */
+  /* line 77, ../scss/core/components/navigation/_bar.scss */
   .sb-has-nav-bar-fixed {
     padding-top: 0px;
     padding-top: 4.5rem;
   }
 }
 
-/* line 73, ../scss/core/components/navigation/_bar.scss */
+/* line 81, ../scss/core/components/navigation/_bar.scss */
 .sb-nav-bar .sb-nav-bar-item {
   margin: 0;
   height: 3rem;
@@ -3893,8 +3940,18 @@ input[type="checkbox"], input[type="radio"] {
 }
 /* line 50, ../scss/core/components/navigation/_bar.scss */
 .sb-nav-bar .sb-nav-bar-item a {
-  line-height: 3rem;
+  padding: 0 0.75rem;
   width: 100%;
   height: 100%;
   display: block;
+}
+
+/* line 85, ../scss/core/components/navigation/_bar.scss */
+.sb-nav-bar-text {
+  padding: 0 0.75rem;
+}
+
+/* line 89, ../scss/core/components/navigation/_bar.scss */
+.sb-nav-bar-brand {
+  font-weight: 700;
 }

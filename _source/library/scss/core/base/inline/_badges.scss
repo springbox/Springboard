@@ -12,7 +12,6 @@ $print-base-inline-badge-classes:		$print-base-inline-classes		!default;
 	font-size: 0.875em;
 	color: white;
 	padding: 0 .75em;
-	background-color: $sb-look-light;
 	text-align: center;
 
 	@include box-shadow(1px 1px 0px #aaaaaa);

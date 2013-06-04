@@ -12,7 +12,6 @@ $print-base-inline-label-classes:		$print-base-inline-classes		!default;
 	font-size: 0.875em;
 	color: white;
 	padding: .125em .75em;
-	background-color: lighten($sb-blue, 40%);
 	@include box-shadow(1px 1px 0px #aaaaaa)
 }
 

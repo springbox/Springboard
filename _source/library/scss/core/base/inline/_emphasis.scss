@@ -23,6 +23,30 @@ $print-base-inline-emphasis-classes:		$print-base-inline-classes		!default;
 	color: lighten($sb-blue, 30%);
 }
 
+@mixin sb-text-warning {
+	color: $sb-orange;
+}
+
+@mixin sb-bg-caution {
+	background-color: $sb-yellow;
+}
+
+@mixin sb-bg-stop {
+	background-color: $sb-red;
+}
+
+@mixin sb-bg-go {
+	background-color: $sb-green;
+}
+
+@mixin sb-bg-look {
+	background-color: lighten($sb-blue, 30%);
+}
+
+@mixin sb-bg-warning {
+	background-color: $sb-orange;
+}
+
 
 // ----- Placeholder styles ----- //
 %sb-text-caution {
@@ -39,6 +63,26 @@ $print-base-inline-emphasis-classes:		$print-base-inline-classes		!default;
 
 %sb-text-look {
 	@include sb-text-look;
+}
+
+%sb-bg-caution {
+	@include sb-bg-caution;
+}
+
+%sb-bg-stop {
+	@include sb-bg-stop;
+}
+
+%sb-bg-go {
+	@include sb-bg-go;
+}
+
+%sb-bg-look {
+	@include sb-bg-look;
+}
+
+%sb-bg-warning {
+	@include sb-bg-warning;
 }
 
 // ----- Class styles ----- //
@@ -58,6 +102,26 @@ $print-base-inline-emphasis-classes:		$print-base-inline-classes		!default;
 
 	.sb-text-look {
 		@extend %sb-text-look;
+	}
+
+	.sb-bg-caution {
+		@extend %sb-bg-caution;
+	}
+
+	.sb-bg-stop {
+		@extend %sb-bg-stop;
+	}
+
+	.sb-bg-go {
+		@extend %sb-bg-go;
+	}
+
+	.sb-bg-look {
+		@extend %sb-bg-look;
+	}
+
+	.sb-bg-warning {
+		@extend %sb-bg-warning;
 	}
 
 }

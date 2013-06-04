@@ -14,7 +14,7 @@ $sb-button-color:				lighten($sb-font-color, 40%)	!default;
 @mixin sb-button($button-background: $sb-button-color) {
 	border: 0;
 	font-family: $sb-sans;
-	font-weight: 500;
+	font-weight: 300;
 	font-size: 1em;
 	cursor: pointer;
 	position: relative;

@@ -1,0 +1,39 @@
+//-------------------------------------
+//  Springboard: core/base/forms/aligned
+//  
+//-------------------------------------
+
+
+// ----- Settings ----- //
+$print-base-form-aligned-classes:		$print-base-form-classes		!default;
+
+
+// ----- Mixins ----- //
+@mixin sb-form-aligned {
+	label {
+		display: inline-block;
+		width: 50%;
+		line-height: 2em;
+		text-align: right;
+		padding-right: $sb-s-spacing;
+	}
+
+	input {
+		display: inline-block;
+		width: auto;
+	}
+}
+
+
+// ----- Placeholders ----- //
+%sb-form-aligned {
+	@include sb-form-aligned;
+}
+
+
+
+
+// ----- Classes ----- //
+.sb-form-aligned {
+	@extend %sb-form-aligned;
+}

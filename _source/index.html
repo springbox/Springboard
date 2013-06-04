@@ -201,8 +201,8 @@ layout: default
 				<h3>Plus: some inline styles</h3>
 			</div>
 			<p>Curabitur <strong>pretium tincidunt</strong> viverra. Pellentesque id ornare arcu. Pellentesque sodales, arcu a convallis tempus, eros <sub>lacus</sub> porttitor quam, id ultricies <sup>dui</sup> leo eu leo. Fusce consectetur viverra nibh eu tempus. <em>Aliquam placerat mi et leo varius vehicula.</em> Vestibulum dapibus <time>16:14:34, May 2013</time> varius aliquet. Pellentesque <abbr title="Habitant">HBT</abbr> morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed molestie risus ac velit pellentesque sed lacinia risus rhoncus.</p>
-			<p><span class="sb-badge">13</span> Curabitur pretium tincidunt viverra. <code>Pellentesque id ornare arcu.</code> Pellentesque sodales, arcu a convallis tempus, eros lacus porttitor quam, id ultricies dui leo eu leo. Fusce consectetur <var>viverra = null</var> nibh eu tempus. Aliquam placerat mi et leo varius vehicula. Vestibulum dapibus varius aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <kbd>⌘ Cmd</kbd> + <kbd>A</kbd></p>
-			<p><span class="sb-label">Watch out!</span> Sed auctor dolor vel diam molestie tempus. Sed molestie risus ac velit pellentesque sed lacinia risus rhoncus.</p>
+			<p><span class="sb-badge sb-bg-stop">13</span> Curabitur pretium tincidunt viverra. <code>Pellentesque id ornare arcu.</code> Pellentesque sodales, arcu a convallis tempus, eros lacus porttitor quam, id ultricies dui leo eu leo. Fusce consectetur <var>viverra = null</var> nibh eu tempus. Aliquam placerat mi et leo varius vehicula. Vestibulum dapibus varius aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <kbd>⌘ Cmd</kbd> + <kbd>A</kbd></p>
+			<p><span class="sb-label sb-bg-go">Watch out!</span> Sed auctor dolor vel diam molestie tempus. Sed molestie risus ac velit pellentesque sed lacinia risus rhoncus.</p>
 			<p class="sb-secondary">Curabitur pretium tincidunt viverra. <del>Aliquam placerat</del> <ins>Consectetur elit</ins> ornare arcu. Pellentesque sodales, arcu a convallis tempus, eros lacus porttitor quam, id ultricies dui leo eu leo. Fusce consectetur viverra nibh eu tempus. <mark>Aliquam placerat<marK> mi et leo varius vehicula. Vestibulum dapibus varius aliquet.  Sed auctor dolor vel diam molestie tempus. Sed molestie risus ac velit pellentesque sed lacinia risus rhoncus.</p>
 			<p class="sb-tertiary">Curabitur pretium tincidunt viverra. Pellentesque id ornare arcu. Pellentesque sodales, arcu a convallis tempus, eros lacus porttitor quam, id ultricies dui leo eu leo. Fusce consectetur viverra nibh eu tempus. Vestibulum dapibus varius aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed auctor dolor vel diam molestie tempus. </p>
 			<p class="sb-text-look">Sed molestie risus ac velit pellentesque sed lacinia risus rhoncus.</p>
@@ -821,12 +821,72 @@ layout: default
 						</div>
 
 						<div class="sb-grid-2">
-							<input type="submit" value="Sign in" class="sb-button">
+							<input type="submit" value="Sign in" class="sb-button sb-button-look">
 						</div>
 					</div>
 				</fieldset>
 			</form>
 				
+		</div>
+
+
+
+		
+	</div>
+
+	<div class="sb-grid-row">
+		<div class="sb-grid-3">
+			<h2>Stacked</h2>
+			<form>
+				<fieldset name="signin">
+						<label for="stacked_username">
+							Username
+							<input type="text" id="stacked_username" placeholder="Username">
+						</label>
+
+						<label for="stacked_password">
+							Password
+							<input type="password" id="stacked_password" placeholder="Password">
+						</label>
+
+						<label for="stacked_remember">
+							<input type="checkbox" id="stacked_remember"> Remember me
+						</label>
+
+						<input type="submit" value="Sign in" class="sb-button sb-button-go">
+				</fieldset>
+			</form>
+		</div>
+
+		<div class="sb-grid-6">
+			<h2>Aligned</h2>
+			<form class="sb-form-aligned">
+				<fieldset name="signin">
+					<div class="sb-grid-row">
+						<div class="sb-grid-6">
+							<label for="aligned_username">
+								Username
+							</label>
+							<input type="text" id="aligned_username">
+						</div>
+
+						<div class="sb-grid-6">
+							<label for="aligned_password">
+								Password
+							</label>
+							<input type="text" id="aligned_password">
+						</div>
+
+						<div class="sb-grid-6">
+							<label for="aligned_remember">
+								Remember me
+							</label>
+							<input type="checkbox" id="aligned_remember">
+						</div>
+					</div>
+				</fieldset>
+			</form>
+			<p><span class="sb-label sb-bg-warning">Hey!</span> This isn't the best responsive example, however, it's possible to use the default styling (Stacked) and then <code>@include sb-aligned</code> in your form class at larger break points.</p>
 		</div>
 	</div>
 	<hr>
