@@ -5,7 +5,7 @@
 
 
 // ----- Images settings ----- //
-$print-base-images-classes:		$print-base-classes		!default;
+$print-base-image-classes:		$print-base-classes		!default;
 
 
 // ----- Images import ----- //
@@ -38,14 +38,16 @@ img {
 	@extend %sb-image;
 }
 
-.sb-rounded {
-	@extend %sb-rounded;
-}
+@if $print-base-image-classes == true {
+	.sb-rounded {
+		@extend %sb-rounded;
+	}
 
-.sb-circular {
-	@extend %sb-circular;
-}
+	.sb-circular {
+		@extend %sb-circular;
+	}
 
-.sb-bordered {
-	@extend %sb-bordered;
+	.sb-bordered {
+		@extend %sb-bordered;
+	}
 }

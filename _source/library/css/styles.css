@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 15, ../scss/core/helpers/_clearfix.scss */
+/* line 19, ../scss/core/helpers/_clearfix.scss */
 .sb-grid-row, .sb-callout-body {
   *zoom: 1;
 }
@@ -74,12 +74,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clear: both;
 }
 
-/* line 34, ../scss/core/helpers/_visibility.scss */
+/* line 37, ../scss/core/helpers/_visibility.scss */
 .sb-hidden {
   display: none;
 }
 
-/* line 38, ../scss/core/helpers/_visibility.scss */
+/* line 41, ../scss/core/helpers/_visibility.scss */
 .sb-visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -91,7 +91,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: 0;
 }
 
-/* line 23, ../scss/core/helpers/_visibility.scss */
+/* line 26, ../scss/core/helpers/_visibility.scss */
 .sb-visually-hidden-but-focusable:active, .sb-visually-hidden-but-focusable:focus {
   clip: auto;
   height: auto;
@@ -2634,7 +2634,7 @@ pre, .sb-preformatted {
   margin-left: .25em;
 }
 
-/* line 23, ../scss/core/base/_typography.scss */
+/* line 22, ../scss/core/base/_typography.scss */
 body {
   font-family: Roboto, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 300;
@@ -2642,7 +2642,7 @@ body {
   color: #222222;
 }
 
-/* line 30, ../scss/core/base/_typography.scss */
+/* line 29, ../scss/core/base/_typography.scss */
 hr {
   height: 0;
   margin-top: 1.4375rem;
@@ -2684,7 +2684,7 @@ img {
   box-shadow: #aaaaaa 0px 0px 3px;
 }
 
-/* line 51, ../scss/core/base/buttons/_generic.scss */
+/* line 53, ../scss/core/base/buttons/_generic.scss */
 .sb-button, .sb-button-caution, .sb-button-warning, .sb-button-stop, .sb-button-go, .sb-button-look, .sb-button-link, .sb-button-quiet {
   border: 0;
   font-family: Roboto, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
@@ -2696,22 +2696,29 @@ img {
   max-width: 100%;
   margin: 0;
   color: white;
-  padding: 0.75rem 1.5rem;
+  line-height: 2;
+  padding: 0 1.5rem;
 }
 /* line 26, ../scss/core/base/buttons/_generic.scss */
 .sb-button:hover, .sb-button-caution:hover, .sb-button-warning:hover, .sb-button-stop:hover, .sb-button-go:hover, .sb-button-look:hover, .sb-button-link:hover, .sb-button-quiet:hover, .sb-button:focus, .sb-button-caution:focus, .sb-button-warning:focus, .sb-button-stop:focus, .sb-button-go:focus, .sb-button-look:focus, .sb-button-link:focus, .sb-button-quiet:focus, .sb-button.sb-button-hover, .sb-button-caution.sb-button-hover, .sb-button-warning.sb-button-hover, .sb-button-stop.sb-button-hover, .sb-button-go.sb-button-hover, .sb-button-look.sb-button-hover, .sb-button-link.sb-button-hover, .sb-button-quiet.sb-button-hover {
-  background: #a2a2a2;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #959595), color-stop(100%, #888888));
+  background: -webkit-linear-gradient(top, #959595, #888888);
+  background: -moz-linear-gradient(top, #959595, #888888);
+  background: -o-linear-gradient(top, #959595, #888888);
+  background: linear-gradient(top, #959595, #888888);
 }
 /* line 32, ../scss/core/base/buttons/_generic.scss */
 .sb-button:active, .sb-button-caution:active, .sb-button-warning:active, .sb-button-stop:active, .sb-button-go:active, .sb-button-look:active, .sb-button-link:active, .sb-button-quiet:active, .sb-button.sb-button-active, .sb-button-caution.sb-button-active, .sb-button-warning.sb-button-active, .sb-button-stop.sb-button-active, .sb-button-go.sb-button-active, .sb-button-look.sb-button-active, .sb-button-link.sb-button-active, .sb-button-quiet.sb-button-active {
-  top: 2px;
+  -webkit-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  background: #6f6f6f;
 }
-/* line 36, ../scss/core/base/buttons/_generic.scss */
+/* line 39, ../scss/core/base/buttons/_generic.scss */
 [disabled].sb-button, [disabled].sb-button-caution, [disabled].sb-button-warning, [disabled].sb-button-stop, [disabled].sb-button-go, [disabled].sb-button-look, [disabled].sb-button-link, [disabled].sb-button-quiet, .sb-button.sb-button-disabled, .sb-button-caution.sb-button-disabled, .sb-button-warning.sb-button-disabled, .sb-button-stop.sb-button-disabled, .sb-button-go.sb-button-disabled, .sb-button-look.sb-button-disabled, .sb-button-link.sb-button-disabled, .sb-button-quiet.sb-button-disabled {
   background: #d5d5d5;
   color: #6f6f6f;
   cursor: not-allowed;
-  top: 0;
 }
 
 /* line 32, ../scss/core/base/buttons/_groups.scss */
@@ -2734,118 +2741,186 @@ img {
 
 /* line 24, ../scss/core/base/buttons/_sizes.scss */
 .sb-button-xl {
-  padding: 1.5rem 6rem;
+  padding: 0 6rem;
   font-size: 1.5em;
+  line-height: 3;
 }
 
-/* line 29, ../scss/core/base/buttons/_sizes.scss */
+/* line 30, ../scss/core/base/buttons/_sizes.scss */
 .sb-button-l {
-  padding: 1.5rem 3rem;
+  padding: 0 3rem;
   font-size: 1.25em;
+  line-height: 2.5;
 }
 
-/* line 34, ../scss/core/base/buttons/_sizes.scss */
+/* line 36, ../scss/core/base/buttons/_sizes.scss */
 .sb-button-m {
-  padding: 0.75rem 1.5rem;
+  padding: 0 1.5rem;
 }
 
-/* line 38, ../scss/core/base/buttons/_sizes.scss */
+/* line 40, ../scss/core/base/buttons/_sizes.scss */
 .sb-button-s {
-  padding: 0.75rem;
+  padding: 0 0.75rem;
   font-size: .75em;
 }
 
-/* line 43, ../scss/core/base/buttons/_sizes.scss */
+/* line 45, ../scss/core/base/buttons/_sizes.scss */
 .sb-button-expanded {
   width: 100%;
 }
 
-/* line 49, ../scss/core/base/buttons/_styles.scss */
+/* line 56, ../scss/core/base/buttons/_styles.scss */
 .sb-button-caution {
   background: #e54c12;
 }
 /* line 26, ../scss/core/base/buttons/_styles.scss */
 .sb-button-caution:hover, .sb-button-caution:focus, .sb-button-caution.sb-button-hover {
-  background: #ee5a22;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ee5a22), color-stop(100%, #e54c12));
+  background: -webkit-linear-gradient(top, #ee5a22, #e54c12);
+  background: -moz-linear-gradient(top, #ee5a22, #e54c12);
+  background: -o-linear-gradient(top, #ee5a22, #e54c12);
+  background: linear-gradient(top, #ee5a22, #e54c12);
   color: white;
 }
 /* line 35, ../scss/core/base/buttons/_styles.scss */
+.sb-button-caution:active, .sb-button-caution.sb-button-active {
+  -webkit-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  background: #cd4410;
+}
+/* line 42, ../scss/core/base/buttons/_styles.scss */
 [disabled].sb-button-caution, .sb-button-caution.sb-button-disabled {
   background: #f7b298;
 }
 
-/* line 53, ../scss/core/base/buttons/_styles.scss */
+/* line 60, ../scss/core/base/buttons/_styles.scss */
 .sb-button-warning {
   background: #ddb20f;
 }
 /* line 26, ../scss/core/base/buttons/_styles.scss */
 .sb-button-warning:hover, .sb-button-warning:focus, .sb-button-warning.sb-button-hover {
-  background: #efc217;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efc217), color-stop(100%, #ddb20f));
+  background: -webkit-linear-gradient(top, #efc217, #ddb20f);
+  background: -moz-linear-gradient(top, #efc217, #ddb20f);
+  background: -o-linear-gradient(top, #efc217, #ddb20f);
+  background: linear-gradient(top, #efc217, #ddb20f);
   color: white;
 }
 /* line 35, ../scss/core/base/buttons/_styles.scss */
+.sb-button-warning:active, .sb-button-warning.sb-button-active {
+  -webkit-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  background: #c59f0e;
+}
+/* line 42, ../scss/core/base/buttons/_styles.scss */
 [disabled].sb-button-warning, .sb-button-warning.sb-button-disabled {
   background: #f7e18e;
 }
 
-/* line 57, ../scss/core/base/buttons/_styles.scss */
+/* line 64, ../scss/core/base/buttons/_styles.scss */
 .sb-button-stop {
   background: #d90b2d;
 }
 /* line 26, ../scss/core/base/buttons/_styles.scss */
 .sb-button-stop:hover, .sb-button-stop:focus, .sb-button-stop.sb-button-hover {
-  background: #f10c32;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f10c32), color-stop(100%, #d90b2d));
+  background: -webkit-linear-gradient(top, #f10c32, #d90b2d);
+  background: -moz-linear-gradient(top, #f10c32, #d90b2d);
+  background: -o-linear-gradient(top, #f10c32, #d90b2d);
+  background: linear-gradient(top, #f10c32, #d90b2d);
   color: white;
 }
 /* line 35, ../scss/core/base/buttons/_styles.scss */
+.sb-button-stop:active, .sb-button-stop.sb-button-active {
+  -webkit-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  background: #c10a28;
+}
+/* line 42, ../scss/core/base/buttons/_styles.scss */
 [disabled].sb-button-stop, .sb-button-stop.sb-button-disabled {
   background: #f98497;
 }
 
-/* line 61, ../scss/core/base/buttons/_styles.scss */
+/* line 68, ../scss/core/base/buttons/_styles.scss */
 .sb-button-go {
   background: #77bc13;
 }
 /* line 26, ../scss/core/base/buttons/_styles.scss */
 .sb-button-go:hover, .sb-button-go:focus, .sb-button-go.sb-button-hover {
-  background: #86d315;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #86d315), color-stop(100%, #77bc13));
+  background: -webkit-linear-gradient(top, #86d315, #77bc13);
+  background: -moz-linear-gradient(top, #86d315, #77bc13);
+  background: -o-linear-gradient(top, #86d315, #77bc13);
+  background: linear-gradient(top, #86d315, #77bc13);
   color: white;
 }
 /* line 35, ../scss/core/base/buttons/_styles.scss */
+.sb-button-go:active, .sb-button-go.sb-button-active {
+  -webkit-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  background: #68a511;
+}
+/* line 42, ../scss/core/base/buttons/_styles.scss */
 [disabled].sb-button-go, .sb-button-go.sb-button-disabled {
   background: #bff177;
 }
 
-/* line 65, ../scss/core/base/buttons/_styles.scss */
+/* line 72, ../scss/core/base/buttons/_styles.scss */
 .sb-button-look {
   background: #116d96;
 }
 /* line 26, ../scss/core/base/buttons/_styles.scss */
 .sb-button-look:hover, .sb-button-look:focus, .sb-button-look.sb-button-hover {
-  background: #137ead;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #137ead), color-stop(100%, #116d96));
+  background: -webkit-linear-gradient(top, #137ead, #116d96);
+  background: -moz-linear-gradient(top, #137ead, #116d96);
+  background: -o-linear-gradient(top, #137ead, #116d96);
+  background: linear-gradient(top, #137ead, #116d96);
   color: white;
 }
 /* line 35, ../scss/core/base/buttons/_styles.scss */
+.sb-button-look:active, .sb-button-look.sb-button-active {
+  -webkit-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  background: #0e5c7f;
+}
+/* line 42, ../scss/core/base/buttons/_styles.scss */
 [disabled].sb-button-look, .sb-button-look.sb-button-disabled {
   background: #54bdec;
 }
 
-/* line 69, ../scss/core/base/buttons/_styles.scss */
+/* line 76, ../scss/core/base/buttons/_styles.scss */
 .sb-button-quiet {
   background: transparent;
   color: #3c3c3c;
 }
 /* line 26, ../scss/core/base/buttons/_styles.scss */
 .sb-button-quiet:hover, .sb-button-quiet:focus, .sb-button-quiet.sb-button-hover {
-  background: #959595;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #959595), color-stop(100%, #888888));
+  background: -webkit-linear-gradient(top, #959595, #888888);
+  background: -moz-linear-gradient(top, #959595, #888888);
+  background: -o-linear-gradient(top, #959595, #888888);
+  background: linear-gradient(top, #959595, #888888);
   color: white;
 }
 /* line 35, ../scss/core/base/buttons/_styles.scss */
+.sb-button-quiet:active, .sb-button-quiet.sb-button-active {
+  -webkit-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  background: #7b7b7b;
+}
+/* line 42, ../scss/core/base/buttons/_styles.scss */
 [disabled].sb-button-quiet, .sb-button-quiet.sb-button-disabled {
   color: #6f6f6f;
 }
 
-/* line 73, ../scss/core/base/buttons/_styles.scss */
+/* line 80, ../scss/core/base/buttons/_styles.scss */
 .sb-button-link {
   background: transparent;
   color: #116d96;
@@ -2860,6 +2935,12 @@ img {
   background: transparent;
 }
 /* line 35, ../scss/core/base/buttons/_styles.scss */
+.sb-button-link:active, .sb-button-link.sb-button-active {
+  -webkit-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.25);
+}
+/* line 42, ../scss/core/base/buttons/_styles.scss */
 [disabled].sb-button-link, .sb-button-link.sb-button-disabled {
   background: transparent;
 }
@@ -2986,8 +3067,8 @@ td, th {
   padding: 0.75rem;
 }
 
-/* line 52, ../scss/core/base/forms/_generic.scss */
-input[type="text"] {
+/* line 60, ../scss/core/base/forms/_generic.scss */
+input[type="text"], input[type="password"] {
   display: block;
   width: 100%;
   height: 2em;
@@ -2996,16 +3077,23 @@ input[type="text"] {
   font-size: 1em;
   font-family: Roboto, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 300;
-  margin-bottom: 1.5rem;
+  vertical-align: middle;
+  border: 1px solid #bbbbbb;
+}
+/* line 26, ../scss/core/base/forms/_generic.scss */
+input[type="text"]:focus, input[type="password"]:focus {
+  outline: 0;
+  border-color: #81cff1;
 }
 
-/* line 56, ../scss/core/base/forms/_generic.scss */
+/* line 64, ../scss/core/base/forms/_generic.scss */
 label {
   display: block;
   cursor: pointer;
+  margin-bottom: 1.5rem;
 }
 
-/* line 60, ../scss/core/base/forms/_generic.scss */
+/* line 68, ../scss/core/base/forms/_generic.scss */
 textarea {
   min-height: 5em;
   display: block;
@@ -3016,19 +3104,63 @@ textarea {
   font-size: 1em;
   font-family: Roboto, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 300;
-  margin-bottom: 1.5rem;
+  vertical-align: middle;
+  border: 1px solid #bbbbbb;
+}
+/* line 26, ../scss/core/base/forms/_generic.scss */
+textarea:focus {
+  outline: 0;
+  border-color: #81cff1;
 }
 
-/* line 64, ../scss/core/base/forms/_generic.scss */
+/* line 72, ../scss/core/base/forms/_generic.scss */
 input {
-  margin-bottom: 1.5rem;
+  vertical-align: middle;
+  border: 1px solid #bbbbbb;
+}
+/* line 26, ../scss/core/base/forms/_generic.scss */
+input:focus {
+  outline: 0;
+  border-color: #81cff1;
 }
 
-/* line 68, ../scss/core/base/forms/_generic.scss */
+/* line 76, ../scss/core/base/forms/_generic.scss */
 select {
   display: block;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin: 0;
+  vertical-align: middle;
+  border: 1px solid #bbbbbb;
+}
+/* line 26, ../scss/core/base/forms/_generic.scss */
+select:focus {
+  outline: 0;
+  border-color: #81cff1;
+}
+
+/* line 89, ../scss/core/base/forms/_generic.scss */
+input[type="checkbox"], input[type="radio"] {
+  vertical-align: middle;
+  margin: 0;
+  margin-top: -0.25em;
+}
+
+/* line 13, ../scss/core/base/forms/_inline.scss */
+.sb-form-inline label {
+  width: 50%;
+  float: left;
+  line-height: 2em;
+  text-align: right;
+  padding-right: 0.75rem;
+}
+/* line 21, ../scss/core/base/forms/_inline.scss */
+.sb-form-inline input {
+  width: 50%;
+  float: left;
+}
+/* line 25, ../scss/core/base/forms/_inline.scss */
+.sb-form-inline input[placeholder] {
+  width: 100%;
 }
 
 /* line 36, ../scss/core/_base.scss */
@@ -3053,95 +3185,7 @@ select {
 }
 
 /* line 44, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-1 {
-  position: static;
-  width: 7.3333333333333%;
-  margin-left: 1%;
-  float: left;
-}
-
-/* line 44, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-2 {
-  position: static;
-  width: 15.6666666666667%;
-  margin-left: 1%;
-  float: left;
-}
-
-/* line 44, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-3 {
-  position: static;
-  width: 24%;
-  margin-left: 1%;
-  float: left;
-}
-
-/* line 44, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-4 {
-  position: static;
-  width: 32.3333333333333%;
-  margin-left: 1%;
-  float: left;
-}
-
-/* line 44, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-5 {
-  position: static;
-  width: 40.6666666666667%;
-  margin-left: 1%;
-  float: left;
-}
-
-/* line 44, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-6 {
-  position: static;
-  width: 49%;
-  margin-left: 1%;
-  float: left;
-}
-
-/* line 44, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-7 {
-  position: static;
-  width: 57.3333333333333%;
-  margin-left: 1%;
-  float: left;
-}
-
-/* line 44, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-8 {
-  position: static;
-  width: 65.6666666666667%;
-  margin-left: 1%;
-  float: left;
-}
-
-/* line 44, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-9 {
-  position: static;
-  width: 74%;
-  margin-left: 1%;
-  float: left;
-}
-
-/* line 44, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-10 {
-  position: static;
-  width: 82.3333333333333%;
-  margin-left: 1%;
-  float: left;
-}
-
-/* line 44, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-11 {
-  position: static;
-  width: 90.6666666666667%;
-  margin-left: 1%;
-  float: left;
-}
-
-/* line 44, ../scss/core/layout/_grid-generator.scss */
-.sb-grid-12 {
+.sb-grid-1, .sb-grid-2, .sb-grid-3, .sb-grid-4, .sb-grid-5, .sb-grid-6, .sb-grid-7, .sb-grid-8, .sb-grid-9, .sb-grid-10, .sb-grid-11, .sb-grid-12 {
   position: static;
   width: 99%;
   margin-left: 1%;
@@ -3769,29 +3813,29 @@ select {
     left: 84rem;
   }
 }
-/* line 35, ../scss/core/layout/_callout.scss */
+/* line 36, ../scss/core/layout/_callout.scss */
 .sb-callout-container {
   margin-bottom: 1.5rem;
   background-color: white;
 }
 
-/* line 39, ../scss/core/layout/_callout.scss */
+/* line 40, ../scss/core/layout/_callout.scss */
 .sb-callout-title {
   padding: 0.75rem;
   border-bottom: 1px solid #a2a2a2;
   background-color: #f1f1f1;
 }
-/* line 19, ../scss/core/layout/_callout.scss */
+/* line 20, ../scss/core/layout/_callout.scss */
 .sb-callout-title h1, .sb-callout-title h2, .sb-callout-title h3, .sb-callout-title h4, .sb-callout-title h5, .sb-callout-title h6, .sb-callout-title .sb-h1, .sb-callout-title .sb-h2, .sb-callout-title .sb-h3, .sb-callout-title .sb-h4, .sb-callout-title .sb-h6 {
   margin-bottom: 0;
 }
-/* line 23, ../scss/core/layout/_callout.scss */
+/* line 24, ../scss/core/layout/_callout.scss */
 .sb-callout-title:last-child {
   border-bottom: 0;
   border-top: 1px solid #a2a2a2;
 }
 
-/* line 43, ../scss/core/layout/_callout.scss */
+/* line 44, ../scss/core/layout/_callout.scss */
 .sb-callout-body {
   padding: 0.75rem;
 }
@@ -3809,18 +3853,19 @@ select {
   background-color: #e6e6e6;
 }
 
-/* line 51, ../scss/core/components/navigation/_bar.scss */
+/* line 61, ../scss/core/components/navigation/_bar.scss */
 .sb-nav-bar {
   width: 100%;
   margin-bottom: 0;
+  font-size: 0;
 }
 
-/* line 55, ../scss/core/components/navigation/_bar.scss */
+/* line 65, ../scss/core/components/navigation/_bar.scss */
 .sb-nav-bar-fixed {
-  background-color: #d1d1d1;
+  background-color: #f1f1f1;
 }
 @media (min-width: 44em) {
-  /* line 55, ../scss/core/components/navigation/_bar.scss */
+  /* line 65, ../scss/core/components/navigation/_bar.scss */
   .sb-nav-bar-fixed {
     position: fixed;
     top: 0;
@@ -3831,16 +3876,25 @@ select {
 }
 
 @media (min-width: 44em) {
-  /* line 59, ../scss/core/components/navigation/_bar.scss */
+  /* line 69, ../scss/core/components/navigation/_bar.scss */
   .sb-has-nav-bar-fixed {
     padding-top: 0px;
     padding-top: 4.5rem;
   }
 }
 
-/* line 63, ../scss/core/components/navigation/_bar.scss */
+/* line 73, ../scss/core/components/navigation/_bar.scss */
 .sb-nav-bar .sb-nav-bar-item {
-  padding: 0.75rem;
   margin: 0;
   height: 3rem;
+  line-height: 3rem;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+/* line 50, ../scss/core/components/navigation/_bar.scss */
+.sb-nav-bar .sb-nav-bar-item a {
+  line-height: 3rem;
+  width: 100%;
+  height: 100%;
+  display: block;
 }

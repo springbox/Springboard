@@ -4,7 +4,7 @@
 //-------------------------------------
 
 // ----- Settings ----- //
- 
+$print-layout-grid-classes:		$print-layout-classes		!default;
 
 // Small (mobile first)
 $sb-s-visible: 			$sb-visible-grid	!default;
@@ -92,7 +92,7 @@ $sb-xl-max-width:			false				!default;
 
 @for $i from 1 through 12 {
 	%sb-grid-#{$i} {
-		@extend %sb-s-#{$i};
+		@extend %sb-s-12;
 		@extend %sb-m-#{$i};
 		@extend %sb-l-#{$i};
 		@extend %sb-xl-#{$i};

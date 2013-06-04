@@ -7,13 +7,14 @@
 $print-component-nav-bar-classes:	$print-component-nav-classes	!default;
 
 
-$sb-bar-nav-color:	#d1d1d1	!default;
+$sb-bar-nav-color:	#f1f1f1	!default;
 
 
 // ----- Mixins ----- //
 @mixin sb-nav-bar {
 	width: 100%;
 	margin-bottom: 0;
+	font-size: 0;
 	@extend %sb-inline-list;
 }
 
@@ -40,9 +41,18 @@ $sb-bar-nav-color:	#d1d1d1	!default;
 }
 
 @mixin sb-nav-bar-item {
-	padding: $sb-s-spacing;
 	margin: 0;
 	height: 3rem;
+	line-height: 3rem;
+	font-size: 1rem;
+	vertical-align: middle;
+
+	a {
+		line-height: 3rem;
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
 }
 
 

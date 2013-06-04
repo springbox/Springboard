@@ -16,15 +16,23 @@ $print-base-form-generic-classes:		$print-base-form-classes		!default;
 @mixin sb-form-label {
 	display: block;
 	cursor: pointer;
+	margin-bottom: $sb-m-spacing;
 }
 
 @mixin sb-form-input {
-	margin-bottom: $sb-m-spacing;
+	vertical-align: middle;
+	border: 1px solid lighten($sb-font-color, 60%);
+	
+	&:focus {
+		outline: 0;
+		border-color: $sb-look-light;
+	}
 }
 
 @mixin sb-form-select {
 	display: block;
 	width: 100%;
+	margin: 0;
 
 	@include sb-form-input;
 }
@@ -70,12 +78,19 @@ $print-base-form-generic-classes:		$print-base-form-classes		!default;
 }
 
 // ----- Elements ----- //
-input[type="text"] {
-	@extend %sb-text-input;
-}
 
 input {
 	@extend %sb-form-input;
+
+	&[type="text"], &[type="password"] {
+		@extend %sb-text-input;
+	}
+
+	&[type="checkbox"], &[type="radio"] {
+		vertical-align: middle;
+		margin: 0;
+		margin-top: -0.25em;
+	}
 }
 
 label {

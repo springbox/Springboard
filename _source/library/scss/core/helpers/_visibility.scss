@@ -2,6 +2,9 @@
 //  Springboard: core/helpers/visibility
 //-------------------------------------
 
+// ----- Settings ----- //
+$print-helpers-visibility-classes:		$print-helpers-classes		!default;
+
 
 // ----- Mixins ----- //
 @mixin sb-hidden {

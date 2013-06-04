@@ -1,0 +1,43 @@
+//-------------------------------------
+//  Springboard: core/base/forms/inline
+//  
+//-------------------------------------
+
+
+// ----- Settings ----- //
+$print-base-form-inline-classes:		$print-base-form-classes		!default;
+
+
+// ----- Mixins ----- //
+@mixin sb-form-inline {
+	label {
+		width: 50%;
+		float: left;
+		line-height: 2em;
+		text-align: right;
+		padding-right: $sb-s-spacing;
+	}
+
+	input {
+		width: 50%;
+		float: left;
+
+		&[placeholder] {
+			width: 100%;
+		}
+	}
+}
+
+
+// ----- Placeholders ----- //
+%sb-form-inline {
+	@include sb-form-inline;
+}
+
+
+
+
+// ----- Classes ----- //
+.sb-form-inline {
+	@extend %sb-form-inline;
+}

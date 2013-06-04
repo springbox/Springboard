@@ -4,6 +4,7 @@
 //-------------------------------------
 
 // ----- Settings ----- //
+$print-layout-callout-classes:	$print-layout-classes		!default;
 
 // ----- Mixins ----- //
 @mixin sb-callout-container {

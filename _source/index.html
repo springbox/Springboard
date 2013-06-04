@@ -201,7 +201,7 @@ layout: default
 				<h3>Plus: some inline styles</h3>
 			</div>
 			<p>Curabitur <strong>pretium tincidunt</strong> viverra. Pellentesque id ornare arcu. Pellentesque sodales, arcu a convallis tempus, eros <sub>lacus</sub> porttitor quam, id ultricies <sup>dui</sup> leo eu leo. Fusce consectetur viverra nibh eu tempus. <em>Aliquam placerat mi et leo varius vehicula.</em> Vestibulum dapibus <time>16:14:34, May 2013</time> varius aliquet. Pellentesque <abbr title="Habitant">HBT</abbr> morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed molestie risus ac velit pellentesque sed lacinia risus rhoncus.</p>
-			<p><span class="sb-badge">13</span>Curabitur pretium tincidunt viverra. <code>Pellentesque id ornare arcu.</code> Pellentesque sodales, arcu a convallis tempus, eros lacus porttitor quam, id ultricies dui leo eu leo. Fusce consectetur <var>viverra = null</var> nibh eu tempus. Aliquam placerat mi et leo varius vehicula. Vestibulum dapibus varius aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <kbd>⌘ Cmd</kbd> + <kbd>A</kbd></p>
+			<p><span class="sb-badge">13</span> Curabitur pretium tincidunt viverra. <code>Pellentesque id ornare arcu.</code> Pellentesque sodales, arcu a convallis tempus, eros lacus porttitor quam, id ultricies dui leo eu leo. Fusce consectetur <var>viverra = null</var> nibh eu tempus. Aliquam placerat mi et leo varius vehicula. Vestibulum dapibus varius aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <kbd>⌘ Cmd</kbd> + <kbd>A</kbd></p>
 			<p><span class="sb-label">Watch out!</span> Sed auctor dolor vel diam molestie tempus. Sed molestie risus ac velit pellentesque sed lacinia risus rhoncus.</p>
 			<p class="sb-secondary">Curabitur pretium tincidunt viverra. <del>Aliquam placerat</del> <ins>Consectetur elit</ins> ornare arcu. Pellentesque sodales, arcu a convallis tempus, eros lacus porttitor quam, id ultricies dui leo eu leo. Fusce consectetur viverra nibh eu tempus. <mark>Aliquam placerat<marK> mi et leo varius vehicula. Vestibulum dapibus varius aliquet.  Sed auctor dolor vel diam molestie tempus. Sed molestie risus ac velit pellentesque sed lacinia risus rhoncus.</p>
 			<p class="sb-tertiary">Curabitur pretium tincidunt viverra. Pellentesque id ornare arcu. Pellentesque sodales, arcu a convallis tempus, eros lacus porttitor quam, id ultricies dui leo eu leo. Fusce consectetur viverra nibh eu tempus. Vestibulum dapibus varius aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed auctor dolor vel diam molestie tempus. </p>
@@ -753,44 +753,39 @@ layout: default
 				<fieldset name="user">
 					<legend><h3>User Profile</h3></legend>
 					<div class="sb-grid-row">
-						<div class="sb-grid-3">
-							<label for="form_name">Name</label>
+						<label for="form_name" class="sb-grid-3">
+							Name
 							<input type="text" id="form_name">
-						</div>
+						</label>
 
-						<div class="sb-grid-3">
-							<label for="form_bio">Bio</label>
+						<label for="form_bio" class="sb-grid-3">
+							Bio
 							<textarea id="form_bio"></textarea>
-						</div>
+						</label>
+						
 					</div>
 
 					<div class="sb-grid-row">
-						<div class="sb-grid-1">
-							<label for="form_check1">Check 1</label> <input type="checkbox" id="form_check1">
-						</div>
-						<div class="sb-grid-1">
-							<label for="form_check2">Check 2 <input type="checkbox" id="form_check2"></label>
-						</div>
-						<div class="sb-grid-1">
-							<label for="form_check3"><input type="checkbox" id="form_check3"> Check 3</label>
-						</div>
+						<label for="form_check2" class="sb-grid-1">
+							<input type="checkbox" id="form_check2"> Skittles
+						</label>
+						<label for="form_check3" class="sb-grid-1">
+							<input type="checkbox" id="form_check3"> M&amp;Ms
+						</label>
 					</div>
 
 					<div class="sb-grid-row">
-						<div class="sb-grid-1">
-							<label for="form_radio1">Radio 1</label> <input type="radio" id="form_radio1" name="form_radio">
-						</div>
-						<div class="sb-grid-1">
-							<label for="form_radio2">Radio 2 <input type="radio" id="form_radio2" name="form_radio"></label>
-						</div>
-						<div class="sb-grid-1">
-							<label for="form_radio3"><input type="radio" id="form_radio3" name="form_radio"> Radio 3</label>
-						</div>
+						<label for="form_radio2" class="sb-grid-1">
+							Male <input type="radio" id="form_radio2" name="form_radio">
+						</label>
+						<label for="form_radio3" class="sb-grid-1">
+							Female <input type="radio" id="form_radio3" name="form_radio">
+						</label>
 					</div>
 					
 					<div class="sb-grid-row">
-						<div class="sb-grid-6">
-							<label for="form_favorite">Favorite</label>
+						<label for="form_favorite" class="sb-grid-6">
+							Favorite
 							<select id="form_favorite">
 								<optgroup label="Villains">
 									<option>Voldemort</option>
@@ -803,10 +798,32 @@ layout: default
 									<option>Aladdin</option>
 								</optgroup>
 							</select>
-						</div>
+						</label>
 					</div>
 					
 					<input type="submit" value="Submit" class="sb-button">
+				</fieldset>
+			</form>
+				
+		</div>
+
+		<div class="sb-grid-6">
+			<h2>Inline</h2>
+			<form class="sb-form-inline">
+				<fieldset name="signin">
+					<div class="sb-grid-row">
+						<div class="sb-grid-2">
+							<input type="text" id="form_name" placeholder="Username">
+						</div>
+
+						<div class="sb-grid-2">
+							<input type="password" id="form_password" placeholder="Password">
+						</div>
+
+						<div class="sb-grid-2">
+							<input type="submit" value="Sign in" class="sb-button">
+						</div>
+					</div>
 				</fieldset>
 			</form>
 				

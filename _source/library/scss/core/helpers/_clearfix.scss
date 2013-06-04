@@ -5,6 +5,10 @@
 // Uses's Compass' clearfix: 
 @import "compass/utilities/general/clearfix";
 
+// ----- Settings ----- //
+$print-helpers-clearfix-classes:		$print-helpers-classes		!default;
+
+
 // ----- Mixins ----- //
 @mixin sb-clearfix {
 	@include pie-clearfix;

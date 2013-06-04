@@ -1,0 +1,47 @@
+//-------------------------------------
+//  Springboard: core/layout/off-canvas
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-layout-offcanvas-classes:			$print-layout-classes		!default;
+
+// ----- Mixins ----- //
+@include sb-offcanvas-container {
+	overflow: hidden;
+	width: 100%;
+}
+
+// ----- Placeholders ----- //
+%sb-offcanvas-container {
+	@include sb-offcanvas-container;
+}
+
+// ----- Classes ----- //
+.sb-offcanvas-container {
+	@extend %sb-offcanvas-container;
+}
+
+.sb-offcanvas-off {
+    margin-left: -100%;
+    float: left;
+}
+
+.sb-offcanvas-left {
+    margin-left: -100%;
+    width: 100%;
+    float: left;
+}
+
+.active .sb-offcanvas-left {
+    margin-left: 0;
+}
+
+.active .sb-offcanvas-right {
+    margin-left: 100%;
+}
+
+
+.sb-offcanvas-right {
+    width: 100%;
+}

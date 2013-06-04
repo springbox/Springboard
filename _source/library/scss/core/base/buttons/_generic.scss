@@ -25,12 +25,15 @@ $sb-button-color:				lighten($sb-font-color, 40%)	!default;
 
 	&:hover, &:focus, &%sb-button-hover {
 		@if $button-background != 'transparent' {
-			background: lighten($button-background, 10%);
+			@include background(linear-gradient(top, lighten($button-background, 5%), $button-background));
 		}
 	}
 
 	&:active, &%sb-button-active {
-		top: 2px;
+		@include box-shadow(inset 0px 2px 3px 1px rgba(0, 0, 0, .25));
+		@if $button-background != 'transparent' {
+			background: darken($button-background, 10%);
+		}
 	}
 
 	&[disabled], &%sb-button-disabled {
@@ -39,7 +42,6 @@ $sb-button-color:				lighten($sb-font-color, 40%)	!default;
 		}
 		color: lighten($sb-font-color, 30%);
 		cursor: not-allowed;
-		top: 0;
 	}
 }
 
@@ -50,7 +52,8 @@ $sb-button-color:				lighten($sb-font-color, 40%)	!default;
 // ----- Buttons Placeholders ----- //
 %sb-button {
 	@include sb-button-generator;
-	padding: $sb-s-spacing $sb-m-spacing;
+	line-height: 2;
+	padding: 0 $sb-m-spacing;
 }
 
 

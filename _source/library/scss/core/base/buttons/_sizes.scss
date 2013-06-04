@@ -22,21 +22,23 @@ $print-base-button-size-classes:		$print-base-button-classes		!default;
 
 
 %sb-button-xl {
-	padding: $sb-m-spacing ($sb-l-spacing * 2);
+	padding: 0 ($sb-l-spacing * 2);
 	font-size: 1.5em;
+	line-height: 3;
 }
 
 %sb-button-l {
-	padding: $sb-m-spacing $sb-l-spacing;
+	padding: 0 $sb-l-spacing;
 	font-size: 1.25em;
+	line-height: 2.5;
 }
 
 %sb-button-m {
-	padding: $sb-s-spacing $sb-m-spacing;
+	padding: 0 $sb-m-spacing;
 }
 
 %sb-button-s {
-	padding: $sb-s-spacing;
+	padding: 0 $sb-s-spacing;
 	font-size: .75em;
 }
 
