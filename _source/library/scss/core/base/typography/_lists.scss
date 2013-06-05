@@ -1,0 +1,17 @@
+//-------------------------------------
+//  Springboard: core/base/typography/lists
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-list-classes:		$print-base-classes		!default;
+
+
+// ----- Import styles ----- //
+@import "lists/generic-list";
+@import "lists/definition-list";
+@import "lists/side-by-side-list";
+@import "lists/unordered-list";
+@import "lists/ordered-list";
+@import "lists/inline-list";
+@import "lists/block-list";

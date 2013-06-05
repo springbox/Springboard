@@ -1,0 +1,23 @@
+
+// Buttons
+// 
+
+$sb-caution-light:		lighten($sb-orange, 20%)	!default;
+$sb-caution:		lighten($sb-orange, 10%)	!default;
+$sb-caution-dark:		$sb-orange	!default;
+
+$sb-warning-light:		lighten($sb-yellow, 17%)	!default;
+$sb-warning:		lighten($sb-yellow, 10%)	!default;
+$sb-warning-dark:		$sb-yellow	!default;
+
+$sb-stop-light:			lighten($sb-red, 35%)	!default;
+$sb-stop:			$sb-red	!default;
+$sb-stop-dark:			darken($sb-red, 10%)	!default;
+
+$sb-go-light:			lighten($sb-green, 30%)	!default;
+$sb-go:			$sb-green	!default;
+$sb-go-dark:			darken($sb-green, 10%)	!default;
+
+$sb-look-light:			lighten($sb-blue, 40%)	!default;
+$sb-look:			$sb-blue	!default;
+$sb-look-dark:			darken($sb-blue, 10%)	!default;

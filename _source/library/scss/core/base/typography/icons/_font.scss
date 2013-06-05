@@ -1,0 +1,18 @@
+
+// Font Awesome
+$sb-font-awesome:		true		!default;
+
+
+// ----- Font Awesome ----- //
+@if $sb-font-awesome == true {
+	@font-face {
+		font-family: 'FontAwesome';
+		src: 	url('../fonts/fontawesome-webfont.eot');
+		src:	url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+				url('../fonts/fontawesome-webfont.woff') format('woff'),
+				url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+				url('../fonts/fontawesome-webfont.svg#fontawesome') format('svg');
+		font-weight: 900;
+		font-style: normal;
+	}
+}

@@ -1,0 +1,248 @@
+//-------------------------------------
+//  Springboard: core/base/inline/generic
+//  Basic inline element styling.
+//-------------------------------------
+
+
+// ----- Inline settings ----- //
+$print-base-inline-generic-classes:		$print-base-inline-classes		!default;
+
+
+// ----- Mixins ----- //
+@mixin sb-link {
+	color: $sb-look;
+	text-decoration: none;
+	
+	&:hover {
+		color: $sb-look-light;
+	}
+
+	@include transition(color .2s ease);
+}
+
+@mixin sb-small {
+	font-size: 3/4em;
+}
+
+@mixin sb-bold {
+	font-weight: 700;
+}
+
+@mixin sb-italic {
+	font-style: italic;
+	font-family: $sb-serif;
+	font-size: .925em;
+}
+
+@mixin sb-delete {
+	text-decoration: line-through;
+	background-color: $sb-stop-light;
+}
+
+@mixin sb-insert {
+	background-color: $sb-go-light;
+}
+
+@mixin sb-mark {
+	background-color: $sb-warning-light;
+}
+
+@mixin sb-abbreviation {
+	cursor: default;
+	border-bottom: 1px dotted lighten($sb-font-color, 20%);
+}
+
+@mixin sb-subscript {
+	position: relative;
+	top: .25em;
+	font-size: .75em;
+}
+
+@mixin sb-superscript {
+	position: relative;
+	top: -.5em;
+	font-size: .75em;
+}
+
+@mixin sb-time {
+	font-family: $sb-serif;
+	font-size: .925em;
+}
+
+@mixin sb-code {
+	padding: .2em .25em .125em;
+	font-family: $sb-mono;
+	font-size: 0.875em;
+	font-weight: normal;
+	background-color: lighten($sb-font-color, 80%);
+	color: $sb-look;
+	white-space: nowrap;
+}
+
+@mixin sb-keyboard {
+	padding: .2em .25em .125em;
+	font-size: .875em;
+	background-color: lighten($sb-font-color, 80%);
+	border: 1px solid #d1d1d1;
+}
+
+// ----- Placeholders ----- //
+%sb-link {
+	@include sb-link;
+}
+
+%sb-small {
+	@include sb-small;
+}
+
+%sb-bold {
+	@include sb-bold;
+}
+
+%sb-italic {
+	@include sb-italic;
+}
+
+%sb-delete {
+	@include sb-delete;
+}
+
+%sb-insert {
+	@include sb-insert;
+}
+
+%sb-mark {
+	@include sb-mark;
+}
+
+%sb-abbreviation {
+	@include sb-abbreviation;
+}
+
+%sb-subscript {
+	@include sb-subscript;
+}
+
+%sb-superscript {
+	@include sb-superscript;
+}
+
+%sb-time {
+	@include sb-time;
+}
+
+%sb-code {
+	@include sb-code;
+}
+
+%sb-keyboard {
+	@include sb-keyboard;
+}
+
+// ----- Basic Typography styles ----- //
+a {
+	@extend %sb-link;
+}
+
+small {
+	@extend %sb-small;
+}
+
+b, strong {
+	@extend %sb-bold;
+}
+
+em {
+	@extend %sb-italic;
+}
+
+del {
+	@extend %sb-delete;
+}
+
+ins {
+	@extend %sb-insert;
+}
+
+mark {
+	@extend %sb-mark;
+}
+
+abbr {
+	@extend %sb-abbreviation;
+}
+
+sub {
+	@extend %sb-subscript;
+}
+
+sup {
+	@extend %sb-superscript;
+}
+
+time {
+	@extend %sb-time;
+}
+
+code, var, samp {
+	@extend %sb-code;
+}
+
+kbd {
+	@extend %sb-keyboard;
+}
+
+// ----- Classes ----- //
+@if $print-base-inline-generic-classes {
+	.sb-link {
+		@extend %sb-link;
+	}
+
+	.sb-small {
+		@extend %sb-small;
+	}
+
+	.sb-bold {
+		@extend %sb-bold;
+	}
+
+	.sb-italic {
+		@extend %sb-italic;
+	}
+
+	.sb-delete {
+		@extend %sb-delete;
+	}
+
+	.sb-insert {
+		@extend %sb-insert;
+	}
+
+	.sb-mark {
+		@extend %sb-mark;
+	}
+
+	.sb-abbreviation {
+		@extend %sb-abbreviation;
+	}
+
+	.sb-subscript {
+		@extend %sb-subscript;
+	}
+
+	.sb-superscript {
+		@extend %sb-superscript;
+	}
+
+	.sb-time {
+		@extend %sb-time;
+	}
+
+	.sb-code {
+		@extend %sb-code;
+	}
+
+	.sb-keyboard {
+		@extend %sb-keyboard;
+	}
+}

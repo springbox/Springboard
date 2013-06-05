@@ -1,0 +1,12 @@
+//-------------------------------------
+//  Springboard: core/base/typography
+//  Adjust the kerning 1px to the left.
+//-------------------------------------
+
+
+// ----- Typography settings ----- //
+$print-base-table-classes:		$print-base-classes		!default;
+
+
+// ----- Typography import ----- //
+@import "tables/generic";

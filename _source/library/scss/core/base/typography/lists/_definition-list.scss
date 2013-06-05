@@ -1,0 +1,50 @@
+//-------------------------------------
+//  Springboard: core/base/typography/lists/definition-list
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-list-classes:		$print-base-classes		!default;
+
+
+// ----- Mixins ----- //
+@mixin sb-definition-list {
+	margin-bottom: $sb-m-spacing;
+
+	dt, %sb-dt {
+		@include sb-bold;
+	}
+
+	dd, %sb-dd {
+		margin-bottom: $sb-s-spacing;
+	}
+}
+
+
+// ----- Placeholder styles ----- //
+%sb-definition-list {
+	@include sb-definition-list;
+}
+
+// ----- Element styles ----- //
+dl {
+	@extend %sb-definition-list;
+}
+
+
+// ----- Class styles ----- //
+@if $print-base-list-classes == true {
+
+	.sb-definition-list {
+		@extend %sb-definition-list;
+
+		.sb-dt {
+			@extend %sb-dt;
+		}
+
+		.sb-dd {
+			@extend %sb-dd;
+		}
+	}
+
+}

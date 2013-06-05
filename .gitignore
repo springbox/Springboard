@@ -1,0 +1,14 @@
+# OSX
+.DS_Store
+
+# Sublime
+*.sublime*
+
+# Mixture
+.sass-cache/
+mixture.json
+.pid
+
+# Codekit
+codekit-config.json
+

@@ -1,0 +1,149 @@
+//-------------------------------------
+//  Springboard: core/layout/grid
+//  Set up our mobile first responsive grid
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-layout-grid-classes:		$print-layout-classes		!default;
+
+// Small (mobile first)
+$sb-s-visible: 			$sb-visible-grid	!default;
+$sb-s-prefix: 			'sb-s'				!default;
+$sb-s-column-count:	 	12					!default;
+$sb-s-column-width:	 	'%'					!default;
+$sb-s-gutter: 			1%					!default;
+$sb-s-max-width:		95%					!default;
+
+// Medium (tablet?)
+$sb-m-visible: 			$sb-visible-grid	!default;
+$sb-m-prefix: 			'sb-l'				!default;
+$sb-m-column-count:	 	12					!default;
+$sb-m-column-width:	 	'%'					!default;
+$sb-m-gutter: 			1%					!default;
+$sb-m-max-width:		90%					!default;
+
+// Large (desktop)
+$sb-l-visible: 			$sb-visible-grid	!default;
+$sb-l-prefix: 			'sb-l'				!default;
+$sb-l-column-count:	 	12					!default;
+$sb-l-column-width:	 	'%'					!default;
+$sb-l-gutter: 			1%					!default;
+$sb-l-max-width:		85%					!default;
+
+// Extra-Large (woah)
+$sb-xl-visible: 			$sb-visible-grid	!default;
+$sb-xl-prefix: 				'sb-xl'				!default;
+$sb-xl-column-count:	 	12					!default;
+$sb-xl-column-width:	 	5.5rem				!default;
+$sb-xl-gutter: 				1.5rem				!default;
+$sb-xl-max-width:			false				!default;
+
+
+
+// ----- Placeholders ----- //
+
+// Extend this if you'd like your own class names be visible
+@if($sb-visible-grid) {
+	%sb-visible-grid {
+		margin-bottom: $sb-s-spacing;
+		background-color: rgba(#000000, .1);
+	}
+}
+
+// s
+@include grid-generator('sb-s', $sb-s-column-count, $sb-s-column-width, $sb-s-gutter,  0, $sb-s-max-width);
+
+// m
+@include respond-to('sb-m') {
+	@include grid-generator('sb-m', $sb-m-column-count, $sb-m-column-width, $sb-m-gutter,  0, $sb-m-max-width);
+}
+
+// l
+@include respond-to('sb-l') {
+	@include grid-generator($sb-l-prefix, $sb-l-column-count, $sb-l-column-width, $sb-l-gutter,  0, $sb-l-max-width);
+}
+
+// xl
+@include respond-to('sb-xl') {
+	@include grid-generator('sb-xl', $sb-xl-column-count, $sb-xl-column-width, $sb-xl-gutter,  0, $sb-xl-max-width);
+}
+
+%sb-grid-container {
+	@extend %sb-s-container;
+	@extend %sb-m-container;
+	@extend %sb-l-container;
+	@extend %sb-xl-container;
+	@extend %sb-learfix;
+}
+
+%sb-grid-row {
+	@extend %sb-s-row;
+	@extend %sb-m-row;
+	@extend %sb-l-row;
+	@extend %sb-xl-row;
+	@extend %sb-clearfix;
+	
+	// TODO: allow lower settings to override the visible grid
+	@if $sb-visible-grid == true {
+		@extend %sb-visible-grid;
+	}
+}
+
+
+@for $i from 1 through 12 {
+	%sb-grid-#{$i} {
+		@extend %sb-s-12;
+		@extend %sb-m-#{$i};
+		@extend %sb-l-#{$i};
+		@extend %sb-xl-#{$i};
+
+		@if $sb-visible-grid == true {
+			@extend %sb-visible-grid;
+		}
+	}
+}
+
+@for $i from 1 through 12 {
+	%sb-grid-push-#{$i} {
+		@extend %sb-s-push-#{$i};
+		@extend %sb-m-push-#{$i};
+		@extend %sb-l-push-#{$i};
+		@extend %sb-xl-push-#{$i};
+
+		@if $sb-visible-grid == true {
+			@extend %sb-visible-grid;
+		}
+	}
+}
+
+
+
+// ----- Classes ----- //
+@if $print-layout-grid-classes {
+	@if $sb-visible-grid == true {
+		[class*="sb-grid"] {
+			@extend %sb-visible-grid;
+		}
+	}
+
+	.sb-grid-container {
+		@extend %sb-grid-container;
+	}
+
+	.sb-grid-row {
+		@extend %sb-grid-row;
+	}
+
+
+	@for $i from 1 through 12 {
+		.sb-grid-#{$i} {
+			@extend %sb-grid-#{$i}
+		}
+	}
+
+	@for $i from 1 through 12 {
+		.sb-grid-push-#{$i} {
+			@extend %sb-grid-push-#{$i}
+		}
+	}
+}

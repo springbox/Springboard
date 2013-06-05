@@ -1,0 +1,40 @@
+//-------------------------------------
+//  Springboard: core/variables
+//-------------------------------------
+
+
+// Predefine your breakpoints
+$breakpoints: 	'sb-xl' (85em),
+				'sb-l' (60em),
+				'sb-m' (44em) !default;
+
+
+// ----- Font stacks ----- //
+$sb-serif: Merriweather, Georgia, Times, "Times New Roman", serif;
+$sb-sans: Roboto, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+$sb-mono: Monaco, Consolas, "Lucida Console", monospace;
+
+
+// ----- Useful numbers ----- //
+$sb-rem: 16px;
+
+$sb-l-spacing:	3rem;
+$sb-m-spacing:	1.5rem;
+$sb-s-spacing:	0.75rem;
+
+
+// ----- Colors ----- //
+
+// Generic
+$sb-green: #77bc13;
+$sb-teal: #139b8a; 
+$sb-orange: darken(#ee5a22, 5%);
+$sb-yellow: darken(#efc217, 5%);
+$sb-blue: lighten(#093b51, 15%);
+$sb-red: #d90b2d;
+
+// Text
+// 
+$sb-font-color: #222222;
+$sb-link-color:	lighten($sb-blue, 15%);
+

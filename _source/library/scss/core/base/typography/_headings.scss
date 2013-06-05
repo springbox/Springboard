@@ -1,0 +1,182 @@
+//-------------------------------------
+//  Springboard: core/base
+//  Step 1: attach to head
+//-------------------------------------
+
+// Compliments to Joshua Hilbert for building such an awesome tool 
+// and open sourcing it for the basic maths: 
+// http://joshnh.com/tools/em-baseline-generator.html
+
+
+// ----- Settings ----- //
+$print-base-heading-classes:	$print-base-classes		!default;
+
+$sb-include-subheads:			true	!default;
+
+// ----- Imports ----- //
+@import "headings-generator";
+
+
+// ----- Placeholders ----- //
+@include sb-heading-generator('sb-s', .875em, 1.5em, 700);
+
+@if $sb-include-subheads == true  {
+	@include sb-heading-generator('sb-s-subhead', .75em, 1.5em, 300);
+}
+
+@include respond-to('sb-m') {
+	@include sb-heading-generator('sb-m', .9375em, 1.5em, 700);
+
+	@if $sb-include-subheads == true {
+		@include sb-heading-generator('sb-m-subhead', .75em, 1.5em, 300);
+	}
+}
+
+@include respond-to('sb-xl') {
+	@include sb-heading-generator('sb-xl', 1em, 1.5em, 700);
+
+	@if $sb-include-subheads == true  {
+		@include sb-heading-generator('sb-xl-subhead', .75em, 1.5em, 300);
+	}
+}
+
+%sb-heading {
+	small {
+		font-size: 2/3em;
+		color: lighten($sb-font-color, 20%);
+	}
+}
+
+%sb-hgroup {
+	margin-bottom: 1.5em;
+
+	%sb-heading {
+		margin-bottom: 0;
+	}
+}
+
+
+// ----- Base Styles ----- //
+
+
+h1 {
+	@extend %sb-s-h1;
+	@extend %sb-m-h1;
+	@extend %sb-xl-h1;
+
+	@extend %sb-heading;
+}
+
+h2 {
+	@extend %sb-s-h2;
+	@extend %sb-m-h2;
+	@extend %sb-xl-h2;
+
+	@extend %sb-heading;
+}
+
+h3 {
+	@extend %sb-s-h3;
+	@extend %sb-m-h3;
+	@extend %sb-xl-h3;
+
+	@extend %sb-heading;
+}
+
+h4 {
+	@extend %sb-s-h4;
+	@extend %sb-m-h4;
+	@extend %sb-xl-h4;
+
+	@extend %sb-heading;
+}
+
+h5 {
+	@extend %sb-s-h5;
+	@extend %sb-m-h5;
+	@extend %sb-xl-h5;
+
+	@extend %sb-heading;
+}
+
+h6 {
+	@extend %sb-s-h6;
+	@extend %sb-m-h6;
+	@extend %sb-xl-h6;
+
+	@extend %sb-heading;
+}
+
+// ----- Classes ----- //
+
+@if $print-base-heading-classes == true {
+	
+
+	// ----- Main headings ----- //
+
+	.sb-h1 {
+		@extend %sb-s-h1;
+		@extend %sb-m-h1;
+		@extend %sb-xl-h1;
+
+		@extend %sb-heading;
+	}
+
+	.sb-h2 {
+		@extend %sb-s-h2;
+		@extend %sb-m-h2;
+		@extend %sb-xl-h2;
+
+		@extend %sb-heading;
+	}
+
+	.sb-h3 {
+		@extend %sb-s-h3;
+		@extend %sb-m-h3;
+		@extend %sb-xl-h3;
+
+		@extend %sb-heading;
+	}
+
+	.sb-h4 {
+		@extend %sb-s-h4;
+		@extend %sb-m-h4;
+		@extend %sb-xl-h4;
+
+		@extend %sb-heading;
+	}
+
+	.sb-h5 {
+		@extend %sb-s-h5;
+		@extend %sb-m-h5;
+		@extend %sb-xl-h5;
+	}
+
+	.sb-h6 {
+		@extend %sb-s-h6;
+		@extend %sb-m-h6;
+		@extend %sb-xl-h6;
+
+		@extend %sb-heading;
+	}
+
+
+	// ----- Subheads ----- //
+	@if $sb-include-subheads == true {
+		@for $sb-header from 1 through 6 {
+			// TODO: make the placeholder follow the same naming convention?
+			.sb-h#{$sb-header}-subhead {
+				@extend %sb-s-subhead-h#{$sb-header};
+				@extend %sb-m-subhead-h#{$sb-header};
+				@extend %sb-xl-subhead-h#{$sb-header};
+			}
+		}
+	}
+
+
+	//  ----- Header groups ----- //
+	.sb-hgroup {
+		@extend %sb-hgroup;
+	}
+
+}

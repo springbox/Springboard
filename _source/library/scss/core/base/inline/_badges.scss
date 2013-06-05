@@ -1,0 +1,37 @@
+//-------------------------------------
+//  Springboard: core/base/inline/badges
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-inline-badge-classes:		$print-base-inline-classes		!default;
+
+// ----- Mixins ----- //
+@mixin sb-badge {
+	font-weight: 800;
+	font-size: 0.875em;
+	color: white;
+	padding: 0 .75em;
+	text-align: center;
+
+	@include box-shadow(1px 1px 0px #aaaaaa);
+	@include border-radius(.75em);
+
+	&:empty {
+		@include sb-hidden;
+	}
+}
+
+// ----- Placeholder styles ----- //
+%sb-badge {
+	@include sb-badge;
+}
+
+// ----- Class styles ----- //
+@if $print-base-inline-badge-classes == true {
+
+	.sb-badge {
+		@extend %sb-badge;
+	}
+
+}

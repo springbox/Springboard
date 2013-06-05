@@ -1,0 +1,12 @@
+//-------------------------------------
+//  Springboard: core/components/navigation
+//-------------------------------------
+
+// ----- Settings ----- //
+
+$print-component-nav-classes:	$print-component-classes	!default;
+
+
+// ----- Imports ----- //
+@import "navigation/bar";
+

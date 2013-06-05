@@ -1,0 +1,63 @@
+//-------------------------------------
+//  Springboard: core/base/typography/alignment
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-alignment-classes:		$print-base-typography-classes		!default;
+
+
+// ----- Mixins ----- //
+@mixin sb-align-left {
+	text-align: left;
+}
+
+@mixin sb-align-right {
+	text-align: right;
+}
+
+@mixin sb-align-center {
+	text-align: center;
+}
+
+@mixin sb-align-justified {
+	text-align: justify;
+}
+
+
+// ----- Placeholders ----- //
+%sb-align-left {
+	@include sb-align-left;
+}
+
+%sb-align-right {
+	@include sb-align-right;
+}
+
+%sb-align-center {
+	@include sb-align-center;
+}
+
+%sb-align-justified {
+	@include sb-align-justified;
+}
+
+
+// ----- Classes ----- //
+@if $print-base-alignment-classes == true {
+	.sb-align-left {
+		@extend %sb-align-left;
+	}
+
+	.sb-align-right {
+		@extend %sb-align-right;
+	}
+
+	.sb-align-center {
+		@extend %sb-align-center;
+	}
+
+	.sb-align-justified {
+		@extend %sb-align-justified;
+	}
+}

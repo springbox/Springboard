@@ -1,0 +1,28 @@
+//-------------------------------------
+//  Springboard: core/settings
+//-------------------------------------
+
+// ----- Print classes? ----- //
+// You can overide these on an individual component basis 
+// in deeper settings.
+// 
+
+// Want to use Springboard classes in your HTML?
+$print-springboard-classes:	true							!default;
+
+$print-component-classes:	$print-springboard-classes		!default;
+
+
+//
+$sb-visible-grid:				false		!default;
+$sb-visible-baseline-grid:		false		!default;
+
+
+
+// Consistent box sizing
+$border-box-all-the-things:		true		!default;
+
+
+
+// Prints various CSS to support IE8
+$ie8-support:		true		!default;

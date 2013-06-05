@@ -1,0 +1,131 @@
+//-------------------------------------
+//  Springboard: core/base/buttons/styles
+//  
+//-------------------------------------
+
+
+// ----- Buttons settings ----- //
+$print-base-button-style-classes:		$print-base-button-classes		!default;
+
+$sb-button-caution-color:		$sb-orange		!default;
+$sb-button-warning-color:		$sb-yellow		!default;
+$sb-button-stop-color:			$sb-red			!default;
+$sb-button-go-color:			$sb-green			!default;
+$sb-button-look-color:			$sb-blue		!default;
+
+
+// ----- Mixins ----- //
+@mixin sb-button-style($button-background, $quiet: false) {
+	@if $quiet == true {
+		background: transparent;
+		color: lighten($sb-font-color, 10%);
+	} @else {
+		background: $button-background;
+	}
+
+	&:hover, &:focus, &%sb-button-hover {
+		@if $button-background != 'transparent' {
+			@include background(linear-gradient(top, lighten($button-background, 5%), $button-background));
+			color: white;
+		} @else {
+			background: transparent;
+		}
+	}
+
+	&:active, &%sb-button-active {
+		@include box-shadow(inset 0px 2px 3px 1px rgba(0, 0, 0, .25));
+		@if $button-background != 'transparent' {
+			background: darken($button-background, 5%);
+		}
+	}
+
+	&[disabled], &%sb-button-disabled {
+		@if $button-background != 'transparent' {
+			@if $quiet == true {
+				color: lighten($sb-font-color, 30%);
+			} @else {
+				background: lighten($button-background, 30%);
+			}
+		} @else {
+			background: transparent;
+		}
+	}
+}
+
+// ----- Placeholders ----- //
+%sb-button-caution {
+	@include sb-button-style($sb-button-caution-color);
+}
+
+%sb-button-warning {
+	@include sb-button-style($sb-button-warning-color);
+}
+
+%sb-button-stop {
+	@include sb-button-style($sb-button-stop-color);
+}
+
+%sb-button-go {
+	@include sb-button-style($sb-button-go-color);
+}
+
+%sb-button-look {
+	@include sb-button-style($sb-button-look-color);
+}
+
+%sb-button-quiet {
+	@include sb-button-style($sb-button-color, true);
+}
+
+%sb-button-link {
+	@include sb-button-style(transparent);
+	@include sb-link;
+}
+
+// ----- Classes ----- //
+.sb-button-caution {
+	@extend %sb-button;
+	@extend %sb-button-caution;
+}
+
+.sb-button-warning {
+	@extend %sb-button;
+	@extend %sb-button-warning;
+}
+
+.sb-button-stop {
+	@extend %sb-button;
+	@extend %sb-button-stop;
+}
+
+.sb-button-go {
+	@extend %sb-button;
+	@extend %sb-button-go;
+}
+
+.sb-button-look {
+	@extend %sb-button;
+	@extend %sb-button-look;
+}
+
+.sb-button-link {
+	@extend %sb-button;
+	@extend %sb-button-link;
+}
+
+.sb-button-quiet {
+	@extend %sb-button;
+	@extend %sb-button-quiet;
+}
+
+.sb-button-active {
+	@extend %sb-button-active;
+}
+
+.sb-button-hover {
+	@extend %sb-button-hover;
+}
+
+.sb-button-disabled {
+	@extend %sb-button-disabled;
+}

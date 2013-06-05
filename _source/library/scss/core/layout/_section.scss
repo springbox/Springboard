@@ -1,0 +1,42 @@
+//-------------------------------------
+//  Springboard: core/layout/section
+//  Full width section for a page.
+//-------------------------------------
+
+// ----- Settings ----- //
+
+// ----- Mixins ----- //
+@mixin sb-section($sb-padding: $sb-l-spacing * 1.5) {
+	width: 100%;
+	margin: 0;
+	padding-top: $sb-padding;
+	padding-bottom: $sb-padding;
+}
+
+@mixin sb-section-inverse {
+	background-color: darken(white, 10%);
+}
+
+
+// ----- Placeholders ----- //
+%sb-section {
+	@include sb-section;
+}
+
+%sb-section-inverse {
+	@extend %sb-section;
+
+	@include sb-section-inverse;
+}
+
+
+// ----- Classes ----- //
+@if $print-layout-callout-classes {
+	.sb-section {
+		@extend %sb-section;
+	}
+
+	.sb-section-inverse {
+		@extend %sb-section-inverse;
+	}
+}

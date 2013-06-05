@@ -1,0 +1,38 @@
+//-------------------------------------
+//  Springboard: core/base/typography/lists/block-list
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-list-classes:		$print-base-classes		!default;
+
+// ----- Mixins ----- //
+@mixin sb-block-list {
+	list-style-type: none;
+	padding-left: 0;
+	border: 1px solid $sb-font-color;
+
+	li {
+		padding: $sb-s-spacing;
+		margin-bottom: 0;
+		border-top: 1px solid $sb-font-color;
+
+		&:first-child {
+			border-top: none;
+		}
+	}
+}
+
+// ----- Placeholder styles ----- //
+%sb-block-list {
+	@include sb-block-list;
+}
+
+// ----- Class styles ----- //
+@if $print-base-list-classes == true {
+
+	.sb-block-list {
+		@extend %sb-block-list;
+	}
+
+}

@@ -1,0 +1,127 @@
+//-------------------------------------
+//  Springboard: core/base/inline/emphasis
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-inline-emphasis-classes:		$print-base-inline-classes		!default;
+
+// ----- Mixins ----- //
+@mixin sb-text-caution {
+	color: $sb-yellow;
+}
+
+@mixin sb-text-stop {
+	color: $sb-red;
+}
+
+@mixin sb-text-go {
+	color: $sb-green;
+}
+
+@mixin sb-text-look {
+	color: lighten($sb-blue, 30%);
+}
+
+@mixin sb-text-warning {
+	color: $sb-orange;
+}
+
+@mixin sb-bg-caution {
+	background-color: $sb-yellow;
+}
+
+@mixin sb-bg-stop {
+	background-color: $sb-red;
+}
+
+@mixin sb-bg-go {
+	background-color: $sb-green;
+}
+
+@mixin sb-bg-look {
+	background-color: lighten($sb-blue, 30%);
+}
+
+@mixin sb-bg-warning {
+	background-color: $sb-orange;
+}
+
+
+// ----- Placeholder styles ----- //
+%sb-text-caution {
+	@include sb-text-caution;
+}
+
+%sb-text-stop {
+	@include sb-text-stop;
+}
+
+%sb-text-go {
+	@include sb-text-go;
+}
+
+%sb-text-look {
+	@include sb-text-look;
+}
+
+%sb-bg-caution {
+	@include sb-bg-caution;
+}
+
+%sb-bg-stop {
+	@include sb-bg-stop;
+}
+
+%sb-bg-go {
+	@include sb-bg-go;
+}
+
+%sb-bg-look {
+	@include sb-bg-look;
+}
+
+%sb-bg-warning {
+	@include sb-bg-warning;
+}
+
+// ----- Class styles ----- //
+@if $print-base-inline-emphasis-classes == true {
+
+	.sb-text-caution {
+		@extend %sb-text-caution;
+	}
+
+	.sb-text-stop {
+		@extend %sb-text-stop;
+	}
+
+	.sb-text-go {
+		@extend %sb-text-go;
+	}
+
+	.sb-text-look {
+		@extend %sb-text-look;
+	}
+
+	.sb-bg-caution {
+		@extend %sb-bg-caution;
+	}
+
+	.sb-bg-stop {
+		@extend %sb-bg-stop;
+	}
+
+	.sb-bg-go {
+		@extend %sb-bg-go;
+	}
+
+	.sb-bg-look {
+		@extend %sb-bg-look;
+	}
+
+	.sb-bg-warning {
+		@extend %sb-bg-warning;
+	}
+
+}

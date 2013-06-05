@@ -1,0 +1,61 @@
+//-------------------------------------
+//  Springboard: core/layout/callout
+//  Need a container with just a dash of extra styling?
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-layout-callout-classes:	$print-layout-classes		!default;
+
+// ----- Mixins ----- //
+@mixin sb-callout-container {
+	margin-bottom: 1.5rem;
+	background-color: white;
+	// @include box-shadow(#aaaaaa 0px 0px 3px);
+}
+
+@mixin sb-callout-title {
+	padding: $sb-s-spacing;
+	border-bottom: 1px solid lighten($sb-font-color, 50%);
+	background-color: #f1f1f1;
+	%sb-heading {
+		margin-bottom: 0;
+	}
+
+	&:last-child {
+		border-bottom:0;
+		border-top: 1px solid lighten($sb-font-color, 50%);
+	}
+}
+
+@mixin sb-callout-body {
+	padding: $sb-s-spacing;
+	@extend %sb-clearfix;
+}
+
+// ----- Placeholders ----- //
+%sb-callout-container {
+	@include sb-callout-container;
+}
+
+%sb-callout-title {
+	@include sb-callout-title;
+}
+
+%sb-callout-body {
+	@include sb-callout-body;
+}
+
+// ----- Classes ----- //
+@if $print-layout-callout-classes {
+	.sb-callout-container {
+		@extend %sb-callout-container;
+	}
+
+	.sb-callout-title {
+		@extend %sb-callout-title;
+	}
+
+	.sb-callout-body {
+		@extend %sb-callout-body;
+	}
+}

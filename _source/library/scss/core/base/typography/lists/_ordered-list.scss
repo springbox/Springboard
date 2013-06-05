@@ -1,0 +1,38 @@
+//-------------------------------------
+//  Springboard: core/base/typography/lists/ordered-list
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-list-classes:		$print-base-classes		!default;
+
+// ----- Mixins ----- //
+@mixin sb-ordered-list {
+	list-style-type: decimal;
+
+	ol {
+		list-style-type: lower-alpha;
+	}
+
+	@include sb-list;
+}
+
+// ----- Placeholders ----- //
+%sb-ordered-list {
+	@include sb-ordered-list;
+}
+
+// ----- Element styles ----- //
+ol {
+	@extend %sb-ordered-list;
+}
+
+
+// ----- Class styles ----- //
+@if $print-base-list-classes == true {
+
+	.sb-ordered-list {
+		@extend %sb-ordered-list;
+	}
+
+}

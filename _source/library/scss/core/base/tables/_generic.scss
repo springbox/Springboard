@@ -1,0 +1,243 @@
+//-------------------------------------
+//  Springboard: core/base/inline/generic
+//  Basic inline element styling.
+//-------------------------------------
+
+
+// ----- Inline settings ----- //
+$print-base-table-generic-classes:		$print-base-table-classes		!default;
+
+$sb-table-border-color: lighten($sb-font-color, 65%);
+$sb-table-stripe-color: lighten($sb-font-color, 75%);
+
+
+// ----- Mixins ----- //
+@mixin sb-table {
+	width: 100%;
+	margin-bottom: $sb-m-spacing;
+}
+
+@mixin sb-table-striped {
+	tr:nth-child(even) {
+		background-color: $sb-table-stripe-color;
+	}
+}
+
+@mixin sb-table-numbers {
+	td {
+		@include sb-align-right;
+	}
+}
+
+@mixin sb-table-row {
+	tr {
+		border-top: 1px solid $sb-table-border-color;
+
+		&:first-child {
+			border-top: 0;
+		}
+	}
+}
+
+@mixin sb-table-column {
+	td, th {
+		border-left: 1px solid $sb-table-border-color;
+
+		&:first-child {
+			border: 0;
+		}
+	}
+
+	tr {
+		border: 0;
+	}
+}
+
+@mixin sb-table-bordered {
+	td, th {
+		border-left: 1px solid $sb-table-border-color;
+
+		&:first-child {
+			border-left: 0;
+		}
+	}
+
+	tr {
+		border-top: 1px solid $sb-table-border-color;
+
+		&:first-child {
+			border-top: 0;
+		}
+	}
+
+	thead {
+		border-bottom: 1px solid $sb-table-border-color;
+	}
+
+	& {
+		border: 1px solid $sb-table-border-color;
+	}
+
+}
+
+@mixin sb-table-empty-first {
+	th:first-child {
+		border: 0;
+	}
+}
+
+@mixin sb-table-stop {
+	background-color: $sb-stop-light;
+}
+
+@mixin sb-table-warning {
+	background-color: $sb-warning-light;
+}
+
+@mixin sb-table-caution {
+	background-color: $sb-caution-light;
+}
+
+@mixin sb-table-look {
+	background-color: $sb-look-light;
+}
+
+@mixin sb-table-go {
+	background-color: $sb-go-light;
+}
+
+@mixin sb-table-caption {
+	@include sb-italic;
+	@include sb-tertiary;
+}
+
+@mixin sb-table-condensed {
+	th, td {
+		padding: $sb-s-spacing / 2;
+	}
+}
+
+// ----- Placeholders ----- //
+%sb-table {
+	@include sb-table;
+}
+
+%sb-table-row {
+	@include sb-table-row;
+}
+
+%sb-table-striped {
+	@include sb-table-striped;
+}
+
+%sb-table-bordered {
+	@include sb-table-bordered;
+}
+
+%sb-table-empty-first {
+	@include sb-table-empty-first;
+}
+
+%sb-table-column {
+	@include sb-table-column;
+}
+
+%sb-table-stop {
+	@include sb-table-stop;
+}
+
+%sb-table-caution {
+	@include sb-table-caution;
+}
+
+%sb-table-warning {
+	@include sb-table-warning;
+}
+
+%sb-table-look {
+	@include sb-table-look;
+}
+
+%sb-table-go {
+	@include sb-table-go;
+}
+
+%sb-table-caption {
+	@include sb-table-caption;
+}
+
+%sb-table-condensed {
+	@include sb-table-condensed;
+}
+
+%sb-table-numbers {
+	@include sb-table-numbers;
+}
+
+// ----- Basic Table styles ----- //
+table {
+	@extend %sb-table;
+	@extend %sb-table-row;
+
+	caption {
+		@extend %sb-table-caption;
+	}
+}
+
+th {
+	font-weight: 700;
+}
+
+td, th {
+	padding: $sb-s-spacing;
+}
+
+
+
+// ----- Classes ----- //
+@if $print-base-table-generic-classes {
+	
+	.sb-table-striped {
+		@extend %sb-table-striped;
+	}
+
+	.sb-table-bordered {
+		@extend %sb-table-bordered;
+	}
+
+	.sb-table-condensed {
+		@extend %sb-table-condensed;
+	}
+
+	.sb-table-empty-first {
+		@extend %sb-table-empty-first;
+	}
+
+	.sb-table-column {
+		@extend %sb-table-column;
+	}
+
+	.sb-table-stop {
+		@extend %sb-table-stop;
+	}
+
+	.sb-table-warning {
+		@extend %sb-table-warning;
+	}
+
+	.sb-table-caution {
+		@extend %sb-table-caution;
+	}
+
+	.sb-table-look {
+		@extend %sb-table-look;
+	}
+
+	.sb-table-go {
+		@extend %sb-table-go;
+	}
+
+	.sb-table-numbers {
+		@extend %sb-table-numbers;
+	}
+}

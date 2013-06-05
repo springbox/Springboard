@@ -1,0 +1,11 @@
+//-------------------------------------
+//  Springboard: core/base/typography/code
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-code-classes:		$print-base-classes		!default;
+
+
+// ----- Import styles ----- //
+@import "code/preformatted";

@@ -1,0 +1,128 @@
+//-------------------------------------
+//  Springboard: core/base/forms/generic
+//  
+//-------------------------------------
+
+
+// ----- Settings ----- //
+$print-base-form-generic-classes:		$print-base-form-classes		!default;
+
+
+// ----- Mixins ----- //
+@mixin sb-form {
+	margin-bottom: $sb-m-spacing;
+}
+
+@mixin sb-form-label {
+	display: block;
+	cursor: pointer;
+	margin-bottom: $sb-m-spacing;
+}
+
+@mixin sb-form-input {
+	vertical-align: middle;
+	border: 1px solid lighten($sb-font-color, 60%);
+	
+	&:focus {
+		outline: 0;
+		border-color: $sb-look-light;
+	}
+}
+
+@mixin sb-form-select {
+	display: block;
+	width: 100%;
+	margin: 0;
+
+	@include sb-form-input;
+}
+
+@mixin sb-text-input($padding: 0.5em) {
+	display: block;
+	width: 100%;
+	height: 2em;
+	padding: $padding;
+	border: 1px solid lighten($sb-font-color, 50%);
+	font-size: 1em;
+	font-family: $sb-sans;
+	font-weight: 300;
+
+	@include sb-form-input;
+}
+
+@mixin sb-textarea {
+	min-height: 5em;
+
+	@include sb-text-input(0.25em 0.5em 0.5em 0.5em);
+}
+
+@mixin sb-form-check {
+	vertical-align: middle;
+	margin: 0;
+	margin-top: -0.25em;
+
+	&:focus {
+		outline: 1px solid $sb-look-light;
+	}
+}
+
+// ----- Placeholders ----- //
+%sb-form {
+	@include sb-form;
+}
+
+%sb-text-input {
+	@include sb-text-input;
+}
+
+%sb-form-label {
+	@include sb-form-label;
+}
+
+%sb-textarea {
+	@include sb-textarea;
+}
+
+%sb-form-input {
+	@include sb-form-input;
+}
+
+%sb-form-select {
+	@include sb-form-select;
+}
+
+%sb-form-check {
+	@include sb-form-check;
+}
+
+// ----- Elements ----- //
+form {
+	@extend %sb-form;
+}
+
+input {
+	@extend %sb-form-input;
+
+	&[type="text"], &[type="password"] {
+		@extend %sb-text-input;
+	}
+
+	&[type="checkbox"], &[type="radio"] {
+		@extend %sb-form-check;
+	}
+}
+
+label {
+	@extend %sb-form-label;
+}
+
+select {
+	@extend %sb-form-select;
+}
+
+textarea {
+	@extend %sb-textarea;
+}
+
+
+// ----- Classes ----- //

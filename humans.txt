@@ -1,0 +1,22 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Josh -- Maker -- @joshmatz
+
+# THANKS
+
+    H5BP team: http://html5boilerplate.com/
+    A project from H5BP currently maintained by Nicolas Gallagher, Paul Irish, Mathias Bynens, Divya Manian, and Hans Christian Reinl.
+
+    Mixture team: http://mixture.io/
+    A rapid prototyping and static site generation tool for designers and developers
+
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+    Mixture for SASS + Compass

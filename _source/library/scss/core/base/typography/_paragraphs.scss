@@ -1,0 +1,96 @@
+//-------------------------------------
+//  Springboard: core/base/typography/paragraphs
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-paragraph-classes:		$print-base-typography-classes		!default;
+
+
+// ----- Mixins ----- //
+@mixin sb-paragraph {
+	margin-bottom: $sb-m-spacing;
+	@include hyphens(auto);
+}
+
+@mixin sb-lead {
+	@include sb-baseline(1.5em, 2.25em);
+}
+
+@mixin sb-secondary {
+	@include sb-baseline(0.9375em, 1.5em);
+}
+
+@mixin sb-tertiary {
+	@include sb-baseline(0.75em, 0.75em);
+}
+
+@mixin sb-caption {
+	@include sb-secondary;
+	font-family: $sb-serif;
+	font-style: italic;
+}
+
+@mixin sb-address {
+	padding: $sb-s-spacing;
+	background-color: #f1f1f1;
+}
+
+
+// ----- Placeholders ----- //
+%sb-paragraph {
+	@include sb-paragraph;
+}
+
+%sb-lead {
+	@include sb-lead;
+}
+
+%sb-secondary {
+	@include sb-secondary;
+}
+
+%sb-tertiary {
+	@include sb-tertiary;
+}
+
+%sb-caption {
+	@include sb-caption;
+	font-style: italic;
+}
+
+%sb-address {
+	@include sb-address;
+}
+
+// ----- Base Styles ----- //
+p {
+	@extend %sb-paragraph;
+}
+
+address {
+	@extend %sb-address;
+}
+
+// ----- Classes ----- //
+@if $print-base-paragraph-classes == true {
+	.sb-lead {
+		@extend %sb-lead;
+	}
+
+	.sb-secondary {
+		@extend %sb-secondary;
+	}
+
+	.sb-tertiary {
+		@extend %sb-tertiary;
+	}
+
+	.sb-caption {
+		@extend %sb-caption;
+	}
+
+	.sb-address {
+		@extend %sb-address;
+	}
+}

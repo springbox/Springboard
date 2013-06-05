@@ -1,0 +1,39 @@
+$print-base-icon-classes:		$print-base-classes		!default;
+
+@if $print-base-icon-classes == true {
+
+	/* FONT AWESOME CORE
+	 * -------------------------- */
+
+	[class^="icon-"],
+	[class*=" icon-"] {
+		font-family: FontAwesome;
+		font-weight: normal;
+		font-style: normal;
+		text-decoration: inherit;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	[class^="icon-"]:before,
+	[class*=" icon-"]:before {
+		text-decoration: inherit;
+		display: inline-block;
+		speak: none;
+	}
+
+	
+	// Quick floats
+	.sb-icon-pull-right { float: right; }
+	.sb-icon-pull-left { float: left; }
+
+	[class^="icon-"],
+	[class*=" icon-"] {
+		&.pull-left {
+			margin-right: .25em;
+		}
+		&.pull-right {
+			margin-left: .25em;
+		}
+	}
+
+}

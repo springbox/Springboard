@@ -1,0 +1,42 @@
+//-------------------------------------
+//  Springboard: core/base/typography/lists/side-by-side-list
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-list-classes:		$print-base-classes		!default;
+
+// ----- Mixins ----- //
+@mixin sb-side-by-side-list {
+	dt, dd {
+		float: left;
+	}
+
+	dt {
+		width: 30%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		margin-right: 5%;
+	}
+
+	dd {
+		width: 65%;
+	}
+
+	@include sb-definition-list;
+}
+
+
+// ----- Placeholder styles ----- //
+%sb-side-by-side-list {
+	@include sb-side-by-side-list;
+}
+
+
+// ----- Class styles ----- //
+@if $print-base-list-classes == true {
+	.sb-side-by-side-list {
+		@extend %sb-side-by-side-list;
+	}
+}

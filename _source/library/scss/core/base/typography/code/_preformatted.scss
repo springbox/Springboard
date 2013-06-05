@@ -1,0 +1,86 @@
+//-------------------------------------
+//  Springboard: core/base/typography/code/preformatted
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-code-preformatted-classes:		$print-base-code-classes		!default;
+
+
+// ----- Mixins ----- //
+@mixin sb-preformatted {
+	margin-bottom: $sb-m-spacing;
+	padding: $sb-s-spacing;
+	white-space: pre;
+	font-family: $sb-mono;
+	font-size: 0.875em;
+	font-weight: normal;
+	background-color: lighten($sb-font-color, 85%);
+	color: $sb-look;
+	overflow: auto;
+	@include box-shadow(0px 0px 3px #aaaaaa);
+}
+
+@mixin sb-preformatted-scrollbar {
+	max-height: 350px;
+	overflow-y: scroll;
+
+	@include sb-preformatted;
+}
+
+@mixin sb-preformatted-line-numbers {
+	padding: 1em 2em;
+	list-style-type: decimal;
+	font-family: $sb-mono;
+	font-size: 0.875em;
+	font-weight: 700;
+	background-color: lighten($sb-font-color, 85%);
+	color: $sb-look;
+	@include box-shadow(0px 0px 3px #aaaaaa);
+
+	li {
+		font-weight: normal;
+		margin-left: 1em;
+		margin-bottom: 0;
+		width: auto;
+		white-space: pre-wrap;
+		@include sb-baseline(1em, .75em);
+	}
+}
+
+
+// ----- Placeholder styles ----- //
+%sb-preformatted {
+	@include sb-preformatted;
+}
+
+%sb-preformatted-scrollbar {
+	@include sb-preformatted-scrollbar;
+}
+
+%sb-preformatted-line-numbers {
+	@include sb-preformatted-line-numbers;
+}
+
+// ----- Element styles ----- //
+pre {
+	@extend %sb-preformatted;
+}
+
+
+// ----- Class styles ----- //
+@if $print-base-code-preformatted-classes == true {
+
+	.sb-preformatted {
+		@extend %sb-preformatted;
+	}
+
+	.sb-preformatted-scrollbar {
+		@extend %sb-preformatted-scrollbar;
+	}
+
+	.sb-preformatted-line-numbers {
+		@extend %sb-preformatted-line-numbers;
+	}
+
+}

@@ -1,0 +1,30 @@
+
+//-------------------------------------
+//  Springboard: core/components
+//  All your base are belong to us.
+//-------------------------------------
+
+
+// ----- Components settings ----- //
+
+// Print classes?
+// 
+$print-componet-nav-classes:		$print-component-classes		!default;
+
+
+// Font settings
+//
+//$sb-font-roboto:					true				!default;
+//$sb-font-roboto-slab:				true				!default;
+//$sb-font-ubuntu:					true				!default;
+
+// Misc
+// 
+//$border-box-all-the-things: false;
+
+
+// ----- Components import ----- //
+@import "components/navigation";
+
+// ----- Components styles ----- //
+

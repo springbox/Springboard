@@ -1,0 +1,86 @@
+//-------------------------------------
+//  Springboard: core/layout/grid-generator
+//  This mixin generates grid placeholders to be extended.
+//  Place the mixin in a media query and extend it like normal for responsive grids.
+//-------------------------------------
+
+
+@mixin grid-generator($sb-gg-prefix: 'sb-grid', $sb-gg-total-columns: 12, $sb-gg-column-width: 4.5em, $sb-gg-gutter: 2em, $sb-gg-spacing: -.5em, $sb-gg-max-width: 64em, $sb-gg-inline: true) {
+	
+
+	// How wide is our grid?
+	$sb-gg-width: 0;
+	@if $sb-gg-column-width == '%' {
+		$sb-gg-width: 100%;
+	} @else {
+		$sb-gg-width: ($sb-gg-column-width * $sb-gg-total-columns) + ($sb-gg-gutter * ($sb-gg-total-columns - 1));
+	}
+
+
+	// placeholder for container
+	%#{$sb-gg-prefix}-container { 
+		width: $sb-gg-width;
+		margin-left: auto;
+		margin-right: auto;
+
+		@if $sb-gg-max-width != false {
+			max-width: $sb-gg-max-width;
+		} @else {
+			max-width: none;
+		}
+	}
+
+
+	// placeholder for row
+	%#{$sb-gg-prefix}-row { 
+		width: auto;
+		margin-left: -$sb-gg-gutter;
+	}
+
+
+	// placeholders for columns
+	@for $sb-gg-column-count from 1 through $sb-gg-total-columns {
+		
+		%#{$sb-gg-prefix}-#{$sb-gg-column-count} {
+			position: static;
+			
+			@if $sb-gg-column-width == '%' {
+				width: percentage($sb-gg-column-count / $sb-gg-total-columns) - $sb-gg-gutter;
+			} @else {
+				width: $sb-gg-column-width * $sb-gg-column-count + $sb-gg-gutter * ($sb-gg-column-count - 1);
+			}
+
+			margin-left: $sb-gg-gutter;
+			float: left;
+
+		}
+
+	}
+
+	// separate these out so they override the above
+	// TODO: make a for loop? It didn't like repeating the for loop...
+	$sb-gg-column-counter: 1;
+	@for $sb-gg-column-count from 1 through $sb-gg-total-columns {
+		%#{$sb-gg-prefix}-push-#{$sb-gg-column-counter} {
+			position: relative;
+			@if $sb-gg-column-width == '%' {
+				left: percentage($sb-gg-column-count / $sb-gg-total-columns);
+			} @else {
+				left: $sb-gg-column-width * $sb-gg-column-count + $sb-gg-gutter * ($sb-gg-column-count);
+			}
+		}
+
+		%#{$sb-gg-prefix}-pull-#{$sb-gg-column-counter} {
+			position: relative;
+
+			@if $sb-gg-column-width == '%' {
+				left: -(percentage($sb-gg-column-count / $sb-gg-total-columns));
+			} @else {
+				left: -($sb-gg-column-width * $sb-gg-column-count + $sb-gg-gutter * ($sb-gg-column-count));
+			}
+		}
+
+		$sb-gg-column-counter: $sb-gg-column-counter + 1;
+	}
+}
+

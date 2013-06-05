@@ -1,0 +1,40 @@
+//-------------------------------------
+//  Springboard: core/base/typography/lists/inline-list
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-base-list-classes:		$print-base-classes		!default;
+
+// ----- Mixins ----- //
+@mixin sb-inline-list {
+	padding: 0;
+
+	li {
+		display: inline-block;
+		margin: 0 0 0 $sb-s-spacing;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	ul {
+		display: inline;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+// ----- Placeholder styles ----- //
+%sb-inline-list {
+	@include sb-inline-list;
+}
+
+
+// ----- Class styles ----- //
+@if $print-base-list-classes == true {
+	.sb-inline-list {
+		@extend %sb-inline-list;
+	}
+}

@@ -1,0 +1,33 @@
+//-------------------------------------
+//  Springboard: core/layout
+//  Grid setup complete.
+//-------------------------------------
+
+
+// ----- Layout settings ----- //
+
+// Print classes?
+// 
+$print-layout-classes:		$print-springboard-classes		!default;
+
+// Show the grid?
+$sb-visible-grid:				false		!default;
+$sb-visible-baseline-grid:		false		!default;
+
+
+// ----- Layout import ----- //
+@import "layout/grid-generator";
+@import "layout/grid";
+@import "layout/callout";
+@import "layout/section";
+
+
+// ----- Layout styles ----- //
+body {
+	@if $sb-visible-baseline-grid == true {
+		background-image: -webkit-linear-gradient(hsla(200,100%,70%,.5) 1px, transparent 1px);
+		background-image: -moz-linear-gradient(hsla(200,100%,70%,.5) 1px, transparent 1px);
+		background-image: linear-gradient(hsla(200,100%,70%,.5) 1px, transparent 1px);
+		background-size: 1.5em 1.5em;
+	}
+}

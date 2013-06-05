@@ -1,0 +1,50 @@
+//-------------------------------------
+//  Springboard: core/base/buttons/groups
+//  
+//-------------------------------------
+
+
+// ----- Buttons settings ----- //
+$print-base-button-group-classes:		$print-base-button-classes		!default;
+
+
+// ----- Mixins ----- //
+@mixin sb-button-group {
+	display: inline-block;
+	font-size: 0;
+	vertical-align: middle;
+	margin-bottom: $sb-m-spacing;
+
+	%sb-button {
+		font-size: 1rem;
+	}
+}
+
+@mixin sb-button-group-vertical {
+	%sb-button {
+		display: block;
+		max-width: 100%;
+	}
+}
+
+
+// ----- Buttons Placeholders ----- //
+%sb-button-group {
+	@include sb-button-group;
+}
+
+%sb-button-group-vertical {
+	@include sb-button-group-vertical;
+}
+
+
+// ----- Buttons styles & classes ----- //
+@if $print-base-button-group-classes == true {
+	.sb-button-group {
+		@extend %sb-button-group;
+	}
+
+	.sb-button-group-vertical {
+		@extend %sb-button-group-vertical;
+	}
+}

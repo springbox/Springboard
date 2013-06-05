@@ -1,0 +1,64 @@
+//-------------------------------------
+//  Springboard: core/helpers/visibility
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-helpers-visibility-classes:		$print-helpers-classes		!default;
+
+
+// ----- Mixins ----- //
+@mixin sb-hidden {
+	display: none;
+}
+
+@mixin sb-visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px; 
+	margin: -1px;
+	padding: 0;
+	border: 0; 
+}
+
+@mixin sb-visually-hidden-but-focusable {
+	&:active, &:focus { 
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+}
+
+// ----- Placeholders ----- //
+%sb-hidden {
+	@include sb-hidden;
+}
+
+%sb-visually-hidden {
+	@include sb-visually-hidden;
+}
+
+%sb-visually-hidden-but-focusable {
+	@include sb-visually-hidden-but-focusable;
+}
+
+
+// ----- Classes ----- //
+
+@if $print-helpers-visibility-classes == true {
+	.sb-hidden {
+		@extend %sb-hidden;
+	}
+
+	.sb-visually-hidden {
+		@extend %sb-visually-hidden;
+	}
+
+	.sb-visually-hidden-but-focusable {
+		@extend %sb-visually-hidden-but-focusable;
+	}
+}

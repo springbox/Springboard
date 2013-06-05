@@ -1,0 +1,39 @@
+//-------------------------------------
+//  Springboard: core/base
+//  All your base are belong to us.
+//-------------------------------------
+
+
+// ----- Base settings ----- //
+
+// Print classes?
+// 
+$print-base-classes:		$print-springboard-classes		!default;
+
+
+
+// Font settings
+//
+//$sb-font-roboto:					true				!default;
+//$sb-font-roboto-slab:				true				!default;
+//$sb-font-ubuntu:					true				!default;
+
+// Misc
+// 
+//$border-box-all-the-things: false;
+
+
+// ----- Base import ----- //
+@import "base/inline";
+@import "base/typography";
+@import "base/images";
+@import "base/buttons";
+@import "base/tables";
+@import "base/forms";
+
+// ----- Base styles ----- //
+@if $border-box-all-the-things == true {
+	* {
+		@include box-sizing(border-box);
+	}
+}

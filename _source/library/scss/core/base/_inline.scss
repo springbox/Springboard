@@ -1,0 +1,14 @@
+//-------------------------------------
+//  Springboard: core/base/inline
+//  Adjust the kerning 1px to the left.
+//-------------------------------------
+
+
+// ----- Inline settings ----- //
+$print-base-inline-classes:		$print-base-classes		!default;
+
+// ----- Import ----- //
+@import "inline/generic";
+@import "inline/emphasis";
+@import "inline/labels";
+@import "inline/badges";
