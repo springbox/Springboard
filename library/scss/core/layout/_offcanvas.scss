@@ -1,0 +1,10 @@
+//-------------------------------------
+//  Springboard: core/layout/off-canvas
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-layout-offcanvas-classes:			$print-layout-classes		!default;
+
+// ----- Import ----- //
+@import "offcanvas/duo";

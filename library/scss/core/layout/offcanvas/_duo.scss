@@ -1,0 +1,81 @@
+//-------------------------------------
+//  Springboard: core/layout/offcanvas/nav
+//  
+//-------------------------------------
+
+// ----- Settings ----- //
+$print-layout-offcanvas-duo-classes:		$print-layout-offcanvas-classes		!default;
+
+// ----- Mixins ----- //
+@mixin sb-offcanvas-duo-outer {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+@mixin sb-offcanvas-duo-inner {
+	@include transition(all 0.5s ease);
+}
+
+@mixin sb-offcanvas-duo-active {
+	@include transform(translate3d(75%, 0, 0));
+}
+
+@mixin sb-offcanvas-duo-main {
+
+}
+
+@mixin sb-offcanvas-duo-supporting($padding: 0 $sb-m-spacing) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 75%;
+	padding: $padding;
+	@include transform(translate3d(-100%, 0, 0));
+}
+
+
+// ----- Placeholders ----- //
+%sb-offcanvas-duo-outer {
+	@include sb-offcanvas-duo-outer;
+}
+
+%sb-offcanvas-duo-inner {
+	@include sb-offcanvas-duo-inner;
+}
+
+%sb-offcanvas-duo-main {
+	@include sb-offcanvas-duo-main;
+}
+
+%sb-offcanvas-duo-supporting {
+	@include sb-offcanvas-duo-supporting;
+}
+
+%sb-offcanvas-duo-active {
+	@include sb-offcanvas-duo-active;
+}
+
+// ----- Classes ----- //
+@if $print-layout-offcanvas-duo-classes == true {
+	.sb-offcanvas-duo-outer {
+		@extend %sb-offcanvas-duo-outer;
+	}
+
+	.sb-offcanvas-duo-inner {
+		@extend %sb-offcanvas-duo-inner;
+	}
+
+	.sb-offcanvas-duo-main {
+		@extend %sb-offcanvas-duo-main;
+	}
+
+	.sb-offcanvas-duo-supporting {
+		@extend %sb-offcanvas-duo-supporting;
+	}
+
+	.sb-offcanvas-duo-active {
+		@extend %sb-offcanvas-duo-active;
+	}
+}

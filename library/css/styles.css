@@ -3903,6 +3903,45 @@ input[type="checkbox"]:focus, input[type="radio"]:focus {
   background-color: #e6e6e6;
 }
 
+/* line 40, ../scss/core/layout/offcanvas/_duo.scss */
+.sb-offcanvas-duo-outer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 44, ../scss/core/layout/offcanvas/_duo.scss */
+.sb-offcanvas-duo-inner {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 52, ../scss/core/layout/offcanvas/_duo.scss */
+.sb-offcanvas-duo-supporting {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 75%;
+  padding: 0 1.5rem;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* line 56, ../scss/core/layout/offcanvas/_duo.scss */
+.sb-offcanvas-duo-active {
+  -webkit-transform: translate3d(75%, 0, 0);
+  -moz-transform: translate3d(75%, 0, 0);
+  -ms-transform: translate3d(75%, 0, 0);
+  -o-transform: translate3d(75%, 0, 0);
+  transform: translate3d(75%, 0, 0);
+}
+
 /* line 69, ../scss/core/components/navigation/_bar.scss */
 .sb-nav-bar {
   width: 100%;
@@ -3929,7 +3968,7 @@ input[type="checkbox"]:focus, input[type="radio"]:focus {
   /* line 77, ../scss/core/components/navigation/_bar.scss */
   .sb-has-nav-bar-fixed {
     padding-top: 0px;
-    padding-top: 4.5rem;
+    padding-top: 3rem;
   }
 }
 
