@@ -3,7 +3,7 @@
 //-------------------------------------
 
 // ----- Settings ----- //
-$print-base-icon-classes:		$print-base-classes;
+$print-base-icon-classes:		$print-base-classes		!default;
 
 // ----- Import ----- //
 @import "icons/core";
