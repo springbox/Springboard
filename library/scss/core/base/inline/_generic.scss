@@ -6,7 +6,7 @@
 
 // ----- Inline settings ----- //
 $print-base-inline-generic-classes:		$print-base-inline-classes		!default;
-
+$print-base-inline-generic-elements:	$print-base-inline-elements		!default;
 
 // ----- Mixins ----- //
 @mixin sb-link {
@@ -140,58 +140,59 @@ $print-base-inline-generic-classes:		$print-base-inline-classes		!default;
 }
 
 // ----- Basic Typography styles ----- //
-a {
-	@extend %sb-link;
-}
+@if $print-base-inline-generic-elements == true {
+	a {
+		@extend %sb-link;
+	}
 
-small {
-	@extend %sb-small;
-}
+	small {
+		@extend %sb-small;
+	}
 
-b, strong {
-	@extend %sb-bold;
-}
+	b, strong {
+		@extend %sb-bold;
+	}
 
-em {
-	@extend %sb-italic;
-}
+	em {
+		@extend %sb-italic;
+	}
 
-del {
-	@extend %sb-delete;
-}
+	del {
+		@extend %sb-delete;
+	}
 
-ins {
-	@extend %sb-insert;
-}
+	ins {
+		@extend %sb-insert;
+	}
 
-mark {
-	@extend %sb-mark;
-}
+	mark {
+		@extend %sb-mark;
+	}
 
-abbr {
-	@extend %sb-abbreviation;
-}
+	abbr {
+		@extend %sb-abbreviation;
+	}
 
-sub {
-	@extend %sb-subscript;
-}
+	sub {
+		@extend %sb-subscript;
+	}
 
-sup {
-	@extend %sb-superscript;
-}
+	sup {
+		@extend %sb-superscript;
+	}
 
-time {
-	@extend %sb-time;
-}
+	time {
+		@extend %sb-time;
+	}
 
-code, var, samp {
-	@extend %sb-code;
-}
+	code, var, samp {
+		@extend %sb-code;
+	}
 
-kbd {
-	@extend %sb-keyboard;
+	kbd {
+		@extend %sb-keyboard;
+	}
 }
-
 // ----- Classes ----- //
 @if $print-base-inline-generic-classes {
 	.sb-link {

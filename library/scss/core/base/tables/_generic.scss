@@ -6,6 +6,7 @@
 
 // ----- Inline settings ----- //
 $print-base-table-generic-classes:		$print-base-table-classes		!default;
+$print-base-table-generic-elements:		$print-base-table-elements		!default;
 
 $sb-table-border-color: lighten($sb-font-color, 65%);
 $sb-table-stripe-color: lighten($sb-font-color, 75%);
@@ -175,23 +176,24 @@ $sb-table-stripe-color: lighten($sb-font-color, 75%);
 }
 
 // ----- Basic Table styles ----- //
-table {
-	@extend %sb-table;
-	@extend %sb-table-row;
+@if $print-base-table-generic-elements == true {
+	table {
+		@extend %sb-table;
+		@extend %sb-table-row;
 
-	caption {
-		@extend %sb-table-caption;
+		caption {
+			@extend %sb-table-caption;
+		}
+	}
+
+	th {
+		font-weight: 700;
+	}
+
+	td, th {
+		padding: $sb-s-spacing;
 	}
 }
-
-th {
-	font-weight: 700;
-}
-
-td, th {
-	padding: $sb-s-spacing;
-}
-
 
 
 // ----- Classes ----- //

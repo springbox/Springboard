@@ -9,7 +9,7 @@
 // Print classes?
 // 
 $print-base-classes:		$print-springboard-classes		!default;
-
+$print-base-elements:		$print-springboard-elements		!default;
 
 
 // Font settings
@@ -30,6 +30,7 @@ $print-base-classes:		$print-springboard-classes		!default;
 @import "base/buttons";
 @import "base/tables";
 @import "base/forms";
+
 
 // ----- Base styles ----- //
 @if $border-box-all-the-things == true {

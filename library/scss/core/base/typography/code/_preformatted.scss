@@ -5,7 +5,7 @@
 
 // ----- Settings ----- //
 $print-base-code-preformatted-classes:		$print-base-code-classes		!default;
-
+$print-base-code-preformatted-elements:		$print-base-code-elements		!default;
 
 // ----- Mixins ----- //
 @mixin sb-preformatted {
@@ -63,8 +63,10 @@ $print-base-code-preformatted-classes:		$print-base-code-classes		!default;
 }
 
 // ----- Element styles ----- //
-pre {
-	@extend %sb-preformatted;
+@if $print-base-code-preformatted-elements == true {
+	pre {
+		@extend %sb-preformatted;
+	}
 }
 
 

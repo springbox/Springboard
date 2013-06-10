@@ -8,14 +8,13 @@
 // 
 
 // Want to use Springboard classes in your HTML?
-$print-springboard-classes:	true							!default;
-
-$print-component-classes:	$print-springboard-classes		!default;
+$print-springboard-classes:		true							!default;
+$print-springboard-elements:	true							!default;
 
 
 //
-$sb-visible-grid:				false		!default;
-$sb-visible-baseline-grid:		false		!default;
+$sb-visible-grid:				true		!default;
+$sb-visible-baseline-grid:		true		!default;
 
 
 

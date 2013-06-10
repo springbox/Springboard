@@ -6,7 +6,7 @@
 
 // ----- Settings ----- //
 $print-base-form-generic-classes:		$print-base-form-classes		!default;
-
+$print-base-form-generic-elements:		$print-base-form-elements		!default;
 
 // ----- Mixins ----- //
 @mixin sb-form {
@@ -96,33 +96,34 @@ $print-base-form-generic-classes:		$print-base-form-classes		!default;
 }
 
 // ----- Elements ----- //
-form {
-	@extend %sb-form;
-}
-
-input {
-	@extend %sb-form-input;
-
-	&[type="text"], &[type="password"] {
-		@extend %sb-text-input;
+@if $print-base-form-generic-elements == true {
+	form {
+		@extend %sb-form;
 	}
 
-	&[type="checkbox"], &[type="radio"] {
-		@extend %sb-form-check;
+	input {
+		@extend %sb-form-input;
+
+		&[type="text"], &[type="password"] {
+			@extend %sb-text-input;
+		}
+
+		&[type="checkbox"], &[type="radio"] {
+			@extend %sb-form-check;
+		}
+	}
+
+	label {
+		@extend %sb-form-label;
+	}
+
+	select {
+		@extend %sb-form-select;
+	}
+
+	textarea {
+		@extend %sb-textarea;
 	}
 }
-
-label {
-	@extend %sb-form-label;
-}
-
-select {
-	@extend %sb-form-select;
-}
-
-textarea {
-	@extend %sb-textarea;
-}
-
 
 // ----- Classes ----- //

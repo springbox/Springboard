@@ -6,7 +6,7 @@
 
 // ----- Images settings ----- //
 $print-base-image-classes:		$print-base-classes		!default;
-
+$print-base-image-elements:		$print-base-elements	!default;
 
 // ----- Images import ----- //
 
@@ -34,8 +34,10 @@ $print-base-image-classes:		$print-base-classes		!default;
 
 
 // ----- Image styles & classes ----- //
-img {
-	@extend %sb-image;
+@if $print-base-image-elements == true {
+	img {
+		@extend %sb-image;
+	}
 }
 
 @if $print-base-image-classes == true {

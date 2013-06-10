@@ -6,6 +6,8 @@
 
 // ----- Inline settings ----- //
 $print-base-inline-classes:		$print-base-classes		!default;
+$print-base-inline-elements:	$print-base-elements	!default;
+
 
 // ----- Import ----- //
 @import "inline/generic";
