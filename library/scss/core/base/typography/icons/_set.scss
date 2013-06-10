@@ -8,7 +8,7 @@ $print-base-icon-set-classes:		$print-base-icon-classes	!default;
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
-@if $print-icon-classes == true {
+@if $print-base-icon-set-classes == true {
 	.icon-glass:before                { content: "\f000"; }
 	.icon-music:before                { content: "\f001"; }
 	.icon-search:before               { content: "\f002"; }
