@@ -5,6 +5,7 @@
 
 // ----- Settings ----- //
 $print-base-quotation-classes:		$print-base-typography-classes		!default;
+$print-base-quotation-elements:		$print-base-elements	!default;
 
 
 // ----- Mixins ----- //
@@ -85,17 +86,20 @@ $print-base-quotation-classes:		$print-base-typography-classes		!default;
 }
 
 // ----- Basic styles ----- //
-blockquote {
-	@extend %sb-blockquote;
+@if $print-base-quotation-elements {
+	blockquote {
+		@extend %sb-blockquote;
 
-	cite {
-		@extend %sb-citation;
+		cite {
+			@extend %sb-citation;
+		}
+	}
+
+	q {
+		@extend %sb-inline-quote;
 	}
 }
 
-q {
-	@extend %sb-inline-quote;
-}
 
 // ----- Classes ----- //
 @if $print-base-quotation-classes == true {

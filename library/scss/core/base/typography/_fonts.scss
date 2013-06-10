@@ -3,9 +3,10 @@
 //-------------------------------------
 
 // ----- Settings ----- //
+$print-base-typography-fonts:		$print-base-typography-elements		!default;
 
 // Roboto
-$sb-font-roboto:					true				!default;
+$sb-font-roboto:					$print-base-typography-fonts		!default;
 $sb-font-roboto-black:				$sb-font-roboto		!default;
 $sb-font-roboto-black-italic: 		$sb-font-roboto 	!default;
 $sb-font-roboto-bold:				$sb-font-roboto		!default;
@@ -20,7 +21,7 @@ $sb-font-roboto-thin:				$sb-font-roboto		!default;
 $sb-font-roboto-thin-italic:		$sb-font-roboto		!default;
 
 // RobotoSlab
-$sb-font-merriweather:					true						!default;
+$sb-font-merriweather:					$print-base-typography-fonts	!default;
 $sb-font-merriweather-black:			$sb-font-merriweather		!default;
 $sb-font-merriweather-bold:				$sb-font-merriweather		!default;
 $sb-font-merriweather-regular:			$sb-font-merriweather		!default;
@@ -31,7 +32,7 @@ $sb-font-merriweather-regular-italic:	$sb-font-merriweather		!default;
 $sb-font-merriweather-light-italic:		$sb-font-merriweather		!default;
 
 // Ubuntu Mono
-$sb-font-ubuntu:					true				!default;
+$sb-font-ubuntu:					$print-base-typography-fonts		!default;
 $sb-font-ubuntu-regular:			$sb-font-ubuntu		!default;
 $sb-font-ubuntu-regular-italic:		$sb-font-ubuntu		!default;
 $sb-font-ubuntu-bold:				$sb-font-ubuntu		!default;

@@ -5,6 +5,7 @@
 
 // ----- Settings ----- //
 $print-base-paragraph-classes:		$print-base-typography-classes		!default;
+$print-base-paragraph-elements:		$print-base-elements				!default;
 
 
 // ----- Mixins ----- //
@@ -63,14 +64,18 @@ $print-base-paragraph-classes:		$print-base-typography-classes		!default;
 	@include sb-address;
 }
 
+
 // ----- Base Styles ----- //
-p {
-	@extend %sb-paragraph;
+@if $print-base-paragraph-elements == true {
+	p {
+		@extend %sb-paragraph;
+	}
+
+	address {
+		@extend %sb-address;
+	}
 }
 
-address {
-	@extend %sb-address;
-}
 
 // ----- Classes ----- //
 @if $print-base-paragraph-classes == true {

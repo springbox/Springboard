@@ -10,6 +10,7 @@
 
 // ----- Settings ----- //
 $print-base-heading-classes:	$print-base-classes		!default;
+$print-base-heading-elements:	$print-base-elements	!default;
 
 $sb-include-subheads:			true	!default;
 
@@ -57,55 +58,56 @@ $sb-include-subheads:			true	!default;
 
 
 // ----- Base Styles ----- //
+@if $print-base-heading-elements == true {
+	h1 {
+		@extend %sb-s-h1;
+		@extend %sb-m-h1;
+		@extend %sb-xl-h1;
 
+		@extend %sb-heading;
+	}
 
-h1 {
-	@extend %sb-s-h1;
-	@extend %sb-m-h1;
-	@extend %sb-xl-h1;
+	h2 {
+		@extend %sb-s-h2;
+		@extend %sb-m-h2;
+		@extend %sb-xl-h2;
 
-	@extend %sb-heading;
+		@extend %sb-heading;
+	}
+
+	h3 {
+		@extend %sb-s-h3;
+		@extend %sb-m-h3;
+		@extend %sb-xl-h3;
+
+		@extend %sb-heading;
+	}
+
+	h4 {
+		@extend %sb-s-h4;
+		@extend %sb-m-h4;
+		@extend %sb-xl-h4;
+
+		@extend %sb-heading;
+	}
+
+	h5 {
+		@extend %sb-s-h5;
+		@extend %sb-m-h5;
+		@extend %sb-xl-h5;
+
+		@extend %sb-heading;
+	}
+
+	h6 {
+		@extend %sb-s-h6;
+		@extend %sb-m-h6;
+		@extend %sb-xl-h6;
+
+		@extend %sb-heading;
+	}
 }
 
-h2 {
-	@extend %sb-s-h2;
-	@extend %sb-m-h2;
-	@extend %sb-xl-h2;
-
-	@extend %sb-heading;
-}
-
-h3 {
-	@extend %sb-s-h3;
-	@extend %sb-m-h3;
-	@extend %sb-xl-h3;
-
-	@extend %sb-heading;
-}
-
-h4 {
-	@extend %sb-s-h4;
-	@extend %sb-m-h4;
-	@extend %sb-xl-h4;
-
-	@extend %sb-heading;
-}
-
-h5 {
-	@extend %sb-s-h5;
-	@extend %sb-m-h5;
-	@extend %sb-xl-h5;
-
-	@extend %sb-heading;
-}
-
-h6 {
-	@extend %sb-s-h6;
-	@extend %sb-m-h6;
-	@extend %sb-xl-h6;
-
-	@extend %sb-heading;
-}
 
 // ----- Classes ----- //
 

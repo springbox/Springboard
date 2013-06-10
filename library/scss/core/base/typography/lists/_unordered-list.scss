@@ -5,6 +5,8 @@
 
 // ----- Settings ----- //
 $print-base-list-classes:		$print-base-classes		!default;
+$print-base-list-elements:		$print-base-elements	!default;
+
 
 // ----- Mixins ----- //
 @mixin sb-unordered-list {
@@ -17,14 +19,18 @@ $print-base-list-classes:		$print-base-classes		!default;
 	@include sb-list;
 }
 
+
 // ----- Placeholder styles ----- //
 %sb-unordered-list {
 	@include sb-unordered-list;
 }
 
+
 // ----- Element styles ----- //
-ul {
-	@extend %sb-unordered-list;
+@if $print-base-list-elements == true {
+	ul {
+		@extend %sb-unordered-list;
+	}
 }
 
 

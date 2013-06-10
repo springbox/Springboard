@@ -5,6 +5,7 @@
 
 // ----- Settings ----- //
 $print-base-list-classes:		$print-base-classes		!default;
+$print-base-list-elements:		$print-base-elements	!default;
 
 // ----- Mixins ----- //
 @mixin sb-ordered-list {
@@ -23,10 +24,11 @@ $print-base-list-classes:		$print-base-classes		!default;
 }
 
 // ----- Element styles ----- //
-ol {
-	@extend %sb-ordered-list;
+@if $print-base-list-elements {
+	ol {
+		@extend %sb-ordered-list;
+	}
 }
-
 
 // ----- Class styles ----- //
 @if $print-base-list-classes == true {

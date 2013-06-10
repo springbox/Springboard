@@ -6,7 +6,7 @@
 
 // ----- Typography settings ----- //
 $print-base-typography-classes:		$print-base-classes		!default;
-
+$print-base-typography-elements:	$print-base-elements	!default;
 
 // ----- Typography import ----- //
 @import "typography/fonts";

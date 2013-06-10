@@ -5,6 +5,7 @@
 
 // ----- Settings ----- //
 $print-base-list-classes:		$print-base-classes		!default;
+$print-base-list-elements:		$print-base-elements	!default;
 
 
 // ----- Mixins ----- //
@@ -26,9 +27,12 @@ $print-base-list-classes:		$print-base-classes		!default;
 	@include sb-definition-list;
 }
 
+
 // ----- Element styles ----- //
-dl {
-	@extend %sb-definition-list;
+@if $print-base-list-elements == true {
+	dl {
+		@extend %sb-definition-list;
+	}
 }
 
 
