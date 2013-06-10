@@ -59,6 +59,8 @@ $sb-button-color:				lighten($sb-font-color, 40%)	!default;
 
 
 // ----- Buttons styles & classes ----- //
-.sb-button {
-	@extend %sb-button;
+@if $print-base-button-single-classes == true {
+	.sb-button {
+		@extend %sb-button;
+	}
 }

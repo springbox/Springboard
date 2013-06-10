@@ -34,6 +34,8 @@ $print-base-form-aligned-classes:		$print-base-form-classes		!default;
 
 
 // ----- Classes ----- //
-.sb-form-aligned {
-	@extend %sb-form-aligned;
+@if $print-base-form-aligned-classes == true {
+	.sb-form-aligned {
+		@extend %sb-form-aligned;
+	}
 }

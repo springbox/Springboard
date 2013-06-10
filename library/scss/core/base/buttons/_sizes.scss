@@ -49,22 +49,24 @@ $print-base-button-size-classes:		$print-base-button-classes		!default;
 
 
 // ----- Buttons styles & classes ----- //
-.sb-button-xl {
-	@extend %sb-button-xl;
-}
+@if $print-base-button-size-classes == true {
+	.sb-button-xl {
+		@extend %sb-button-xl;
+	}
 
-.sb-button-l {
-	@extend %sb-button-l;
-}
+	.sb-button-l {
+		@extend %sb-button-l;
+	}
 
-.sb-button-m {
-	@extend %sb-button-m;
-}
+	.sb-button-m {
+		@extend %sb-button-m;
+	}
 
-.sb-button-s {
-	@extend %sb-button-s;
-}
+	.sb-button-s {
+		@extend %sb-button-s;
+	}
 
-.sb-button-expanded {
-	@extend %sb-button-expanded;
+	.sb-button-expanded {
+		@extend %sb-button-expanded;
+	}
 }

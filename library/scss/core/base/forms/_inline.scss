@@ -39,6 +39,8 @@ $print-base-form-inline-classes:		$print-base-form-classes		!default;
 
 
 // ----- Classes ----- //
-.sb-form-inline {
-	@extend %sb-form-inline;
+@if $print-base-form-inline-classes == true {
+	.sb-form-inline {
+		@extend %sb-form-inline;
+	}
 }

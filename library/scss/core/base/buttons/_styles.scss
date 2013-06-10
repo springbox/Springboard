@@ -83,49 +83,51 @@ $sb-button-look-color:			$sb-blue		!default;
 }
 
 // ----- Classes ----- //
-.sb-button-caution {
-	@extend %sb-button;
-	@extend %sb-button-caution;
-}
+@if $print-base-button-style-classes == true {
+	.sb-button-caution {
+		@extend %sb-button;
+		@extend %sb-button-caution;
+	}
 
-.sb-button-warning {
-	@extend %sb-button;
-	@extend %sb-button-warning;
-}
+	.sb-button-warning {
+		@extend %sb-button;
+		@extend %sb-button-warning;
+	}
 
-.sb-button-stop {
-	@extend %sb-button;
-	@extend %sb-button-stop;
-}
+	.sb-button-stop {
+		@extend %sb-button;
+		@extend %sb-button-stop;
+	}
 
-.sb-button-go {
-	@extend %sb-button;
-	@extend %sb-button-go;
-}
+	.sb-button-go {
+		@extend %sb-button;
+		@extend %sb-button-go;
+	}
 
-.sb-button-look {
-	@extend %sb-button;
-	@extend %sb-button-look;
-}
+	.sb-button-look {
+		@extend %sb-button;
+		@extend %sb-button-look;
+	}
 
-.sb-button-link {
-	@extend %sb-button;
-	@extend %sb-button-link;
-}
+	.sb-button-link {
+		@extend %sb-button;
+		@extend %sb-button-link;
+	}
 
-.sb-button-quiet {
-	@extend %sb-button;
-	@extend %sb-button-quiet;
-}
+	.sb-button-quiet {
+		@extend %sb-button;
+		@extend %sb-button-quiet;
+	}
 
-.sb-button-active {
-	@extend %sb-button-active;
-}
+	.sb-button-active {
+		@extend %sb-button-active;
+	}
 
-.sb-button-hover {
-	@extend %sb-button-hover;
-}
+	.sb-button-hover {
+		@extend %sb-button-hover;
+	}
 
-.sb-button-disabled {
-	@extend %sb-button-disabled;
+	.sb-button-disabled {
+		@extend %sb-button-disabled;
+	}
 }
