@@ -4,7 +4,7 @@
 //---------------------------
 
 
-$print-base-icon-classes:		$print-base-classes		!default;
+$print-base-icon-core-classes:		$print-base-icon-classes		!default;
 
 
 @if $print-base-icon-classes == true {

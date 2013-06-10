@@ -4,11 +4,11 @@
 //---------------------------
 
 // Font Awesome
-$sb-font-awesome:		true		!default;
+$print-base-icon-font-classes:		$print-base-icon-classes		!default;
 
 
 // ----- Font Awesome ----- //
-@if $sb-font-awesome == true {
+@if $print-base-icon-font-classes == true {
 	@font-face {
 		font-family: 'FontAwesome';
 		src: 	url('../fonts/fontawesome-webfont.eot');
