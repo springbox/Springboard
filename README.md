@@ -23,9 +23,9 @@ Since we don't store our dependencies in git, you'll need to download them to ge
 
 #### Available tasks
 
-* *compass* — Compile Sass to CSS using Compass *                            
-* *watch* — Run predefined tasks whenever watched files change.            
-* *default* — Alias for "compass" task.    
+- *compass* — Compile Sass to CSS using Compass *                            
+- *watch* — Run predefined tasks whenever watched files change.            
+- *default* — Alias for "compass" task.    
 
 ### SASS + Compass
 Springboard's SASS structure is designed to help mitigate large problems with existing front-end frameworks. Visual styles being too opinionated, non-semantic classes encouraged, or mixins easily producing too much code.
