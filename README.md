@@ -44,7 +44,7 @@ With Springboard, we want you to only use the classes that are relevant to your 
 ##### Overrides 
 If you do some digging into the core directory, you'll notice quite a few variables with `!default` at the top of all the files. This default setting allows us to _override_ the variable at any point above that particular declaration. Doing so let's us do some cool things, such as turning off all our classes but keeping the grid or keeping all our classes on except button classes. 
 
-For example, if you don't have forms or tables on your pages there's obviously no reason to include the form styles! You'd this in your `_override.scss` to keep any form styles from being printed to your compiled CSS file:
+For example, if you don't have forms or tables on your pages there's obviously no reason to include the form or table styles! You'd set this in your `_override.scss` to keep any form styles from being printed to your compiled CSS file:
 
 	$print-base-form-classes:	false;
 	$print-base-form-elements:	false;
