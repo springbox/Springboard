@@ -32,9 +32,9 @@ Springboard's SASS structure is designed to help mitigate large problems with ex
 
 So how do we do tackle those problems? Springboard provides options! 
 
-	- If you prefer your non-semantic classes, that's ok! They're included. But if you don't, just write one line to turn them off. 
-	- If you like your mixins, they're there! But we include [placeholder selectors](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#placeholder_selectors_) and encourage you to use those in your SCSS. 
-	- If you don't want all the visual styling, too bad! We're not there yet, but we've kept the styles as minimal as possible for the time being.
+- If you prefer your non-semantic classes, that's ok! They're included. But if you don't, just write one line to turn them off. 
+- If you like your mixins, they're there! But we include [placeholder selectors](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#placeholder_selectors_) and encourage you to use those in your SCSS. 
+- If you don't want all the visual styling, too bad! We're not there yet, but we've kept the styles as minimal as possible for the time being.
 
 #### Settings
 With Springboard, we want you to only use the classes that are relevant to your project. You'll notice in the `library/scss` directory there are two folders: *app* and *core*. You shouldn't _ever_ have to touch the `core` folder. Within the `app` folder, you'll notice two default files: *_main.scss* and *_override.scss*. Both are called by our `library/scss/styles.scss` (the muscle of our SCSS), but there's a difference between the two. The *_override.scss* file is imported before anything else, and the main file is imported at the end. Doing it this way gives us options. We can use *_override.scss* to do what its name suggests and we can use *_main.scss* to override Springboard's styles via the natural cascade as well as add our own. 
