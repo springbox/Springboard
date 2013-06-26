@@ -12,3 +12,5 @@ mixture.json
 # Codekit
 codekit-config.json
 
+# GruntJS
+node_modules/

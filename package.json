@@ -1,0 +1,10 @@
+{
+  "name": "springboard",
+  "repository": "https://github.com/springbox/Springboard.git",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-compass": "~0.3.0"
+  }
+}
