@@ -22,7 +22,7 @@ $print-layout-offcanvas-duo-classes:		$print-layout-offcanvas-classes		!default;
 }
 
 @mixin sb-offcanvas-duo-main {
-
+	display: block;
 }
 
 @mixin sb-offcanvas-duo-supporting($padding: 0 $sb-m-spacing) {

@@ -73,7 +73,7 @@ $sb-xl-max-width:			false				!default;
 	@extend %sb-m-container;
 	@extend %sb-l-container;
 	@extend %sb-xl-container;
-	@extend %sb-learfix;
+	@extend %sb-clearfix;
 }
 
 %sb-grid-row {

@@ -24,6 +24,6 @@ $print-helpers-clearfix-classes:		$print-helpers-classes		!default;
 // ----- Classes ----- //
 @if $print-helpers-clearfix-classes == true {
 	.sb-clearfix {
-		@extend %csb-learfix;
+		@extend %sb-clearfix;
 	}
 }
