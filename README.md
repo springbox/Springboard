@@ -21,7 +21,7 @@ If you're on Windows, you can download and install via [RubyInstaller](http://ru
 ## Getting started
 
 ### Grunt
-Since we don't store our dependencies in git, you'll need to download them to get started with Springboard. Just open your terminal, navigate to Springboard's root directory and run `npm install`. This tells Node's package manager to fetch our dependencies (located in `package.json`).
+Since we don't store our grunt-specific dependencies in git, you'll need to download them to get started with Springboard. Just open your terminal, navigate to Springboard's root directory and run `npm install`. This tells Node's package manager to fetch our dependencies (located in `package.json`).
 
 #### Available tasks
 
