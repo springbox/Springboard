@@ -5,6 +5,8 @@ Springboard is a front-end framework to give you a giant leap forward when you b
 ## Dependencies
 [Grunt](http://gruntjs.com/) is the preferred method to utilize Springboard's awesome features. Grunt requires you to have Node.js and Grunt's command line interface installed globally. Our particular setup requires Ruby, Sass, and Compass >=0.12.2 installed. 
 
+If you prefer Codekit or another option for compiling SCSS, you can certainly use it for most of Springboard's features! Grunt, however, is the best option we've been able to find for cross-platform teams.
+
 ### Node.JS
 Navigate to the [Node.js download page](http://nodejs.org/download/) and install Node. It's straight forward if you use the installers provided for OS X and Windows. If you're on Linux, see [Node's wiki on Github](https://github.com/joyent/node/wiki/Installation) for more detailed instructions.
 
